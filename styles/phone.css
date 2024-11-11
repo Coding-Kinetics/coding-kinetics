@@ -1,0 +1,76 @@
+/* /styles/phone.css */
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+.nav-links {
+  display: none;
+}
+
+
+/* Style the hamburger menu */
+.topnav a.icon {
+  display: block;
+  right: 0;
+  top: 0;
+}
+
+.topnav .icon {
+  display: block;
+}
+
+.row {
+    flex-direction: column;
+    padding-bottom: 10%;
+}
+
+.value {
+    width: 100%;
+    padding-top: 5%;
+}
+
+.value-desc > p {
+    margin-top: 3%;
+}
+
+.welcome-content {
+    padding: 0%;
+}
+
+.welcome {
+    flex-direction: column;
+}
+
+.welcome-image {
+    width: 80%;
+    height: 80%;
+    margin: 0 auto;
+    padding-right: 0%;
+}
+
+.welcome-description {
+    padding-bottom: 5%;
+}
+
+.problem {
+    padding: 0%;
+    width: 100%;
+}
+
+.products-section {
+    flex-direction: column;
+    margin-bottom: 10%;
+}
+
+.product > p {
+    text-align: center;
+}
+
+.product {
+    width: 100%;
+    padding-bottom: 10%;
+    padding-left: 0%;
+    padding-right: 0%;
+}
+
+.products-description {
+    flex-direction: column;
+}

@@ -1,0 +1,615 @@
+/**
+ *  Wireframing
+ * */
+
+* {
+	font-family: "Space Grotesk", sans-serif;
+}
+
+body {
+	margin: 0px;	
+	background-color: #ffffff;
+}
+
+h1, h2, h3  {
+	font-family:  "Space Grotesk", sans-serif;
+}
+
+h2 {
+	font-size: 32px;
+}
+
+.one-liner-title {
+	font-weight: 100;
+}
+
+.row {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+@media (max-width: 600px) {
+	.row {
+		flex-direction: column;
+		padding-bottom: 10%;
+	}
+}
+
+.spacer-2 {
+	margin: 1%;
+}
+
+.spacer-3 {
+	margin: 3%;
+}
+
+
+.header {
+	width: 100%;
+}
+
+.divider {
+	height: 10px;
+	width: 100%;
+	background-color: #000000;
+}
+
+.hamburger {
+	width: 80px;
+	height: 80px;
+}
+
+.header-logo {
+	display: inline-block;
+}
+
+.logo-img {
+	min-width: 150px;
+	min-height: 150px;
+	width: 25%;
+	height: 25%;
+	max-width: 200px;
+	max-height: 200px;
+	background: transparent;
+}
+
+.header-content {
+	width: 100%;
+}
+
+.section {
+	padding: 5%;
+}
+
+/** 
+ * Nav Bar 
+ **/
+
+/* Add a black background color to the top navigation */
+.topnav {
+  float: right;
+  padding-top: 7%;
+  position: relative;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+ 	 float: right;
+  	display: block;
+  	color: black;
+  	text-align: center;
+  	padding: 14px 16px;
+  	text-decoration: none;
+  	font-size: 17px;
+}
+
+/* Add an active class to highlight the current page */
+.topnav a.active {
+  	background-color: #04AA6D;
+  	color: white;
+}
+
+.topnav a:hover {
+  	background-color: #eeeeee;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+	width: 80px;
+	height: 80px;
+  	display: none;
+}
+
+.black-button {
+	background-color: black;
+	border-radius: 3px;
+	color: white;
+    font-family: 'Metropolis', sans-serif;
+    font-weight: bold;
+    text-align: center;
+ 	padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-decoration: none;
+}
+
+.get-started {
+	margin-top: auto;
+}
+
+.black-button:hover {
+	box-shadow: 2px 2px;
+	color: black;
+  	background-color: #dddddd;
+}
+
+@keyframes bubble {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+
+/**
+ *  Welcome
+ **/
+
+.welcome {
+	background: white;
+	position: relative;
+	z-index: 1;
+}
+
+.welcome:after {
+  background: inherit;
+  bottom: 0;
+  content: '';
+  display: block;
+  height: 50%;
+  left: 0;
+  position: absolute;
+  right: 0;
+  transform: skewY(-1.2deg);
+  transform-origin: 100%;
+  z-index: -1;
+}
+
+.welcome-content {
+	padding: 3%;
+}
+
+.welcome-description {
+	font-size: 20px;
+}
+
+@media (max-width: 600px) {
+	.welcome-content {
+    	padding: 1%;
+    	width: 100%;
+    	display: flex;
+    	flex-direction: column;
+	}
+}
+
+.welcome-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.welcome-title {
+    margin-top: 0px;
+    font-size: 3.9vw;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+}
+
+.welcome-image {
+    width: 50%;
+    height: 50%;
+    float: left;
+    padding-right: 5%;
+}
+
+@media (max-width: 600px) {
+	.welcome-image {
+    	width: 80%;
+    	height: 80%;
+    	margin: 0 auto;
+    	padding-right: 0%;
+    	padding-bottom: 10%;
+	}
+}
+
+
+/**
+ * Value props
+ **/
+
+.valueprops {
+	background: #996E00;
+	position: relative;
+}
+
+.valueprops > .section-title {
+	color: white;
+}
+
+.value {
+	display: flex;
+	flex-direction: column;
+	margin-left: 2%;
+	margin-right: 2%;
+	width: 30%;
+}
+
+@media (max-width: 600px) {
+	.value {
+    	width: 100%;
+    	padding-bottom: 5%;
+	}
+}
+
+
+.value-desc > h4 {
+	font-size: 20px;
+	text-align: center;
+	color: white;
+	margin-block-start: 0px;
+	margin-block-end: 0px;
+	padding-top: 20px;
+} 
+
+.value-desc > p {
+	text-align: center;
+	color: white;
+	margin-top: 10%;
+	margin-bottom: 10%;
+} 
+
+.circle {
+	width: 150px;
+	height: 150px;
+ 	max-width: 200px;
+    max-height: 200px;
+	border-radius: 50%;
+	background: white;
+	margin: 0 auto;
+}
+
+.circle > img {
+	width: 150px;
+	height: 150px;
+	max-width: 200px;
+	max-height: 200px;
+	border-radius: 50%;
+	margin: 0 auto;
+}
+
+.value-button {
+	background-color: #FFA500;
+	border-radius: 3px;
+	color: #444444;
+	width: fit-content;
+    font-family: 'Metropolis', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 10%;
+    margin-top: auto;
+    box-shadow: 2px 2px #705100;
+}
+
+.value-button:hover {
+	background-color: #8B5B29;
+	color: white;
+}
+
+@media (max-width: 600px) {
+	.value-button {
+		width: fit-content;
+    	padding-left: 20px;
+    	padding-right: 20px;
+    	margin: 0 auto;
+	}
+}
+
+
+/**
+ * Problems
+ **/
+.problems {
+	position: relative;
+	z-index: 1;
+}
+
+.problems:after {
+  background: inherit;
+  bottom: 0;
+  content: '';
+  display: block;
+  height: 50%;
+  left: 0;
+  position: absolute;
+  right: 0;
+  transform: skewY(-1.2deg);
+  transform-origin: 100%;
+  z-index: -1;
+}
+
+.problems > .row > img {
+	width: 40%;
+}
+
+.problem {
+	padding: 2%;
+	width: 22%;
+}
+
+@media (max-width: 600px) {
+	.problem {
+		padding: 0%;
+		width: 100%;
+	}
+}
+
+.problem-description {
+	padding-left: 5%;
+}
+
+.problem-description > p {
+	font-size: 20px;
+}
+
+
+.problem-set > p {
+	font-size: 20px;
+}
+
+.problem > h4 {
+	text-align: center;
+	color: black;
+	margin-block-start: 0px;
+	margin-block-end: 0px;
+	padding-top: 20px;
+} 
+
+.problem > .circle {
+	margin-top: 20%;
+}
+
+/**
+ * Benefits
+ **/
+.benefits {
+	background: #FFBF23;
+	display: flex;
+	flex-direction: column;
+}
+
+
+/**
+ *  Products
+**/
+.products {
+	background: #E8E6E6;
+}
+
+.products-section {
+	display: flex;
+    zoom: 1; /* Trigger hasLayout */
+    text-align: center;
+    background: white;
+}
+
+@media (max-width: 600px) {
+	.products-section {
+		flex-direction: column;
+		margin-bottom: 10%;
+	}
+}
+
+.product {
+	margin-left: 2%;
+	margin-right: 2%;
+	width: 50%;
+	padding-left: 2%;
+	padding-right: 2%;
+	padding-bottom: 15%;
+	border: 1px transparent;
+	box-shadow: 2px 2px #222222;
+}
+
+@media (max-width: 600px) {
+	.product {
+		width: 100%;
+		padding-bottom: 10%;
+		padding-left: 0%;
+		padding-right: 0%;
+	}
+}
+
+.product:hover {
+	border: 1px solid #666666;
+	border-radius: 10px;
+	box-shadow: 2px 2px;
+}
+
+.product > h4 {
+	height: 50px;
+	font-size: 20px;
+}
+
+.product > img {
+	width: 90%;
+	border: 1px solid #666666;
+	border-radius: 10px;
+}
+
+.product > p {
+	text-align: left;
+}
+
+/**
+ * Partners 
+ **/
+
+.partners {
+	background: #E8E6E6;
+}
+
+/**
+ * Get started
+ **/
+
+.ready-get-started-title {
+	text-align: center;
+}
+
+.black-button-small {
+	padding-left: 20px;
+	padding-right: 20px;
+	width: fit-content;
+	margin: 0 auto;
+}
+
+.ready-get-started {
+	background: #FFFFFF;
+	display:flex;
+	flex-direction: column;
+}
+
+.ready-get-started > .section-title {
+	margin-bottom: 30%;
+}
+
+.ready-get-started-img {
+	margin-top: 10%;
+	margin: 0 auto;
+	width: 60%;
+}
+
+.character-profiles {
+	display: flex;
+    zoom: 1; /* Trigger hasLayout */
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+	.profile {
+		flex-direction: column;
+		padding-bottom: 10%;
+	}
+}
+
+.problem > img {
+	width: 150px;
+	height: 150px;
+	max-width: 200px;
+	max-height: 200px;
+	border-radius: 50%;
+	margin: 0 auto;
+}
+
+.product {
+	margin-left: 1px;
+	margin-right: 1px;
+	width: 50%;
+	padding-left: 3%;
+	padding-right: 3%;
+	padding-bottom: 15%;
+	border: 1px transparent;
+	box-shadow: 2px 2px #222222;
+}
+
+@media (max-width: 600px) {
+	.product {
+		width: 100%;
+		padding-bottom: 10%;
+		padding-left: 0%;
+		padding-right: 0%;
+	}
+}
+
+.product:hover {
+	border: 1px solid #666666;
+	border-radius: 10px;
+	box-shadow: 2px 2px;
+}
+
+/**
+ * Junk Drawer
+ */
+.junk-drawer {
+	background-color: #FFBF23;
+	padding: 0%;
+	padding-bottom: 5%;
+}
+
+.junk-text {
+	background: transparent;
+}
+
+.img-junk {
+	max-width: 500px;
+}
+
+.junk-links {
+	padding-left: 10%;
+	padding-right: 10%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.link {
+	color: black;
+	padding-top: 5%;
+}
+
+.junk-quick-links {
+	display: flex;
+	flex-direction: column;
+}
+
+.junk-follow-section {
+	display: flex;
+}
+
+.junk-section {
+	width: 100%;
+}
+
+@media (max-width: 600px) {
+	.junk-section {
+		padding-bottom: 10%;
+	}
+}
+
+.junk-section > h3 {
+	margin-top: 0px;
+}
+
+.follow-subscribe {
+	width: 100%;
+}
+
+.follow-socials {
+	padding-left: 5%
+}
+
+.subscribe > input {
+	border: 2px solid black;
+	border-radius: 3px;
+	background: #FFBF23;
+	width: 97%;
+}

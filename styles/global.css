@@ -1,0 +1,61 @@
+/* /styles/global.css */
+
+/**
+ * Website color palette: 
+ * 
+ *     Primaries
+ *     - white #FFF
+ * 
+ *     Theme
+ *      - yellow: #FFBF23
+ *      - brown: #996E00
+ *      - red: #FE393C
+ *      - red2: #D74E09
+ *      - pink: FFD7EF
+ *      - gray: 
+ * 
+ *     Secondary
+ *      - emerald: #08875D
+ *      - office-green: #157F1F
+ * 
+ * 
+ * - other complimenting colors
+ * **/
+
+@font-face {
+    font-family: 'Jost';
+    src: url('../fonts/jost/Jost-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Jost';
+    src: url('../fonts/jost/Jost-Bold.ttf');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Jost';
+    src: url('../fonts/jost/Jost-Italic.ttf');
+    font-weight: normal;
+    font-style: italic;
+}
+
+
+@font-face {
+    font-family: 'Jost';
+    src: url('../fonts/jost/Jost-Thin.ttf');
+    font-weight: 200;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Jost-Medium';
+    src: url('../fonts/jost/Jost-Medium.ttf');
+    font-weight: 400;
+    font-style: normal;
+}
+
+
