@@ -1,0 +1,33 @@
+/**
+*  Get started
+**/
+
+.persona > img {
+	width: 150px;
+	height: 150px;
+ 	max-width: 200px;
+    max-height: 200px;
+	background: white;
+	margin: 0 auto;
+}
+
+.persona {
+	margin: 0 auto;
+}
+
+.persona.active {
+	border: 1px solid #666666;
+	border-radius: 10px;
+	box-shadow: 2px 2px;
+}
+
+.quiz {
+	padding-bottom: 15%;
+}
+
+.question-1 {
+	padding-bottom: 15%;
+}
+
+
+.

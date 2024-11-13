@@ -1,0 +1,51 @@
+/**
+*  About
+**/
+
+.about {
+	width: 100%;
+}
+
+.bio {
+	padding-left: 5%;
+	padding-right: 5%;
+}
+
+.bio-profile {
+	width: 35%;
+	height: 35%;
+	margin: auto;
+}
+
+.bio-links {
+	padding-top: 10%;
+	display: flex;
+	flex-direction: row;
+	float: left;
+}
+
+.github, .linkedin {
+	padding-right: 10%;
+}
+
+.bio-social-icon > a > img {
+	width: 40px;
+	height: 40px;
+	padding: 2%;
+}
+
+.quiz {
+	padding-bottom: 15%;
+}
+
+.question-1 {
+	padding-bottom: 15%;
+}
+
+iframe {
+	width: 100%
+}
+
+.contact-form {
+	padding: 5%;
+}
