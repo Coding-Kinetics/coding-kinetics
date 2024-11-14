@@ -2,19 +2,14 @@
 *  About
 **/
 
-.about {
-	width: 100%;
+.bio-profile {
+	width: 27%;
+	margin-top: 4%;
+	margin-right: 5%;
 }
 
 .bio {
-	padding-left: 5%;
 	padding-right: 5%;
-}
-
-.bio-profile {
-	width: 35%;
-	height: 35%;
-	margin: auto;
 }
 
 .bio-links {
@@ -24,7 +19,7 @@
 	float: left;
 }
 
-.github, .linkedin {
+.github, .linkedin, .medium {
 	padding-right: 10%;
 }
 
@@ -47,5 +42,7 @@ iframe {
 }
 
 .contact-form {
-	padding: 5%;
+	padding-left: 5%;
+	padding-right: 5%;
+	padding-bottom: 5%;
 }

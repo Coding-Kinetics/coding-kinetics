@@ -1,9 +1,8 @@
 <!DOCTYPE html>
     <head>
-        <link rel="stylesheet" href="styles/global.css" />
-        <link rel="stylesheet" href="styles/styles.css" />
-        <link rel="stylesheet" href="styles/about.css" />
-        <link rel='stylesheet' media='handheld, only screen and (max-device-width: 600px)' href='styles/phone.css'>
+        <link rel="stylesheet" href="./styles/global.css" />
+        <link rel="stylesheet" href="./styles/styles.css" />
+        <link rel="stylesheet" href="./styles/about.css" />
         <link rel='stylesheet' media='handheld, only screen and (max-device-width: 600px)' href='styles/phone.css'>
         <link href='https://fonts.googleapis.com/css?family=Space Grotesk' rel='stylesheet'>
     </head>
@@ -11,13 +10,12 @@
         <div class="header">
             <div class="divider"></div>
             <div class="header-content">
-                <img class="logo-img" src="./logos/logo-bw.svg"></img>
+                <a href="./index.html"><img class="logo-img" src="./logos/logo-bw.svg"></img></a>
                 <div class="topnav" id="myLink">
                     <div class="nav-links">
                         <a href="./index.html">Home</a>
                         <a href="./about.html" class="active">About</a>
-                        <a href="#products">Products</a>
-                        <a href="#pricing">Pricing</a>
+                        <a href="./products.html">Products</a>
                         <a href="./get-started.html" class="get-started">Get Roadmap</a>
                     </div>
                     <a href="javascript:void(0);" class="icon" onclick="myFunction()">
@@ -28,13 +26,17 @@
             </div>
         </div>
         </div>
-         <div class="about row">
+         <div class="about section row">
             <div class="bio">
                 <h2 class="section-title">Amanda Hinchman-Dominguez, President</h2>
                 <p>Welcome to Kotlin Kinetics, LLC! Kotlin Kinetics is a minority-owned, woman-owned business based in Chicago and globally online.</p>
-                <p>Kotlin Kinetics is run by Amanda Hinchman-Dominguez, a Kotlin GDE and co-author of the book <i>Programming Android with Kotlin: Acheiving Structured Concurrency with Coroutines.</i></p>
-                <p> Amanda is active in the Kotlin and Android communities locally and globally. She is a regular speaker for KotlinConf, Droidcon, and other technical conferences since 2018, giving lectures across multiple cities including Amsterdam, Belarus, Budapest, Berlin, Copenhagen, and London, NY, San Francisco and Chicago. </p>
+                <p>Kotlin Kinetics is run by Amanda Hinchman-Dominguez, a Kotlin GDE and co-author of the book <i>Programming Android with Kotlin: Achieving Structured Concurrency with Coroutines.</i></p>
+                <p> Amanda is active in the Kotlin and Android communities locally and globally. Amanda has been a regular speaker for KotlinConf, Droidcon, and other technical conferences since 2018, giving lectures across multiple cities including Amsterdam, Belarus, Budapest, Berlin, Copenhagen, London, NY, San Francisco, and Chicago. </p>
+                <br/>
                 <div class="bio-links">
+                    <div class="medium bio-social-icon">
+                         <a href="https://medium.com/@hinchman-amanda"><img src="./assets/medium-logo.png"></img></a>
+                    </div>
                     <div class="github bio-social-icon">
                         <a href="https://github.com/ahinchman1"><img src="./assets/github-mark.svg"></img></a>
                     </div>
@@ -45,6 +47,8 @@
                         <a href="https://androiddev.social/@amanda"><img src="./assets/mastodon-logo.png"></img></a>
                     </div>
                 </div>
+                <h2 class="section-title">Notable Works</h2>
+
             </div>
             <img class="problem-profile bio-profile" src="./assets/profile.png"></img>
         </div>
@@ -64,6 +68,7 @@
                     <h3 class="quick-links">Quick Links</h3>
                     <a class="link" href="#terms-and-conditions">Terms and Conditions</a>
                     <a class="link" href="#privacy-policy">Privacy Policy</a>
+                    <a class="link" href="https://github.com/Kotlin-Kinetics/kotlin-kinetics">Report website issues</a>
                 </div>
                    <div class="junk-follow junk-section">
                         <h3 class="follow ">Follow</h3>

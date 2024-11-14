@@ -1,0 +1,125 @@
+/**
+*  Get started
+**/
+
+.tier-image {
+	width: 25%;
+	height: 25%;
+}
+
+@media (max-width: 600px) {
+	.tier-image {
+		width: 100%;
+		padding-bottom: 10%;
+		padding-left: 0%;
+		padding-right: 0%;
+	}
+}
+
+h3 {
+	font-size: 26px;
+}
+
+h4 {
+	height: 50px;
+	font-size: 20px;
+}
+
+li {
+	font-weight: normal;
+}
+
+
+.tier {
+	padding-left: 2%;
+	padding-right: 2%;
+	border: 1px solid #666666;
+	border-radius: 10px;
+	display: flex;
+    flex-direction: column;
+    width: 35%;
+    text-decoration: none;
+    color: black;
+}
+
+@media (max-width: 600px) {
+	.tier {
+		width: 50%;
+		padding-bottom: 10%;
+		padding-left: 0%;
+		padding-right: 0%;
+	}
+}
+
+.patreon-overview {
+	padding-top: 5%;
+	padding-bottom: 5%;
+	display: flex;
+	width: 100%;
+	justify-content: center;
+}
+
+.tier:hover {
+	border: 1px solid #666666;
+	border-radius: 10px;
+	box-shadow: 2px 2px;
+}
+
+.tier > h4 {
+	font-size: 20px;
+}
+
+.tier > h5 {
+	font-size: 16px;
+	text-align: center;
+}
+
+.tier > .space-cowboy {
+	width: 80%;
+	padding-bottom: 10%;
+}
+
+
+.tier > img {
+	width: 90%;
+	margin: 0 auto;
+}
+
+.tier > p {
+	text-align: left;
+}
+
+.offer-desc {
+	font-weight: bold;
+	font-size: 18px;
+}
+
+.offering {
+	font-weight: bold;
+	padding-left: 5%;
+}
+
+.offering-desc{
+	padding-left: 10%;
+}
+
+ul {
+	padding-left: 15%;
+}
+
+.description {
+	display: flex;
+	flex-direction: column;
+}
+
+.product-sample {
+	display: flex;
+	width: 100%;
+}
+ 
+.notecard-sample {
+	width: 60%;
+	border: 2px solid #666666;
+	border-radius: 10px;
+	margin: auto;
+}
