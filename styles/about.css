@@ -8,12 +8,7 @@
 	margin-right: 5%;
 }
 
-.bio {
-	padding-right: 5%;
-}
-
 .bio-links {
-	padding-top: 10%;
 	display: flex;
 	flex-direction: row;
 	float: left;
@@ -23,10 +18,135 @@
 	padding-right: 10%;
 }
 
+.about-buttons {
+	display: flex;
+}
+
+.invite {
+	margin-left: auto;
+	background: #FFBF23;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 12px;
+	padding-bottom: 10px;
+	border-radius: 5px;
+	text-decoration: none;
+	color: black;
+}
+
+.invite:hover {
+	background: #d69700;
+	color: white;
+}
+
+/**
+ * Notable Works
+ * */
+
+.notable-works {
+ 	display: flex;
+ 	flex-direction: column;
+}
+
+.social-links > .bio-social-icon {
+	display: flex;
+}
+
+.social-links > .bio-social-icon > a {
+	margin-right: 1%;
+	margin-top: 1%;
+}
+
+.social-links > .bio-social-icon > p {
+	padding-top: 8px;
+}
+
+.notable-work {
+	width: 70%;
+	margin-top: 5%;
+}
+
+.notable-works-desc {
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-left: 5%;
+}
+
+.social-links {
+	margin-left: 5%;
+}
+
 .bio-social-icon > a > img {
 	width: 40px;
 	height: 40px;
 	padding: 2%;
+}
+
+.book {
+	width: 20%;
+	height: 20%;
+	margin-top: 1em;
+	border: 1px solid black;
+}
+
+.book-work {
+	margin-left: 5%;
+}
+
+.desc {
+	flex-direction: column;
+}
+
+.visit-o {
+	background: #FE393C;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border-radius: 3px;
+	text-decoration: none;
+	color: black;
+	text-weight: bold;
+	box-shadow: 2px 2px;
+}
+
+.visit-o:hover {
+	color: white;
+	background: #D74E09;
+}
+
+.desc-link > p, .desc-link > a {
+	margin-left: 10%;
+}
+
+.kotlinconf-work {
+	width: 80%;
+	display: flex;
+	flex-direction: column;
+	margin-top: 5%;
+}
+
+.work-1 {
+	margin-left: auto;
+}
+
+.work-2 {
+	margin-left: 5%;
+}
+
+.works-info-video {
+	display: flex;
+}
+
+.works-info-video > .talk-description {
+	width: fit-content;
+	padding-left: 5%;
+	margin: auto;
+}
+
+.kotlinconf-frame {
+	width: 100%;
+	margin-top: 1em;
 }
 
 .quiz {
@@ -37,12 +157,62 @@
 	padding-bottom: 15%;
 }
 
-iframe {
+.form {
 	width: 100%
 }
 
 .contact-form {
+	margin-top: 5%;
 	padding-left: 5%;
 	padding-right: 5%;
 	padding-bottom: 5%;
 }
+
+
+@media (max-width: 600px) {
+	.book {
+		width: 50%;
+		margin: auto;
+	}
+
+	.book-work {
+		margin-left: 0%;
+		width: 100%;
+	}
+	
+	.bio-profile {
+		width: 70%;
+		margin: auto;
+	}
+
+	.about {
+		width: 100%;
+	}
+
+	.kotlinconf-work, .book-work {
+		width: 100%;
+	}
+
+	.work-1, .work-2 {
+		margin-left: 0%;
+	}
+
+	.works-info-video {
+    	display: block;
+	}
+
+	.works-info-video > .talk-description  {
+		margin-top: 5%;
+	}
+
+	.desc-link > a {
+		margin-top: 5%;
+		margin-left: 5%;
+	}
+
+	.desc-link > p {
+		margin-left: 0%;
+		padding-left: 5%;
+	}
+}
+

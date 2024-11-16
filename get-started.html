@@ -1,5 +1,7 @@
 <!DOCTYPE html>
     <head>
+        <meta charset="UTF-8"/>
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="./styles/global.css" />
         <link rel="stylesheet" href="./styles/styles.css" />
         <link rel="stylesheet" href="./styles/get-started.css" />
@@ -31,9 +33,9 @@
         </div>
          <div class="character_profiles section">
             <h2 class="section-title">Ready to get started?</h2>
-            <h4>Choose your dev persona that best matches you.</h4> 
+            <h4>Choose your dev persona that best matches you for a recommended roadmap.</h4> 
             <div class="quiz">
-                <div id="pick-persona" class="row">
+                <div class="pick-persona">
                     <div id="java-dev" class="persona single-player">
                         <img src="./assets/java.png">
                         <h4>Java Developers</h4>
@@ -45,20 +47,24 @@
                         <p>You're familiar with using Kotlin, but still falls back to Java when you need to get things done</p>
                     </div>
                     <div id="team" class="persona multi-player">
-                        <<img src="./assets/teams.png"></img>
+                        <img src="./assets/teams.png"></img>
                         <h4>Organizations</h4>
                          <p>You're team is ready to transition to Kotlin, but unsure how to get up to speed quickly and create a plan for transitioning.</p> 
                     </div>
                     <div id="novice-dev" class="persona single-player">
                         <img src="./assets/novice.png"></img>
-                      <h4>Novice Programmers</h4>
+                        <h4>Novice Programmers</h4>
                         <p>You're new to coding and you're eager to get your foot in the door.</p> 
                     </div>
                 </div>
                 <div class="roadmap-single">
                     <h3>To keep up with out latest content development:</h3>
-                    <h3>1. Check out our <a href="patreon.com/KotlinKinetics">Kotlin Kinetics Patreon</a>! As a bonus, we've provided some free content</h3>
-                    <h3>2. Sign up by email to get updates on our newest product developments as it comes out, or follow our socials.</h3>
+                    <p>1. Check out our <a href="patreon.com/KotlinKinetics">Kotlin Kinetics Patreon</a>! As a bonus, we've provided some free content</p>
+                    <p>2. Keep up with the latest content development as it comes out: 
+                        <ul>
+                            <li>Sign up by email to get updates on our newest product developments</li>
+                            <li>Follow Kotlin Kinetic socials</li>
+                        </ul>
                 </div>
                 <div class="roadmap-team">
                     <h3>To work with us</h3>
@@ -89,7 +95,7 @@
                                 <p class="junk-text">Sign up to get the latest news <br/> on our product.</p>
                                 <p class="junk-text">Email*</p>
                                 <form class="subscribe" action="">
-                                    <input type="text" id="email-subscribe"></input>
+                                    <input type="text" id="email-subscribe-input"></input>
                                 </form>
                                 <p class="black-button">Subscribe</p>
                             </div>

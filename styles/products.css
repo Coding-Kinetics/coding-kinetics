@@ -1,6 +1,7 @@
-/**
-*  Get started
-**/
+.products-section > a {
+	text-decoration: none;
+	color: black;
+}
 
 .tier-image {
 	width: 25%;
@@ -29,6 +30,9 @@ li {
 	font-weight: normal;
 }
 
+.products {
+	background: white;
+}
 
 .tier {
 	padding-left: 2%;
@@ -112,6 +116,10 @@ ul {
 	flex-direction: column;
 }
 
+.product-product {
+	padding-bottom: 5%;
+}
+
 .product-sample {
 	display: flex;
 	width: 100%;
@@ -122,4 +130,50 @@ ul {
 	border: 2px solid #666666;
 	border-radius: 10px;
 	margin: auto;
+}
+
+.offering-section {
+	position: relative;
+	background-color: rgba(0, 0, 0, 0.2);
+	border-radius: 10px;
+	width: 100%;
+	margin-bottom: 5%;
+}
+
+.offering-section-desc {
+	padding: 5%;
+	opacity: 0.7;
+}
+
+.offerings > .online-courses {
+	margin-left: 5%;
+	margin-right: 2%;
+	padding-bottom: 20%;
+}
+
+.offerings > .workshops {
+	margin-right: 5%;
+}
+
+.under-construction {
+	opacity: 1.0;
+	position: absolute;
+	height: auto;
+	border: transparent;
+	background: transparent;
+	width: 100%;
+	top: 25%;
+	text-align: center;
+}
+
+.wip {
+	margin: 5%;
+	width: auto;
+	top: 5%;
+	position: relative;
+}
+
+.wip-sign > p {
+	padding-left: 5%;
+	padding-right: 5%;
 }

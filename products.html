@@ -1,6 +1,7 @@
 <!DOCTYPE html>
     <head>
         <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="./styles/global.css" />
         <link rel="stylesheet" href="./styles/styles.css" />
         <link rel="stylesheet" href="./styles/products.css" />
@@ -11,7 +12,7 @@
         <div class="header">
             <div class="divider"></div>
             <div class="header-content">
-                <a href="./index.html"><img class="logo-img" src="./logos/logo-bw.svg"></img></a>
+                <a href="./index.html"><img class="logo-img" src="./logos/logo-bw.svg"/></a>
                 <div class="topnav" id="myLink">
                     <div class="nav-links">
                         <a href="./index.html">Home</a>
@@ -20,63 +21,44 @@
                         <a href="./get-started.html" class="get-started">Get Roadmap</a>
                     </div>
                     <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                        <img src="./assets/hamburger-menu.svg"></img>
+                        <img src="./assets/hamburger-menu.svg"/>
                     </a>
                 </div>
               </div>
             </div>
         </div>
-        <div class="products section row">
+        <div class="products section">
             <div class="products-header">
                 <h2 class="section-title">Products</h2>
                 <p>Kotlin Kinetics offers a diverse range of learning experiences for everyone. No matter the budget or learning style.</p>
             </div>
             <div class="products-section">
-                <div class="snippets-section product product-product">
+                <a href="#patreon" class="snippets-section product product-product">
                     <h4>Kotlin & Coroutines, in Snippets</h4>
-                    <img src="./assets/snippets.png"></img>
-                </div>
-                 <div class="online-courses-section product-product">
-                    <div class="product under-construction">
-                        <h4>Online courses</h4>
-                        <img src="./assets/online-courses.png"></img>
-                    </div>
-                    <div class="wip">
-                        <div class="wip-sign">
-                            <p class="wip-title">Area under construction</p>
-                            <p>Be the first to know when we go live:</p>
-                            <p class="email-subscribe-button">Notify Me</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="workshops-section product-product">
-                    <div class="product under-construction">
-                        <h4>Popup workshops</h4>
-                        <img src="./assets/workshop.png"></img>
-                        <p>In-person and online-workshops.</p>
-                    </div>
-                    <div class="wip">
-                        <div class="wip-sign">
-                            <p class="wip-title">Area under construction</p>
-                            <p>Be the first to know when we go live:</p>
-                            <p class="email-subscribe-button">Notify Me</p>
-                        </div>
-                    </div>
-                </div>
+                    <img src="./assets/snippets.png"/>
+                </a>
+                 <a href="#offerings-row" class="online-courses-section product product-product">
+                    <h4>Online courses</h4>
+                    <img src="./assets/online-courses.png"/>
+                </a>
+                <a href="#offerings-row" class="workshops-section product product-product">
+                    <h4>Popup workshops</h4>
+                    <img src="./assets/workshop.png"/>
+                </a>
             </div>
         </div>
-        <div class="patreon section">
+        <div id="patreon" class="patreon section">
             <h3>Kotlin & Coroutines, in Snippets</h3>
             <p>Subscribe to Kotlin Kinetics membership on Patreon for a curated exclusive content on Kotlin in digestible snippets.</p>
             <div class="patreon-overview">
                 <a href="#tier-1" class="tier-1-overview-cost tier">
                     <h4>Tier 1: Kotlin Cadet</h4>
-                    <img class="space-cadet " src="./assets/space-cadet.png"></img>
+                    <img class="space-cadet " src="./assets/space-cadet.png"/>
                     <h5>$5/month</h5>
                 </a>
                  <a href="#tier-2" class="tier-2-overview-cost tier">
                     <h4>Tier 2: Kotlin Cowboy</h4>
-                    <img class="space-cowboy" src="./assets/space-cowboy.png"></img>
+                    <img class="space-cowboy" src="./assets/space-cowboy.png"/>
                     <h5>$10/month</h5>
                 </a>
             </div>
@@ -84,7 +66,7 @@
                 <div id="tier-1">
                     <h4>Tier 1: Kotlin Cadet</h4>
                     <div class="row">
-                        <img class="space-cadet tier-image" src="./assets/space-cadet.png"></img>
+                        <img class="space-cadet tier-image" src="./assets/space-cadet.png"/>
                         <div class="description">
                             <p class="offer-desc">Included in membership:</p>
                             <p class="offering">1. Two Monthly Kotlin Kinetic Notecards</p>
@@ -105,7 +87,7 @@
                         </div>
                     </div>
                 </div>
-                <div id="tier-2 row">
+                <div id="tier-2">
                     <h4>Tier 2: Kotlin Cowboy</h4>
                     <div class="row">
                         <img class="space-cowboy tier-image" src="./assets/space-cowboy.png"></img>
@@ -131,20 +113,35 @@
                 </div>
             </div>
         </div>
-        <div class="offerings row">
-            <div class="online-courses section">
-                <h3>Online Courses</h3>
-                <p>In-depth tutorials on different platforms, coupled with exclusive resources that provide a unique approach to mastering Kotlin - empowering you to build more efficient and responsive applications at scale.</p>
-            </div>
-            <div class="workshops section ">
-                <h3>Workshops</h3>
-                <p> Subscribe to Kotlin Kinetics on Patreon for a curated exclusive content on Kotlin in digestible snippets.</p>
+        <div id="offerings-row" class="offerings row">
+            <div class="online-courses offering-section">
+                <div class="offering-section-desc">
+                    <h3>Online Courses</h3>
+                    <p>In-depth tutorials on different platforms, coupled with exclusive resources that provide a unique approach to mastering Kotlin - empowering you to build more efficient and responsive applications at scale.</p>
+                </div>
                 <div class="under-construction row">
-                    <div class="wip">
+                   <div class="wip">
                         <div class="wip-sign">
                             <p class="wip-title">Area under construction</p>
+                             <img src="./assets/crane-4.svg"/>
                             <p>Be the first to know when we go live:</p>
-                            <p class="email-subscribe-button">Notify Me</p>
+                            <p class="email-subscribe-button black-button">Notify Me</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="workshops offering-section">
+                <div class="offering-section-desc">
+                    <h3>Workshops</h3>
+                    <p> Subscribe to Kotlin Kinetics on Patreon for a curated exclusive content on Kotlin in digestible snippets.</p>
+                </div>
+                <div class="under-construction row">
+                       <div class="wip">
+                        <div class="wip-sign">
+                            <p class="wip-title">Area under construction</p>
+                             <img src="./assets/crane-4.svg"/>
+                            <p>Be the first to know when we go live:</p>
+                            <p class="email-subscribe-button black-button">Notify Me</p>
                         </div>
                     </div>
                 </div>
@@ -171,7 +168,7 @@
                             <p class="junk-text">Sign up to get the latest news <br/> on our product.</p>
                             <p class="junk-text">Email*</p>
                             <form class="subscribe" action="">
-                                <input type="text" id="email-subscribe"></input>
+                            <input type="text" id="email-subscribe-input"></input>
                             </form>
                             <p class="black-button">Subscribe</p>
                         </div>
@@ -182,8 +179,13 @@
                     </div>
                 </div>
             </div>
-            <img class="img-junk" src="./logos/logo-no-background.svg"></img>
+            <img class="img-junk" src="./logos/logo-no-background.svg"/>
         </div>
         <div class="divider"></div>
+        <div id="subscribe-screen">
+            <!-- MailerLite Universal -->
+            <div class="ml-embedded subscribe-by-email" data-form="mNZx0g"></div>
+            <!-- End MailerLite Universal -->
+        </div>
     </body>
 </html>

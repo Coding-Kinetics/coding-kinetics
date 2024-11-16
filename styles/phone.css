@@ -55,6 +55,13 @@
     width: 100%;
 }
 
+.problems > .row > img {
+    width: 80%;
+    height: 80%;
+    margin: auto;
+    padding-bottom: 5%;
+}
+
 .products-section {
     flex-direction: column;
     margin-bottom: 10%;
@@ -77,4 +84,24 @@
 
 .under-construction {
     display: relative;
+}
+
+.structured-benefit {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.benefit {
+    width: 50%;
+    padding: 0%;
+}
+
+.benefit > img {
+    width: 40%;
+    height: 40%;
+    margin: auto;
+}
+
+.last-benefit {
+    grid-column: 1 / span 2;
 }
