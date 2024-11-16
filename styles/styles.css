@@ -53,81 +53,8 @@ h2 {
 	margin: 3%;
 }
 
-
-.header {
-	width: 100%;
-}
-
-.divider {
-	height: 10px;
-	width: 100%;
-	background-color: #000000;
-}
-
-.header-logo {
-	display: inline-block;
-}
-
-.logo-img {
-	min-width: 50px;
-	min-height: 50px;
-	width: 25%;
-	height: 25%;
-	max-width: 200px;
-	max-height: 200px;
-	background: transparent;
-}
-
-.header-content {
-	width: 100%;
-}
-
 .section {
 	padding: 5%;
-}
-
-/** 
- * Nav Bar 
- **/
-
-/* Add a black background color to the top navigation */
-.topnav {
-  float: right;
-  padding-top: 7%;
-  position: relative;
-}
-
-/* Style the links inside the navigation bar */
-.topnav a {
- 	 float: right;
-  	display: block;
-  	color: black;
-  	text-align: center;
-  	padding: 14px 16px;
-  	font-size: 17px;
-}
-
-/* Add an active class to highlight the current page */
-.topnav a.active {
-  	background-color: #04AA6D;
-  	color: white;
-}
-
-/* Add an active class to highlight the current page */
-.topnav a.active:hover {
-  	background-color: #5BAA73;
-  	color: black;
-}
-
-.topnav a:hover {
-  	background-color: #eeeeee;
-}
-
-/* Hide the link that should open and close the topnav on small screens */
-.topnav > .icon {
-		width: 80px;
-		height: 80px;
-  	display: none;
 }
 
 .black-button {
@@ -683,6 +610,7 @@ h2 {
 
 .link {
 	color: black;
+	text-decoration: underline;
 	padding-top: 5%;
 }
 

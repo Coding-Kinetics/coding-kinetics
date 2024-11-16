@@ -1,20 +1,47 @@
 /* /styles/phone.css */
 
 /* Hide the links inside the navigation menu (except for logo/home) */
+.header-content {
+  display: block;
+  z-index: 25;
+}
+
 .nav-links {
   display: none;
 }
 
+.nav-links.selected {
+    display: flex;
+    flex-direction: column;
+}
+
 
 /* Style the hamburger menu */
-.topnav a.icon {
-  display: block;
-  right: 0;
-  top: 0;
+
+.topnav {
+    position: absolute;
+    padding-top: 14px;
+    display: flex;
+    flex-direction: column;
+    right: 0;
+    top: 10px;
+    width: 50%;
+}
+
+.menu-nav:hover {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.topnav-selected {
+    background: #FFBF23;
 }
 
 .topnav .icon {
-  display: block;
+    display: block;
+    width: auto;
+    padding-left: 0px;
+    padding-bottom: 14px;
+    padding-right: 0px;
 }
 
 .row {
@@ -36,6 +63,7 @@
 }
 
 .welcome {
+    z-index: 1;
     flex-direction: column;
 }
 

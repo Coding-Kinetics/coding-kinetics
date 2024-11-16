@@ -11,8 +11,9 @@
  *      - brown: #996E00
  *      - red: #FE393C
  *      - red2: #D74E09
- *      - pink: FFD7EF
- *      - gray: 
+ *      - pink: #FFD7EF
+ *      - gray: #E8E6E6
+ *      - blue: 
  * 
  *     Secondary
  *      - emerald: #08875D
@@ -58,4 +59,103 @@
     font-style: normal;
 }
 
+/**
+ * Header
+ * */
+
+.navigation {
+    display: flex;
+}
+
+.header {
+    width: 100%;
+}
+
+.divider {
+    height: 10px;
+    width: 100%;
+    background-color: #000000;
+}
+
+.header-logo {
+    display: inline-block;
+}
+
+.logo-img {
+    min-width: 50px;
+    min-height: 50px;
+    width: 125px;
+    max-width: 200px;
+    max-height: 200px;
+    background: transparent;
+    padding-top: 20px;
+    padding-bottom: 16px;
+    padding-left: 20px;
+}
+
+.header-content {
+    position: fixed;
+    background: white;
+    z-index: 25;
+    width: 100%;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.08), 0 2px 4px 0 rgba(0, 0, 0, 0.12);
+}
+
+.header-content > a {
+    display: block;
+    min-width: 50px;
+    min-height: 50px;
+    width: 25%;
+    height: 25%;
+    max-width: 200px;
+    max-height: 200px;
+}
+
+/** 
+ * Nav Bar 
+ **/
+
+/* Add a black background color to the top navigation */
+.topnav {
+    margin-top: auto;
+    margin-left: auto;
+    padding-top: 20px;
+    position: relative;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: right;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    font-size: 17px;
+}
+
+/* Add an active class to highlight the current page */
+.topnav a.active {
+    background-color: #04AA6D;
+    color: white;
+}
+
+/* Add an active class to highlight the current page */
+.topnav a.active:hover {
+    background-color: #5BAA73;
+    color: black;
+}
+
+.topnav a:hover {
+    background-color: #eeeeee;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav > .icon {
+        position: relative;
+    display: none;
+    width: 40px;
+        height: 40px;
+        margin-left: auto;
+        margin-right: 14px;
+}
 

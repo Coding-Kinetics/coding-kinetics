@@ -10,28 +10,27 @@
         <link rel='stylesheet' media='handheld, only screen and (max-device-width: 800px)' href='styles/phone.css'>
         <link rel='stylesheet' media='handheld, only screen and (max-device-width: 800px)' href='styles/about-phone.css'>
         <link href='https://fonts.googleapis.com/css?family=Space Grotesk' rel='stylesheet'>
+        <script src="./js/global.js"></script>
     </head>
     <body>
         <div class="header">
-            <div class="divider"></div>
             <div class="header-content">
-                <a href="./index.html"><img class="logo-img" src="./logos/logo-bw.svg"></img></a>
-                <div class="topnav" id="myLink">
-                    <div class="nav-links">
-                        <a href="./index.html">Home</a>
-                        <a href="./about.html" class="active">About</a>
-                        <a href="./products.html">Products</a>
-                        <a href="./get-started.html" class="get-started">Get Roadmap</a>
+                <div class="divider"></div>
+                <div class="navigation">
+                    <a href="./index.html"><img class="logo-img" src="./logos/logo-transparent.png"/></a>
+                    <div class="topnav" id="myLink">
+                        <img class="menu-nav icon" src="./assets/hamburger-menu.svg"/>
+                        <div class="nav-links">
+                            <a href="./index.html" class="active">Home</a>
+                            <a href="./about.html">About</a>
+                            <a href="./products.html">Products</a>
+                            <a href="./get-started.html">Get Roadmap</a>
+                        </div>
                     </div>
-                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                        <img src="./assets/hamburger-menu.svg"></img>
-                    </a>
                 </div>
-              </div>
             </div>
         </div>
-        </div>
-         <div class="about section row">
+        <div class="about section row">
             <img class="problem-profile bio-profile" src="./assets/profile.png"></img>
             <div class="bio">
                 <h2 class="section-title">Amanda Hinchman-Dominguez, President</h2>
@@ -169,5 +168,10 @@
             <img class="img-junk" src="./logos/logo-no-background.svg"></img>
         </div>
         <div class="divider"></div>
+        <div id="subscribe-screen">
+            <!-- MailerLite Universal -->
+            <div class="ml-embedded subscribe-by-email" data-form="mNZx0g"></div>
+            <!-- End MailerLite Universal -->
+        </div>
     </body>
 </html>
