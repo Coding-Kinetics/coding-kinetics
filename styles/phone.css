@@ -13,36 +13,36 @@
 .nav-links.selected {
     display: flex;
     flex-direction: column;
+    margin-top: 14px;
 }
 
 
 /* Style the hamburger menu */
 
 .topnav {
-    position: absolute;
-    padding-top: 14px;
+    margin-top: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
     display: flex;
     flex-direction: column;
-    right: 0;
-    top: 10px;
     width: 50%;
-}
-
-.menu-nav:hover {
-    background: rgba(0, 0, 0, 0.5);
 }
 
 .topnav-selected {
     background: #FFBF23;
+    border-radius: 0px 0px 10px 10px;
+    border: 1px solid black;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.08), 0 2px 4px 0 rgba(0, 0, 0, 0.12);
 }
 
 .topnav .icon {
     display: block;
-    width: auto;
-    padding-left: 0px;
-    padding-bottom: 14px;
-    padding-right: 0px;
 }
+
+.topnav a {
+    text-align: left;
+}
+
 
 .row {
     flex-direction: column;

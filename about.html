@@ -10,168 +10,169 @@
         <link rel='stylesheet' media='handheld, only screen and (max-device-width: 800px)' href='styles/phone.css'>
         <link rel='stylesheet' media='handheld, only screen and (max-device-width: 800px)' href='styles/about-phone.css'>
         <link href='https://fonts.googleapis.com/css?family=Space Grotesk' rel='stylesheet'>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
         <script src="./js/global.js"></script>
     </head>
     <body>
         <div class="header">
-            <div class="header-content">
-                <div class="divider"></div>
-                <div class="navigation">
-                    <a href="./index.html"><img class="logo-img" src="./logos/logo-transparent.png"/></a>
-                    <div class="topnav" id="myLink">
-                        <img class="menu-nav icon" src="./assets/hamburger-menu.svg"/>
-                        <div class="nav-links">
-                            <a href="./index.html" class="active">Home</a>
-                            <a href="./about.html">About</a>
-                            <a href="./products.html">Products</a>
-                            <a href="./get-started.html">Get Roadmap</a>
-                        </div>
+            <div class="divider"></div>
+            <div class="navigation">
+                <a href="./index.html"><img class="logo-img" src="./logos/logo-transparent.png"/></a>
+                <div class="topnav" id="myLink">
+                    <img class="menu-nav icon" src="./assets/hamburger-menu.svg"/>
+                    <div class="nav-links">
+                        <a href="./index.html">Home</a>
+                        <a href="./about.html" class="active">About</a>
+                        <a href="./products.html">Products</a>
+                        <a href="./get-started.html">Get Roadmap</a>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="about section row">
-            <img class="problem-profile bio-profile" src="./assets/profile.png"></img>
-            <div class="bio">
-                <h2 class="section-title">Amanda Hinchman-Dominguez, President</h2>
-                <p>Welcome to Kotlin Kinetics, LLC! Kotlin Kinetics is a minority-owned, woman-owned business based in Chicago and globally online.</p>
-                <p>Kotlin Kinetics is run by Amanda Hinchman-Dominguez, a Kotlin GDE and co-author O'Reilly's <i>Programming Android with Kotlin: Achieving Structured Concurrency with Coroutines.</i></p>
-                <p> Amanda is active in the Kotlin and Android communities locally and globally. Amanda has been a regular speaker for KotlinConf, Droidcon, and other technical conferences since 2018, giving lectures across multiple cities including Amsterdam, Belarus, Budapest, Berlin, Copenhagen, London, NY, San Francisco, and Chicago.</p>
-                <br/>
-                <div class="about-buttons">
-                    <div class="bio-links">
-                        <div class="github bio-social-icon">
-                            <a href="https://github.com/ahinchman1">
-                                <img src="./assets/github-mark.svg"/>
-                            </a>
-                        </div>
-                        <div class="medium bio-social-icon">
-                             <a href="https://medium.com/@hinchman-amanda">
-                                <img src="./assets/medium-logo.png"/>
-                             </a>
-                        </div>
-                        <div class="linkedin bio-social-icon">
-                            <a href="https://www.linkedin.com/in/amanda-hinchman-dominguez-4190a7a4/">
-                                <img src="./assets/linkedin-logo.png"/>
-                            </a>
-                        </div>
-                        <div class="mastodon bio-social-icon">
-                            <a href="https://androiddev.social/@amanda">
-                                <img src="./assets/mastodon-logo.png"/>
-                            </a>
-                        </div>
-                    </div>
-                    <a class="invite" href="#contact-form">Submit an event invitation</a>
-                </div>
-            </div>
-        </div>
-        <div class="notable-works section">
-            <h2 class="section-title">Notable Works</h2>
-            <p class="notable-works-desc">For a full list of works:</p>
-            <div class="social-links">
-                <div class="bio-social-icon">
-                    <a href="https://github.com/ahinchman1">
-                        <img src="./assets/github-mark.svg"/>
-                    </a>
-                    <p>Complete list of talks, interviews, podcasts & more</p>
-                </div>
-                <div class="bio-social-icon">
-                     <a href="https://medium.com/@hinchman-amanda">
-                        <img src="./assets/medium-logo.png"/>
-                    </a>
-                     <p>Most updated written GDE works & more</p>
-                </div>
-            </div>
-            <div class="book-work notable-work">
-                <h3>Programming Android with Kotlin: Achieving Structured Concurrency with Coroutines</h3>
-                <div class="works-info row">
-                    <img class="book works-logo" src="./assets/programming_android_with_kotlin.jpg"/>
-                    <div class="desc-link">
-                        <p>Developing applications for the Android mobile operating system can seem daunting, particularly if it requires learning a new programming language: Kotlin, now Android's official development language. With this practical book, Android developers will learn how to make the transition from Java to Kotlin, including how Kotlin provides a true advantage for gaining control over asynchronous computations.</p>
-                        <a class="visit-o" href="https://www.oreilly.com/library/view/programming-android-with/9781492062998/">visit O'Reilly.com</a>
-                    </div>
-                </div>
-            </div>
-            <div class="kotlinconf-work notable-work work-1">
-                <h3>KotlinConf 2023: Crash Course on the Kotlin Compiler</h3>
-                <div class="works-info-video">
-                    <iframe class="kotlinconf-frame" width="560" height="315" src="https://www.youtube.com/embed/wUGfuWHCqrc?si=2qKcQMNZGvFUR7Q1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                    <p class="talk-description">Let’s face it - learning about the Kotlin compiler is hard. Luckily, being able to look through various plugins can give insight to how the Kotlin compiler processes data at every phase, from human-readable Kotlin code to machine-readable bytecode. This session intends to expose Kotlin compiler functionality through reverse engineering compiler plugins and all the phases a plugin may intercept, giving us a conceptual, high-level overview what the the Kotlin compiler looks like.</p>
-                </div>
-            </div>
-            <div class="kotlinconf-work work-2 notable-work">
-                <h3>KotlinConf 2019: KEEP insisting!</h3>
-                <div class="works-info-video">
-                     <iframe class="kotlinconf-frame" width="560" height="315" src="https://www.youtube.com/embed/n9smQNxUyBI?si=udky49FJiuL2RnX3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                     <div class="talk-description">
-                        <p>This session intends to analyze a general definition of crosscutting and how it affects growing software, how Aspect-Oriented Programming (AOP) attempts to tackle crosscutting, shortcomings in Java's current approaches in reflexive programming, and subsequently discuss my experiences with TornadoFX in solving day-to-day business inefficiencies through my first attempt at metaprogramming. Exploration through examples will provide insight in Kotlin's approaches to metaprogramming intended to expose Kotln's predisposition to AOP. By harnessing the power of Kotlin, we can make strides in creating a foundation for rational framework for metaprogramming.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="kotlinconf-work work-1 notable-work">
-                <h3>KotlinConf 2018 - Kotlin and TornadoFX: The Next Frontier in Modern (Meta)Programming</h3>
-                <div class="works-info-video">
-                     <iframe class="kotlinconf-frame" width="560" height="315" src="https://www.youtube.com/embed/XyGvwsQ5W5A?si=JQmgLAVNd2Iyt5f0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                     <div class="talk-description">
-                        <p>There's a formal process for sending proposals for the Kotlin language, and it's called KEEP (Kotlin Evolution and Enhancement Process).</p>
-                        <p>During this year we've been making good use of it from the Arrow maintainers team, since we've filed the KEEP-87, where we propose support for compile time validation and dependency resolution. But no fear! we'll not talk about FP here, just about the complete pipeline we went through to get it done. We've learned a lot during the process, and would love to share our experience.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="book-work notable-work">
-                <h3>ACM SIGCSE ’15 Demo Abstract/MIST – The Mathematical Synthesis Toolkit</h3>
-                <div class="works-info row">
-                    <img class="book works-logo" src="./assets/acm.png"/>
-                    <div class="desc-link">
-                        <p>MIST, the Mathematical Image Synthesis Toolkit, is an open-source, Web-based graphics application in which students develop skills in computational thinking and deepen their understanding of mathematical functions through creative play in making images. Students develop a variety of skills in computational thinking by using the small set of images and operations to develop complex images, not only images that the system challenges them to make but also images that they find themselves inspired to create and even images that their peers challenge them to build. MIST also incorporates a community of artists/learners. Images created in MIST are available to other MIST users to comment on and remix (provided the designer permits reuse). MIST community members may also create challenges for other community members and can curate "galleries" of images they find particularly engaging, interesting, or even useful as challenges for others. We find that this additional community further encourages students to develop new and interesting images.</p>
-                        <a class="visit-o" href="https://dl.acm.org/doi/10.1145/2676723.2691878">visit ACM Digital Library</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div id="contact-form" class="section">
-            <h2>Interest form for public events</h2>
-            <iframe class="form" src="https://docs.google.com/forms/d/e/1FAIpQLSctVTU8XWbE4nrIyFBLfYUdpwnhL-aq40qdCJ8HKGlUtUaajQ/viewform?embedded=true" width="640" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-        </div>
-        <div class="junk-drawer section">
-            <div class="junk-links row">
-                <div class="junk-contact junk-section">
-                    <h3 class="contact">Contact</h3>
-                    <p class="junk-text">123 Chicago Ave<br/>Chicago, IL, 60622</p>
-                    <p class="junk-text">Sales:<br/>info@kotlinkinetics.com</p>
-                    <p class="junk-text">Info:<br/>info@kotlinkinetics.com</p>
-                </div>
-                 <div class="junk-quick-links junk-section">
-                    <h3 class="quick-links">Quick Links</h3>
-                    <a class="link" href="#terms-and-conditions">Terms and Conditions</a>
-                    <a class="link" href="#privacy-policy">Privacy Policy</a>
-                    <a class="link" href="https://github.com/Kotlin-Kinetics/kotlin-kinetics">Report website issues</a>
-                </div>
-                   <div class="junk-follow junk-section">
-                        <h3 class="follow ">Follow</h3>
-                        <div class="junk-follow-section">
-                            <div class="follow-subscribe">
-                                <p class="junk-text">Sign up to get the latest news <br/> on our product.</p>
-                                <p class="junk-text">Email*</p>
-                                <form class="subscribe" action="">
-                                    <input type="text" id="email-subscribe"></input>
-                                </form>
-                                <p class="black-button">Subscribe</p>
+        <div class="body-content">
+            <div class="about section row">
+                <img class="problem-profile bio-profile" src="./assets/profile.png"></img>
+                <div class="bio">
+                    <h2 class="section-title">Amanda Hinchman-Dominguez, President</h2>
+                    <p>Welcome to Kotlin Kinetics, LLC! Kotlin Kinetics is a minority-owned, woman-owned business based in Chicago and globally online.</p>
+                    <p>Kotlin Kinetics is run by Amanda Hinchman-Dominguez, a Kotlin GDE and co-author O'Reilly's <i>Programming Android with Kotlin: Achieving Structured Concurrency with Coroutines.</i></p>
+                    <p> Amanda is active in the Kotlin and Android communities locally and globally. Amanda has been a regular speaker for KotlinConf, Droidcon, and other technical conferences since 2018, giving lectures across multiple cities including Amsterdam, Belarus, Budapest, Berlin, Copenhagen, London, NY, San Francisco, and Chicago.</p>
+                    <br/>
+                    <div class="about-buttons">
+                        <div class="bio-links">
+                            <div class="github bio-social-icon">
+                                <a href="https://github.com/ahinchman1">
+                                    <img src="./assets/github-mark.svg"/>
+                                </a>
                             </div>
-                            <div class="follow-socials">
-                                <h3 class="link" href="">LinkedIn</h3>
-                                 <h3 class="link" href="">Threads</h3>
+                            <div class="medium bio-social-icon">
+                                 <a href="https://medium.com/@hinchman-amanda">
+                                    <img src="./assets/medium-logo.png"/>
+                                 </a>
+                            </div>
+                            <div class="linkedin bio-social-icon">
+                                <a href="https://www.linkedin.com/in/amanda-hinchman-dominguez-4190a7a4/">
+                                    <img src="./assets/linkedin-logo.png"/>
+                                </a>
+                            </div>
+                            <div class="mastodon bio-social-icon">
+                                <a href="https://androiddev.social/@amanda">
+                                    <img src="./assets/mastodon-logo.png"/>
+                                </a>
                             </div>
                         </div>
+                        <a class="invite" href="#contact-form">Submit an event invitation</a>
+                    </div>
                 </div>
             </div>
-            <img class="img-junk" src="./logos/logo-no-background.svg"></img>
-        </div>
-        <div class="divider"></div>
-        <div id="subscribe-screen">
-            <!-- MailerLite Universal -->
-            <div class="ml-embedded subscribe-by-email" data-form="mNZx0g"></div>
-            <!-- End MailerLite Universal -->
+            <div class="notable-works section">
+                <h2 class="section-title">Notable Works</h2>
+                <p class="notable-works-desc">For a full list of works:</p>
+                <div class="social-links">
+                    <div class="bio-social-icon">
+                        <a href="https://github.com/ahinchman1">
+                            <img src="./assets/github-mark.svg"/>
+                        </a>
+                        <p>Complete list of talks, interviews, podcasts & more</p>
+                    </div>
+                    <div class="bio-social-icon">
+                         <a href="https://medium.com/@hinchman-amanda">
+                            <img src="./assets/medium-logo.png"/>
+                        </a>
+                         <p>Most updated written GDE works & more</p>
+                    </div>
+                </div>
+                <div class="book-work notable-work">
+                    <h3>Programming Android with Kotlin: Achieving Structured Concurrency with Coroutines</h3>
+                    <div class="works-info row">
+                        <img class="book works-logo" src="./assets/programming_android_with_kotlin.jpg"/>
+                        <div class="desc-link">
+                            <p>Developing applications for the Android mobile operating system can seem daunting, particularly if it requires learning a new programming language: Kotlin, now Android's official development language. With this practical book, Android developers will learn how to make the transition from Java to Kotlin, including how Kotlin provides a true advantage for gaining control over asynchronous computations.</p>
+                            <a class="visit-o" href="https://www.oreilly.com/library/view/programming-android-with/9781492062998/">visit O'Reilly.com</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="kotlinconf-work notable-work work-1">
+                    <h3>KotlinConf 2023: Crash Course on the Kotlin Compiler</h3>
+                    <div class="works-info-video">
+                        <iframe class="kotlinconf-frame" width="560" height="315" src="https://www.youtube.com/embed/wUGfuWHCqrc?si=2qKcQMNZGvFUR7Q1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <p class="talk-description">Let’s face it - learning about the Kotlin compiler is hard. Luckily, being able to look through various plugins can give insight to how the Kotlin compiler processes data at every phase, from human-readable Kotlin code to machine-readable bytecode. This session intends to expose Kotlin compiler functionality through reverse engineering compiler plugins and all the phases a plugin may intercept, giving us a conceptual, high-level overview what the the Kotlin compiler looks like.</p>
+                    </div>
+                </div>
+                <div class="kotlinconf-work work-2 notable-work">
+                    <h3>KotlinConf 2019: KEEP insisting!</h3>
+                    <div class="works-info-video">
+                         <iframe class="kotlinconf-frame" width="560" height="315" src="https://www.youtube.com/embed/n9smQNxUyBI?si=udky49FJiuL2RnX3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                         <div class="talk-description">
+                            <p>This session intends to analyze a general definition of crosscutting and how it affects growing software, how Aspect-Oriented Programming (AOP) attempts to tackle crosscutting, shortcomings in Java's current approaches in reflexive programming, and subsequently discuss my experiences with TornadoFX in solving day-to-day business inefficiencies through my first attempt at metaprogramming. Exploration through examples will provide insight in Kotlin's approaches to metaprogramming intended to expose Kotln's predisposition to AOP. By harnessing the power of Kotlin, we can make strides in creating a foundation for rational framework for metaprogramming.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="kotlinconf-work work-1 notable-work">
+                    <h3>KotlinConf 2018 - Kotlin and TornadoFX: The Next Frontier in Modern (Meta)Programming</h3>
+                    <div class="works-info-video">
+                         <iframe class="kotlinconf-frame" width="560" height="315" src="https://www.youtube.com/embed/XyGvwsQ5W5A?si=JQmgLAVNd2Iyt5f0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                         <div class="talk-description">
+                            <p>There's a formal process for sending proposals for the Kotlin language, and it's called KEEP (Kotlin Evolution and Enhancement Process).</p>
+                            <p>During this year we've been making good use of it from the Arrow maintainers team, since we've filed the KEEP-87, where we propose support for compile time validation and dependency resolution. But no fear! we'll not talk about FP here, just about the complete pipeline we went through to get it done. We've learned a lot during the process, and would love to share our experience.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="book-work notable-work">
+                    <h3>ACM SIGCSE ’15 Demo Abstract/MIST – The Mathematical Synthesis Toolkit</h3>
+                    <div class="works-info row">
+                        <img class="book works-logo" src="./assets/acm.png"/>
+                        <div class="desc-link">
+                            <p>MIST, the Mathematical Image Synthesis Toolkit, is an open-source, Web-based graphics application in which students develop skills in computational thinking and deepen their understanding of mathematical functions through creative play in making images. Students develop a variety of skills in computational thinking by using the small set of images and operations to develop complex images, not only images that the system challenges them to make but also images that they find themselves inspired to create and even images that their peers challenge them to build. MIST also incorporates a community of artists/learners. Images created in MIST are available to other MIST users to comment on and remix (provided the designer permits reuse). MIST community members may also create challenges for other community members and can curate "galleries" of images they find particularly engaging, interesting, or even useful as challenges for others. We find that this additional community further encourages students to develop new and interesting images.</p>
+                            <a class="visit-o" href="https://dl.acm.org/doi/10.1145/2676723.2691878">visit ACM Digital Library</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="contact-form" class="section">
+                <h2>Interest form for public events</h2>
+                <iframe class="form" src="https://docs.google.com/forms/d/e/1FAIpQLSctVTU8XWbE4nrIyFBLfYUdpwnhL-aq40qdCJ8HKGlUtUaajQ/viewform?embedded=true" width="640" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+            </div>
+            <div class="junk-drawer section">
+                <div class="junk-links row">
+                    <div class="junk-contact junk-section">
+                        <h3 class="contact">Contact</h3>
+                        <p class="junk-text">123 Chicago Ave<br/>Chicago, IL, 60622</p>
+                        <p class="junk-text">Sales:<br/>info@kotlinkinetics.com</p>
+                        <p class="junk-text">Info:<br/>info@kotlinkinetics.com</p>
+                    </div>
+                     <div class="junk-quick-links junk-section">
+                        <h3 class="quick-links">Quick Links</h3>
+                        <a class="link" href="#terms-and-conditions">Terms and Conditions</a>
+                        <a class="link" href="#privacy-policy">Privacy Policy</a>
+                        <a class="link" href="https://github.com/Kotlin-Kinetics/kotlin-kinetics">Report website issues</a>
+                    </div>
+                       <div class="junk-follow junk-section">
+                            <h3 class="follow ">Follow</h3>
+                            <div class="junk-follow-section">
+                                <div class="follow-subscribe">
+                                    <p class="junk-text">Sign up to get the latest news <br/> on our product.</p>
+                                    <p class="junk-text">Email*</p>
+                                    <form class="subscribe" action="">
+                                        <input type="text" id="email-subscribe"></input>
+                                    </form>
+                                    <p class="black-button">Subscribe</p>
+                                </div>
+                                <div class="follow-socials">
+                                    <h3 class="link" href="">LinkedIn</h3>
+                                     <h3 class="link" href="">Threads</h3>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+                <img class="img-junk" src="./logos/logo-no-background.svg"></img>
+            </div>
+            <div class="divider"></div>
+            <div id="subscribe-screen">
+                <!-- MailerLite Universal -->
+                <div class="ml-embedded subscribe-by-email" data-form="mNZx0g"></div>
+                <!-- End MailerLite Universal -->
+            </div>
         </div>
     </body>
 </html>

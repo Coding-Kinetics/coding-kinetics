@@ -71,6 +71,8 @@ li {
 
 .tier > h4 {
 	font-size: 20px;
+	margin-left: 1em;
+	margin-right: 1em;
 }
 
 .tier > h5 {
