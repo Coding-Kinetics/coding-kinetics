@@ -14,7 +14,10 @@
         <div class="header">
             <div class="divider"></div>
             <div class="navigation">
-                <a href="./index.html"><img class="logo-img" src="./logos/logo-transparent.png"/></a>
+                <a href="./index.html">
+                    <img class="logo-img" src="./logos/logo-transparent.png"/>
+                    <div class="author-name">Amanda Hinchman-Dominguez</div>
+                </a>
                 <div class="topnav" id="myLink">
                     <img class="menu-nav icon" src="./assets/hamburger-menu.svg"/>
                     <div class="nav-links">
@@ -30,119 +33,109 @@
             <div class="products section">
                 <div class="products-header">
                     <h2 class="section-title">Products</h2>
-                    <p>Kotlin Kinetics offers a diverse range of learning experiences for everyone. No matter the budget or learning style.</p>
+                    <p class="section-desc">Kotlin Kinetics offers a diverse range of learning experiences for everyone. No matter the budget or learning style, learn Kotlin your way.</p>
                 </div>
                 <div class="products-section">
-                    <a href="#patreon" class="snippets-section product product-product">
-                        <h4>Kotlin & Coroutines, in Snippets</h4>
-                        <img src="./assets/snippets.png"/>
-                    </a>
-                     <a href="#offerings-row" class="online-courses-section product product-product">
-                        <h4>Online courses</h4>
-                        <img src="./assets/online-courses.png"/>
-                    </a>
-                    <a href="#offerings-row" class="workshops-section product product-product">
-                        <h4>Popup workshops</h4>
+                     <div class="workshops-section product product-product">
+                        <h4>Kotlin Training</h4>
                         <img src="./assets/workshop.png"/>
+                        <a href="#workshops" class="black-button black-button-small learn-more">Learn more</a>
+                    </div>
+                     <a href="#offerings-row" class="online-courses-section product-product product">
+                        <h4>Online courses</h4>
+                        <div class="wip">
+                            <div class="wip-sign">
+                                <p class="wip-title">Area under construction</p>
+                                <img src="./assets/crane-4.svg"/>
+                                <p>Be the first to know when we go live:</p>
+                                <p class="email-subscribe-button black-button black-button-small">Notify Me</p>
+                                <p><br/></p>
+                            </div>
+                        </div>
                     </a>
+                    <div class="snippets-section product product-product">
+                        <h4>Kotlin Snippets for Researchers</h4>
+                        <img src="./assets/snippets.png"/>
+                        <a href="#patreon" class="black-button black-button-small learn-more">Learn more</a>
+                    </div>
+                </div>
+            </div>
+            <div id="workshops" class="workshop-training section">
+                <h3>Master Kotlin Fast – Training for Teams and Individuals</h3>
+                <p class="section-desc">It's never been easier to get developers writing in  Kotlin.</p>
+                <div class="structured-benefit"> 
+                    <div class="benefit">
+                        <img src="./assets/productivity.png"/>    
+                        <p>Accelerate Productivity</p>
+                    </div>
+                    <div class="benefit">
+                        <img src="./assets/expert-led.png"/>  
+                        <p>Expert-led workshops</p>
+                    </div>
+                    <div class="benefit">
+                        <img src="./assets/hands-on.png"/> 
+                        <p>Hands-on experience with Kotlin projects</p>
+                    </div>
+                    <div class="benefit">
+                        <img src="./assets/tailored.png"/> 
+                        <p>Tailored training for organizations</p>
+                    </div>
+                </div>  
+                <div class="workshop-offerings">
+                    <div class="workshop-offering-section offerings-popup">
+                        <h4 id="popup-workshops">Training for Individuals</h4>
+                        <p class="workshop-desc">Offered to the public. Some are free for the Kotlin community, and others are paid.</p>
+                    </div>
+                    <div class="workshop-offering-section">
+                        <h4 class="private-workshops">Team Training</h4>
+                        <p class="workshop-desc">To book a private workshop, follow these 3 easy steps:
+                            <ol>
+                                <li>Browse sample workshop trainings</li>
+                                <li>Sign up for email for product updates & receive complimentary PDF of 5 common mistakes in concurrency</li>
+                                <li>When you're ready, fill the inquiry form to receive a full abtract</li>
+                            </ol>
+                        </p>
+                    </div> 
+                </div>
+                <div class="workshop-calendar">
+                    <h4>Upcoming public workshops:</h4>
+                    <div class="upcoming-workshops-calendar">
+                        <p> Workshops on the way </p>
+                        <p>Come back here to check again later, or be the first to know when you subscribe to product updates.</p>
+                    </div>
                 </div>
             </div>
             <div id="patreon" class="patreon section">
                 <h3>Kotlin & Coroutines, in Snippets</h3>
-                <p>Subscribe to Kotlin Kinetics membership on Patreon for a curated exclusive content on Kotlin in digestible snippets.</p>
+                <p class="section-desc">Subscribe to Kotlin Kinetics membership on Patreon for a curated exclusive content on Kotlin in digestible snippets.</p>
+                <h4>Membership Offerings</h4>
                 <div class="patreon-overview">
-                    <a href="#tier-1" class="tier-1-overview-cost tier">
-                        <h4>Tier 1: Kotlin Cadet</h4>
+                    <div id="tier-1" class="tier-1-overview-cost tier">
+                        <h4>Tier 1: Kotlin Cadet - $5/month</h4>
                         <img class="space-cadet " src="./assets/space-cadet.png"/>
-                        <h5>$5/month</h5>
-                    </a>
-                     <a href="#tier-2" class="tier-2-overview-cost tier">
-                        <h4>Tier 2: Kotlin Cowboy</h4>
+                        <a href="https://patreon.com/AmandaKotlin" class="black-button black-button-small learn-more">Take me to Patreon</a>
+                        <div class="description">
+                            <p class="offer-desc">Included in membership:</p>
+                            <p class="offering">1. Two Monthly Kotlin Kinetic Notecards</p>
+                            <p class="offering-desc">Receive 2 notecards breaking complex topics into bite-sized, easy-to-understand points.</p>
+                            <div class="product-sample">
+                                <img class="notecard-sample" src="./assets/sample-notecard.png"></img>
+                            </div>
+                            <p class="offering">2. Collaborative chat:</p>
+                            <p class="offering-desc">Get an invite to collaborative learning on the Global Kotlin chat on Slack</p>
+                            <p class="offering">3. Store discounts</p>
+                            <p class="offering-desc">Access to store discounts and other special offers</p>
+                        </div>
+                    </div>
+                    <div id="tier-2" class="tier-2-overview-cost tier">
+                        <h4>Tier 2: Kotlin Cowboy - $10</h4>
                         <img class="space-cowboy" src="./assets/space-cowboy.png"/>
-                        <h5>$10/month</h5>
-                    </a>
-                </div>
-                <div class="memberships">
-                    <div id="tier-1">
-                        <h4>Tier 1: Kotlin Cadet</h4>
-                        <div class="row">
-                            <img class="space-cadet tier-image" src="./assets/space-cadet.png"/>
-                            <div class="description">
-                                <p class="offer-desc">Included in membership:</p>
-                                <p class="offering">1. Two Monthly Kotlin Kinetic Notecards</p>
-                                <p class="offering-desc">Receive 2 notecards breaking complex topics into bite-sized, easy-to-understand points. Topics include:</p>
-                                <ul>
-                                    <li>interview question breakdown</li>
-                                    <li>coroutines & Kotlin language features</li>
-                                    <li>computational topics</li><li>exclusive tidbits from O'Reilly&#39;s <i>Programming Android with Kotlin: Achieving Structured Concurrency with Coroutines</i></li>
-                                </ul>
-                                <p class="offering">2. Collaborative chat:</p>
-                                <p class="offering-desc">Get an invite to collaborative learning on the Global Kotlin chat on Slack</p>
-                                <p class="offering">3. Store discounts</p>
-                                <p class="offering-desc">Access to store discounts and other special offers</p>
-                                <p class="offer-desc">Sample notecard:</p>
-                                <div class="product-sample">
-                                    <img class="notecard-sample" src="./assets/sample-notecard.png"></img>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="tier-2">
-                        <h4>Tier 2: Kotlin Cowboy</h4>
-                        <div class="row">
-                            <img class="space-cowboy tier-image" src="./assets/space-cowboy.png"></img>
-                             <div class="description">
-                                <p class="offer-desc">Included in membership:</p>
-                                <p class="offering">1. Two Monthly Kotlin Kinetic Notecards</p>
-                                <p class="offering-desc">Receive 2 notecards breaking complex topics into bite-sized, easy-to-understand points. Topics include:</p>
-                                <ul>
-                                    <li>interview question breakdown</li>
-                                    <li>coroutines & Kotlin language features</li>
-                                    <li>computational topics</li><li>exclusive tidbits from O'Reilly&#39;s <i>Programming Android with Kotlin: Achieving Structured Concurrency with Coroutines</i></li>
-                                </ul>
-                                <p class="offering">2. Collaborative chat:</p>
-                                <p class="offering-desc">Get an invite to collaborative learning on the Global Kotlin chat on Slack</p>
-                                <p class="offering">3. Store discounts</p>
-                                <p class="offering-desc">Access to store discounts and other special offers</p>
-                                <p class="offer-desc">Sample notecard:</p>
-                                <div class="product-sample">
-                                    <img class="notecard-sample" src="./assets/sample-notecard.png"></img>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div id="offerings-row" class="offerings row">
-                <div class="online-courses offering-section">
-                    <div class="offering-section-desc">
-                        <h3>Online Courses</h3>
-                        <p>In-depth tutorials on different platforms, coupled with exclusive resources that provide a unique approach to mastering Kotlin - empowering you to build more efficient and responsive applications at scale.</p>
-                    </div>
-                    <div class="under-construction row">
-                       <div class="wip">
-                            <div class="wip-sign">
-                                <p class="wip-title">Area under construction</p>
-                                 <img src="./assets/crane-4.svg"/>
-                                <p>Be the first to know when we go live:</p>
-                                <p class="email-subscribe-button black-button">Notify Me</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="workshops offering-section">
-                    <div class="offering-section-desc">
-                        <h3>Workshops</h3>
-                        <p> Subscribe to Kotlin Kinetics on Patreon for a curated exclusive content on Kotlin in digestible snippets.</p>
-                    </div>
-                    <div class="under-construction row">
-                           <div class="wip">
-                            <div class="wip-sign">
-                                <p class="wip-title">Area under construction</p>
-                                 <img src="./assets/crane-4.svg"/>
-                                <p>Be the first to know when we go live:</p>
-                                <p class="email-subscribe-button black-button">Notify Me</p>
-                            </div>
+                        <a href="https://patreon.com/AmandaKotlin" class="black-button black-button-small learn-more">Take me to Patreon</a>
+                        <div class="description">
+                            <p class="offer-desc">Get everything in tier 1 and:</p>
+                            <p class="offering">1. A Deep-Dive Notecard</p>
+                            <p class="offering">2. Fan requests - Ask Amanda</p>
+                            <p class="offering">3. Member-only voting on content</p>
                         </div>
                     </div>
                 </div>
@@ -151,7 +144,6 @@
                 <div class="junk-links row">
                     <div class="junk-contact junk-section">
                         <h3 class="contact">Contact</h3>
-                        <p class="junk-text">123 Chicago Ave<br/>Chicago, IL, 60622</p>
                         <p class="junk-text">Sales:<br/>info@kotlinkinetics.com</p>
                         <p class="junk-text">Info:<br/>info@kotlinkinetics.com</p>
                     </div>
@@ -159,7 +151,7 @@
                         <h3 class="quick-links">Quick Links</h3>
                         <a class="link" href="#terms-and-conditions">Terms and Conditions</a>
                         <a class="link" href="#privacy-policy">Privacy Policy</a>
-                        <a class="link" href="https://github.com/Kotlin-Kinetics/kotlin-kinetics">Report website issues</a>
+                        <a class="link" href="https://github.com/Kotlin-Kinetics/kotlin-kinetics/issues/new/choose">Report website issues</a>
                     </div>
                     <div class="junk-follow junk-section">
                         <h3 class="follow ">Follow</h3>
@@ -179,7 +171,10 @@
                         </div>
                     </div>
                 </div>
-                <img class="img-junk" src="./logos/logo-no-background.svg"/>
+                <a class="junk-logo" href="./index.html">
+                    <img class="logo-img" src="./logos/logo-transparent.png"/>
+                    <div class="author-name">Amanda Hinchman-Dominguez</div>
+                </a>
             </div>
             <div class="divider"></div>
             <div id="subscribe-screen">

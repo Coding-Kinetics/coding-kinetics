@@ -1,3 +1,7 @@
+.online-courses-section {
+	background: rgba(0, 0, 0, 0.08);
+}
+
 .products-section > a {
 	text-decoration: none;
 	color: black;
@@ -8,31 +12,36 @@
 	height: 25%;
 }
 
-@media (max-width: 600px) {
-	.tier-image {
-		width: 100%;
-		padding-bottom: 10%;
-		padding-left: 0%;
-		padding-right: 0%;
-	}
-}
-
 h3 {
 	font-size: 26px;
 }
 
 h4 {
-	height: 50px;
-	font-size: 20px;
+	font-size: 24px;
+}
+
+p {
+	font-size: 16px;
 }
 
 li {
 	font-weight: normal;
+	margin-block-start: 1em;
+	text-align: left;
 }
 
 .products {
 	background: white;
 }
+
+.section-desc {
+	font-size: 18px;
+}
+
+
+/**
+ * Patreon
+ **/
 
 .tier {
 	padding-left: 2%;
@@ -41,22 +50,12 @@ li {
 	border-radius: 10px;
 	display: flex;
     flex-direction: column;
-    width: 35%;
+    width: 50%;
     text-decoration: none;
     color: black;
 }
 
-@media (max-width: 600px) {
-	.tier {
-		width: 50%;
-		padding-bottom: 10%;
-		padding-left: 0%;
-		padding-right: 0%;
-	}
-}
-
 .patreon-overview {
-	padding-top: 5%;
 	padding-bottom: 5%;
 	display: flex;
 	width: 100%;
@@ -138,7 +137,6 @@ ul {
 	position: relative;
 	background-color: rgba(0, 0, 0, 0.2);
 	border-radius: 10px;
-	width: 100%;
 	margin-bottom: 5%;
 }
 
@@ -153,8 +151,58 @@ ul {
 	padding-bottom: 20%;
 }
 
+/**
+ * Workshops
+ **/
+
+.benefit {
+	padding: 3%;
+}
+
+#workshops {
+	background: #FFBF23;
+}
+
 .offerings > .workshops {
 	margin-right: 5%;
+}
+
+.workshop-offerings {
+	display: flex;
+}
+
+.workshop-offerings-section {
+	width: 50%;
+}
+
+.sample-workshops {
+	margin-left: 5%;
+	margin-right: 5%;
+}
+
+.sample-workshop-sample {
+	border-radius: 10px;
+	border: 1px solid black;
+	padding: 3%;
+	background: white;
+	margin-bottom: 3%;
+}
+
+.offerings-popup {
+	margin-right: 3%;
+}
+
+.upcoming-workshops-calendar {
+	border: 1px solid #666;
+	padding: 2%;
+	border-radius: 10px;
+	background: white;
+	width: 75%;
+	margin: auto;
+}
+
+.sample-workshop-title {
+	font-size: 20px;
 }
 
 .under-construction {
@@ -163,19 +211,51 @@ ul {
 	height: auto;
 	border: transparent;
 	background: transparent;
-	width: 100%;
-	top: 25%;
 	text-align: center;
 }
 
 .wip {
-	margin: 5%;
 	width: auto;
-	top: 5%;
-	position: relative;
+	position: unset;
 }
 
 .wip-sign > p {
 	padding-left: 5%;
 	padding-right: 5%;
+}
+
+/**
+ * For media max-width: 600px
+ **/
+
+@media (max-width: 600px) {
+
+	.workshop-offering-section {
+		width: 100%;
+	}
+
+	.offerings-popup {
+		margin-right: unset;
+	}
+
+	.patreon-overview, .workshop-offerings {
+		flex-direction: column;
+	}
+
+	.tier-image {
+		width: 100%;
+		padding-bottom: 10%;
+		padding-left: 0%;
+		padding-right: 0%;
+	}
+
+	.tier {
+		width: 100%;
+		padding-bottom: 10%;
+	}
+
+	.offer-desc {
+		padding-left: 5%;
+		padding-right: 5%;
+	}
 }

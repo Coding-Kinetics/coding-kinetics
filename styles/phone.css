@@ -20,9 +20,6 @@
 /* Style the hamburger menu */
 
 .topnav {
-    margin-top: auto;
-    padding-top: 20px;
-    padding-bottom: 20px;
     display: flex;
     flex-direction: column;
     width: 50%;
@@ -50,8 +47,8 @@
 }
 
 .value {
-    width: 100%;
     padding-top: 5%;
+    width: auto;
 }
 
 .value-desc > p {

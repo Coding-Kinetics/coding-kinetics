@@ -2,6 +2,10 @@
 *  Get started
 **/
 
+h4 {
+	font-size: 20px;
+}
+
 .persona > img {
 	width: 150px;
 	height: 150px;
@@ -12,7 +16,6 @@
 }
 
 .persona {
-	margin: 0 auto;
 	width: 25%;
 	display: flex;
 	flex-direction: column;
