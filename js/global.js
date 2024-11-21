@@ -11,6 +11,18 @@
 
 $(document).ready(function() {
 
+    /**
+     * Nav menu
+     **/
+
+    $(".icon").click(function() {
+        if ($(".topnav-selected").is(":visible")) {
+            $(".topnav-selected").hide();
+        }
+        $(".topnav").addClass("topnav-selected");
+        $(".nav-links").addClass("selected")
+    });
+
     // exit out of menu by clicking elsewhere
      $("body").click(function(e) {
         if ($(e.target).closest(".topnav-selected").length) {
@@ -33,31 +45,47 @@ $(document).ready(function() {
         window["gid-disable-UA-7358061-1"] = true;
     }
 
+    /**
+     * Show/hide subscribe screen
+     **/
+
     // subscribe screen pops up
     $(".email-subscribe-button").click(function() {
         // show single player roadmap
         $("#subscribe-screen").show();
     });
 
-    // show email subscribe popup form
+    // hide subscribe screen
     $("#subscribe-screen").click(function() {
         $("#subscribe-screen").hide();
     });
 
-    // 
+    /**
+     * Show/hide page under construction screen 
+     **/
+
+    // show page
+    $(".page-under-construction").click(function() {
+        // show popup
+        $("#page-under-construction").show();
+    });
+
+    // hide page
+    $("#page-under-construction").click(function() {
+        $("#page-under-construction").hide();
+    });
+
+    // hide popups
     $(document).on('keydown', function() {
         if ($("#subscribe-screen").is(":visible") && event.key == "Escape") {
             $("#subscribe-screen").hide();
         }
+
+        if ($("#page-under-construction").is(":visible") && event.key == "Escape") {
+            $("#page-under-construction").hide();
+        }
     });
 
-    $(".icon").click(function() {
-        if ($(".topnav-selected").is(":visible")) {
-            $(".topnav-selected").hide();
-        }
-        $(".topnav").addClass("topnav-selected");
-        $(".nav-links").addClass("selected")
-    });
 });
 
 

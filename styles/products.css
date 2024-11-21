@@ -159,6 +159,10 @@ ul {
 	padding: 3%;
 }
 
+.benefit > p {
+	height: 40px;
+}
+
 #workshops {
 	background: #FFBF23;
 }
@@ -175,6 +179,34 @@ ul {
 	width: 50%;
 }
 
+.workshop-desc {
+	font-size: 18px;
+}
+
+.step {
+	width: 60%;
+	margin-bottom: 10%;
+}
+
+.step-title {
+	font-size: 22px;
+	font-weight: 600;
+}
+
+.step-desc {
+	font-size: 18px;
+	margin-left: 5%;
+}
+
+.step2 {
+	margin-left: auto;
+}
+
+.learn-more {
+	margin-top: 10%;
+	margin-right: 0;
+}
+
 .sample-workshops {
 	margin-left: 5%;
 	margin-right: 5%;
@@ -189,7 +221,7 @@ ul {
 }
 
 .offerings-popup {
-	margin-right: 3%;
+	margin-right: 5%;
 }
 
 .upcoming-workshops-calendar {
@@ -197,7 +229,7 @@ ul {
 	padding: 2%;
 	border-radius: 10px;
 	background: white;
-	width: 75%;
+	height: 200px;
 	margin: auto;
 }
 
