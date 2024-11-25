@@ -17,6 +17,7 @@ $(document).ready(function() {
         $(".java-dev-img").attr('src','./assets/java.png');
 
         $("#team").removeClass("active");
+        $(".team-dev-img").attr('src', './assets/teams.png');
 
         $("#kotlin-dev").removeClass("active");
         $(".kotlin-dev-img").attr('src','./assets/kotlin.png');
@@ -44,6 +45,7 @@ $(document).ready(function() {
         $(".kotlin-dev-img").attr('src','./assets/kotlin.png');
 
         $("#team").removeClass("active");
+        $(".team-dev-img").attr('src', './assets/teams.png');
 
         $("#novice-dev").removeClass("active");
         $(".novice-dev-img").attr('src','./assets/novice.png');
@@ -71,6 +73,7 @@ $(document).ready(function() {
         $(".java-dev-img").attr('src','./assets/java.png');
 
         $("#team").removeClass("active");
+        $(".team-dev-img").attr('src', './assets/teams.png');
 
         $("#novice-dev").removeClass("active");
         $(".novice-dev-img").attr('src','./assets/novice.png');
@@ -84,9 +87,13 @@ $(document).ready(function() {
      * Select team
      **/
 
-    $("#team").click(function() {
+    $("#team").hover(
+        function() { if (!$(this).hasClass("active")) $(".team-dev-img").attr('src','./assets/teams-persona.png'); },
+        function() { if (!$(this).hasClass("active")) $(".team-dev-img").attr('src','./assets/teams.png'); },
+    ).click(function() {
         // add selection to current element
         $("#team").addClass("active");
+        $(".team-dev-img").attr('src', './assets/teams-persona.png');
 
         // remove selection from other choices
         $("#java-dev").removeClass("active");

@@ -107,6 +107,7 @@ h2 {
 
 .welcome-content {
 	padding: 3%;
+	display: flex;
 }
 
 .welcome-description {
@@ -120,7 +121,6 @@ h2 {
 
 .welcome-title {
     margin-top: 0px;
-    font-size: 3.9vw;
     margin-block-start: 0px;
     margin-block-end: 0px;
 }
@@ -237,12 +237,16 @@ h2 {
   z-index: -1;
 }
 
-.problems > .row > img {
+.problems > .row > img, .journey > .row > img {
 	width: 30%;
 	height: 30%;
 	margin: auto;
 	border-radius: 20px;
 	border-radius: 50%;
+}
+
+.journey > .row > img {
+	margin-left: 5%;
 }
 
 .problem {
@@ -283,17 +287,25 @@ h2 {
 }
 
 /**
+ * Journey
+ **/
+
+.journey {
+	background: #FFBF23;
+}
+
+/**
  * Benefits
  **/
 .benefits {
-	background: #FFBF23;
+	background: #E8E6E6;
 	display: flex;
 	flex-direction: column;
 }
 
-
 .structured-benefit {
 	display: flex;
+	justify-content: space-between;
 }
 
 .benefit {
@@ -316,14 +328,11 @@ h2 {
 /**
  *  Products
 **/
-.products {
-	background: #E8E6E6;
-}
 
 .products-section {
 	display: flex;
-    zoom: 1; /* Trigger hasLayout */
-    text-align: center;
+   zoom: 1; /* Trigger hasLayout */
+   text-align: center;
 }
 
 li {

@@ -25,7 +25,7 @@
                         <a href="./index.html">Home</a>
                         <a href="./about.html">About</a>
                         <a href="./products.html">Products</a>
-                        <a href="./get-started.html" class="active">Get Roadmap</a>
+                        <a href="./get-started.html" class="active">Who we support</a>
                     </div>
                 </div>
             </div>
@@ -36,30 +36,30 @@
                 <h4>Choose your dev persona that best matches you for a recommended roadmap tailored to your needs.</h4> 
                 <div class="quiz">
                     <div class="pick-persona">
+                        <div id="novice-dev" class="persona single-player">
+                            <img class="novice-dev-img" src="./assets/novice.png"></img>
+                            <h4>Novice Programmer</h4>
+                            <p>You're new to coding and you're eager to get your foot in the door.</p> 
+                        </div>
                         <div id="java-dev" class="persona single-player">
                             <img class="java-dev-img" src="./assets/java.png">
-                            <h4>Java Developers</h4>
+                            <h4>Java Developer</h4>
                             <p>You're part of the large majority of Java users who haven't yet made the transition to Kotlin.</p>
                         </div>
                         <div id="kotlin-dev" class="persona single-player">
                             <img class="kotlin-dev-img" src="./assets/kotlin.png"></img>
-                            <h4>Kotlin Developers</h4>
+                            <h4>Kotlin Developer</h4>
                             <p>You're familiar with using Kotlin, but still fall back to Java when you need to get things done.</p>
                         </div>
                         <div id="team" class="persona multi-player">
-                            <img src="./assets/teams.png"></img>
-                            <h4>Organizations</h4>
+                            <img class="team-dev-img" src="./assets/teams.png"></img>
+                            <h4>Teams</h4>
                              <p>Your team is ready to transition to Kotlin, but unsure how to get up-to-speed & transition quickly.</p> 
                         </div>
-                        <div id="novice-dev" class="persona single-player">
-                            <img class="novice-dev-img" src="./assets/novice.png"></img>
-                            <h4>Novice Programmers</h4>
-                            <p>You're new to coding and you're eager to get your foot in the door.</p> 
-                        </div>
                     </div>
-                    <div class="roadmap-single">
+                    <div class="roadmap-single roadmap">
                         <h3>Welcome developer! Here are our current recommendations, but come back later as more comes out.</h3>
-                        <h3>Popup workshops</h3>
+
                         <h3>For Kotlin researchers:</h3>
                         <p>1. Check out our <a href="patreon.com/KotlinKinetics">Kotlin Kinetics Patreon</a> and keep up with personal research! As a bonus, we've provided some free content.</p>
                         <p>2. Keep up with the latest content development: 
@@ -68,15 +68,61 @@
                                 <li>Follow Kotlin Kinetic socials</li>
                             </ul>
                     </div>
-                    <div class="roadmap-team">
-                        <p>Kotlin Kinetics offers private, customized Kotlin training that fits the needs of the organization.</p>
-                        <h2>Book Your Private Kotlin Workshop in 3 Simple Steps:</h2>
-                        <h3>1. Explore Our Workshop Options</h3>
-                        <p>Browse through our sample workshops and discover the perfect training for your team.</p>
-                        <h3>2. Stay Informed and Get a Free Resource</h3> 
-                        <p>Sign up for email updates to receive the latest news, plus a complimentary PDF: 5 Common Mistakes in Concurrency.</p>
-                        <h3>3. Request Your Customized Workshop:</h3>
-                        <p>Ready to get started? Fill out the inquiry form, and we'll send you a personalized workshop proposal with all the details.</p>
+                    <div class="roadmap-single roadmap roadmap-novice">
+                        <h3>Welcome developer! We're glad you're here. Here are our current recommendations, but come back later as more comes out.</h3>
+                        <h3>Learn Kotlin in small snippets</h3>
+                        <p>1. Check out our <a href="patreon.com/KotlinKinetics">Kotlin Kinetics Patreon</a> and keep up with personal research! As a bonus, we've provided some free content.</p>
+                        <p>2. Keep up with the latest content development: 
+                            <ul>
+                                <li>Sign up by email to get updates on our newest product developments</li>
+                                <li>Follow Kotlin Kinetic socials</li>
+                            </ul>
+                        <h3>Popup workshops</h3>
+
+                    </div>
+                    <div class="roadmap-team roadmap">
+                        <h3>Kotlin Kinetics offers private, customized Kotlin training that fits the needs of the organization.</h3>
+                        <h2>Book Your Private Kotlin Workshop in 2 Simple Steps:</h2>
+                        <h3>1. Explore our Workshop Options</h3>
+                        <p>Select one of our sample workshops and receive full abstract via email.</p>
+                        <p>Workshops are combined interactive labs/lectures, which can range from 1 day to 3 days training.</p>
+                        <div class="sample-workshops">
+                            <div class="sample-workshop-1 sample-workshop">
+                                <p class="sample-workshop-title">Programming Android with Kotlin: Making Kotlin work for you</p>
+                                <p class="sample-subtitle"><b>Target Audience:</b> Any of the over six million Android engineers.</p>
+                                <p class="sample-workshop-desc">Attendees will walk through digestible, relatable examples in:
+                                    <ul>
+                                        <li>Kotlin Essentials</li>
+                                        <li>How Kotlin simplifies code and lends itself to safeguarded logic</li>
+                                        <li>Leveraging Kotlin's language features to solve concurrency problems in Android</li>
+                                        <li>Performance considerations</li>
+                                        <li>IDE shortcuts, tooling, and more related to measuring overall performance improvements</li>
+                                    </ul>
+                                Workshop attendees receive a crash course on everything you need to start writing Android in Kotlin. Every section is an interactive lab in which workshop attendees walk through bug fixes /refactors with Kotlin.
+                                </p>
+                            </div>
+                            <div class="sample-workshop-2 sample-workshop">
+                                <p class="sample-workshop-title">Going from Java to Kotlin: Making Kotlin work for you</p>
+                                 <p class="sample-subtitle"><b>Target Audience:</b> Java engineers & beginner Kotlin engineers</p>
+                                <p class="sample-workshop-desc">This workshop explores how Kotlin boosts productivity in day-to-day development with Android. Attendees will walk through digestible, relatable examples in:
+                                    <ul>
+                                        <li>How Kotlin simplifies code and lends itself to safeguarded logic</li>
+                                        <li>Leveraging Kotlin's language features to solve concurrency problems in Android</li>
+                                        <li>Performance considerations</li>
+                                        <li>IDE shortcuts, tooling, and more related to measuring overall performance improvements</li>
+                                    </ul>
+                                Workshop attendees receive a crash course on everything you need to start writing Android in Kotlin. Every section is an interactive lab in which workshop attendees walk through bug fixes /refactors with Kotlin.
+                                </p>
+                            </div>
+                            <div class="sample-workshop-3 sample-workshop">
+                                <p class="sample-workshop-title">Kotlin Coroutine Mechanisms: Introduction to coroutine behavior through playful examples</p>
+                                <p class="sample-subtitle"><b>Target Audience:</b> Kotlin engineers looking to master coroutines</p>
+                                <p class="sample-workshop-desc">This workshop strengthens everyday coroutine understanding through playful explorations.</p>
+                                <p class="sample-workshop-desc">Whether you are in the beginning stages of learning Kotlin, or have been using coroutine for a while, you'll be looking at coroutines a little different by the end of this session!</p>
+                            </div>
+                        </div>
+                        <h3>2. Ready to Get Your Personalized Workshop?</h3>
+                        <p>Fill out the inquiry form below to book your own customized team workshop.</p>
                         <div class="ml-embedded" data-form="y1yKWx"></div>
                     </div>
                 </div>
@@ -106,7 +152,7 @@
                                     <p class="black-button">Subscribe</p>
                                 </div>
                                 <div class="follow-socials">
-                                    <h3 class="link" href="">LinkedIn</h3>
+                                    <a class="link" href="https://www.linkedin.com/company/kotlin-kinetics">LinkedIn</a>
                                     <h3 class="link" href="">Threads</h3>
                                 </div>
                             </div>
@@ -122,17 +168,6 @@
                 <!-- MailerLite Universal -->
                 <div class="ml-embedded subscribe-by-email" data-form="mNZx0g"></div>
                 <!-- End MailerLite Universal -->
-            </div>
-            <div id="page-under-construction">
-                 <div class="wip">
-                    <div class="wip-sign">
-                        <p class="wip-title">CAUTION</p>
-                        <p>Page under construction</p>
-                        <img src="./assets/crane-4.svg"/>
-                        <p class="wip-desc">Sign up by email for notification of T&C and Privacy Policy updates: </p>
-                        <p class="email-subscribe-button subscribe-wip black-button">Notify Me</p>
-                    </div>
-                </div>
             </div>
         </div>
     </body>

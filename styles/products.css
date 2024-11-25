@@ -163,6 +163,12 @@ ul {
 	height: 40px;
 }
 
+.benefit > img {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+}
+
 #workshops {
 	background: #FFBF23;
 }
@@ -203,8 +209,7 @@ ul {
 }
 
 .learn-more {
-	margin-top: 10%;
-	margin-right: 0;
+	margin-top: 25%;
 }
 
 .sample-workshops {
@@ -259,8 +264,17 @@ ul {
 /**
  * For media max-width: 600px
  **/
-
 @media (max-width: 600px) {
+
+	.benefit > p {
+    	height: unset;
+	}
+
+
+	.benefit > img {
+    	width: 100% !important;
+    	height: 100% !important;
+	}
 
 	.workshop-offering-section {
 		width: 100%;
@@ -282,7 +296,7 @@ ul {
 	}
 
 	.tier {
-		width: 100%;
+		width: fit-content;
 		padding-bottom: 10%;
 	}
 

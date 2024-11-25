@@ -55,6 +55,23 @@ h4 {
 	display: none;
 }
 
+/**
+ * Sample workshops
+ **/
+.sample-workshops {
+	display: flex;
+}
+
+.sample-workshop {
+	border: 1px solid #666666;
+	border-radius: 10px;
+	padding: 2%;
+}
+
+.sample-workshop-title {
+	font-weight: bolder;
+}
+
 #mlb2-19767908.ml-form-embedContainer .ml-form-embedWrapper.embedForm {
 	max-width: 600px;
 	margin-top: 5%;
@@ -63,6 +80,12 @@ h4 {
 }
 
 @media (max-width: 800px) {
+	.persona > h4 {
+		padding-left: 5%;
+		padding-right: 5%;
+		text-align: center;
+	}
+
 	.pick-persona {
 		margin-bottom: 5%;
 		display: grid;
