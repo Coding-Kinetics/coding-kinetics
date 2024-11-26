@@ -108,6 +108,44 @@ $(document).ready(function() {
         $(".roadmap-single").hide();
         $(".roadmap-team").slideToggle();
     });
+
+    /**
+     * Team can browse through workshops for selection
+     **/
+    $(".sample-workshop-1").click(function() {
+        $(".sample-workshop-1").addClass("active");
+        $(".workshop-1").show();
+
+        $(".sample-workshop-2").removeClass("active");
+        $(".workshop-2").hide();
+
+        $(".sample-workshop-3").removeClass("active");
+        $(".workshop-3").hide();
+    });
+
+    $(".sample-workshop-2").click(function() {
+        $(".sample-workshop-1").removeClass("active");
+        $(".workshop-1").hide();
+
+        $(".sample-workshop-2").addClass("active");
+        $(".workshop-2").show();
+
+        $(".sample-workshop-3").removeClass("active");
+        $(".workshop-3").hide();
+    });
+
+
+    $(".sample-workshop-3").click(function() {
+        $(".sample-workshop-1").removeClass("active");
+        $(".workshop-1").hide();
+
+        $(".sample-workshop-2").removeClass("active");
+        $(".workshop-2").hide();
+
+        $(".sample-workshop-3").addClass("active");
+        $(".workshop-3").show();
+    });
+
 });
 
 

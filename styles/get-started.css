@@ -66,10 +66,25 @@ h4 {
 	border: 1px solid #666666;
 	border-radius: 10px;
 	padding: 2%;
+	width: 33%;
 }
 
 .sample-workshop-title {
 	font-weight: bolder;
+}
+
+.sample-workshop-screen {
+	padding: 5%;
+	border: 1px solid #666666;
+	border-radius: 10px;
+}
+
+.sample-workshop-details {
+	width: 100%;
+}
+
+.workshop-2, .workshop-3 {
+	display: none;
 }
 
 #mlb2-19767908.ml-form-embedContainer .ml-form-embedWrapper.embedForm {
