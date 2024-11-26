@@ -6,6 +6,10 @@ h4 {
 	font-size: 20px;
 }
 
+h3 {
+	margin-top: 5%;
+}
+
 .persona > img {
 	width: 150px;
 	height: 150px;
@@ -49,6 +53,13 @@ h4 {
 	display: none;
 }
 
+.img-roadmap {
+	width: 30%;
+	padding: inherit;
+	margin:auto;
+	display: block;
+}
+
 .roadmap-single {
 	margin-top: 5%;
 	padding: 5%;
@@ -63,24 +74,56 @@ h4 {
 }
 
 .sample-workshop {
-	border: 1px solid #666666;
-	border-radius: 10px;
-	padding: 2%;
+	border: 2px solid #666666;
+	border-bottom: none;
+	border-radius: 10px 10px 0 0;
 	width: 33%;
+	box-shadow: 1px 0 0 1px #705100;
+	background: #FFBF23;
+	flex-basis: 100%;
+}
+
+.sample-workshop:hover {
+	box-shadow: 4px 1px 3px #705100;
+}
+
+.sample-workshop.active {
+	box-shadow: 3px -1px 0 #705100
 }
 
 .sample-workshop-title {
 	font-weight: bolder;
+	padding-left: 1em;
+	padding-right: 1em;
+}
+
+.workshop > .black-button {
+	margin-top: 3%;
+}
+
+.target {
+	padding-left: 1em;
+	padding-right: 1em;
+}
+
+.target-audience {
+	padding-left: 2em;
+	padding-right: 2em;
 }
 
 .sample-workshop-screen {
-	padding: 5%;
-	border: 1px solid #666666;
-	border-radius: 10px;
+	border: 2px solid #666666;
+	border-top: none;
+	padding: 3%;
+	border-radius: 0 0 10px 10px;
+	background: #FFBF23;
+	box-shadow: 1px 0 0 1px #705100;
 }
 
 .sample-workshop-details {
-	width: 100%;
+	background: white;
+	padding: 2%;
+	border-radius: 5px;
 }
 
 .workshop-2, .workshop-3 {
@@ -109,7 +152,7 @@ h4 {
 
 	.persona {
 		width: 100%;
-  		padding-left: 0%;
-		padding-right: 0%;
+  		padding-left: 0;
+		padding-right: 0;
 	}
 }

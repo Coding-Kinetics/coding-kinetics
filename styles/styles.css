@@ -237,16 +237,19 @@ h2 {
   z-index: -1;
 }
 
-.problems > .row > img, .journey > .row > img {
+.journey > .row > img {
 	width: 30%;
 	height: 30%;
-	margin: auto;
+	margin: auto 5% auto 0%;
 	border-radius: 20px;
 	border-radius: 50%;
 }
 
-.journey > .row > img {
-	margin-left: 5%;
+.problems > .row > img {
+	margin-right: 5%;
+  border-radius: 10px;
+  width: 30%;
+  height: 30%;
 }
 
 .problem {

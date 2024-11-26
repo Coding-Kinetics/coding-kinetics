@@ -1,149 +1,190 @@
 $(document).ready(function() {
 
+    const active = "active"
+    const src = "src"
+
+    /**
+     * Persona views
+     */
+    let $novice_persona = $("#novice-dev");
+    let $java_persona = $("#java-dev");
+    let $kotlin_persona = $("#kotlin-dev");
+    let $team_persona = $("#team");
+
+    /**
+     * Roadmap views
+     */
+    let $novice_roadmap = $(".roadmap-novice");
+    let $kotlin_roadmap = $(".roadmap-kotlin");
+    let $java_roadmap = $(".roadmap-java");
+    let $team_roadmap = $(".roadmap-team");
+
     /**
      * Select novice dev
      **/
 
-    $("#novice-dev").hover(
-        function() { if (!$(this).hasClass("active")) $(".novice-dev-img").attr('src','./assets/novice-dev.png'); },
-        function() { if (!$(this).hasClass("active")) $(".novice-dev-img").attr('src','./assets/novice.png'); },
+    $novice_persona.hover(
+        function() { if (!$(this).hasClass(active)) $(".novice-dev-img").attr(src,'./assets/novice-dev.png'); },
+        function() { if (!$(this).hasClass(active)) $(".novice-dev-img").attr(src,'./assets/novice.png'); },
     ).click(function() {
         // add selection to current element
-        $("#novice-dev").addClass("active");
-        $(".novice-dev-img.active").attr('src','./assets/novice-dev.png');
+        $novice_persona.addClass(active);
+        $(".novice-dev-img.active").attr(src,'./assets/novice-dev.png');
 
         // remove selection from other choices
-        $("#java-dev").removeClass("active");
-        $(".java-dev-img").attr('src','./assets/java.png');
+        $java_persona.removeClass(active);
+        $(".java-dev-img").attr(src,'./assets/java.png');
 
-        $("#team").removeClass("active");
-        $(".team-dev-img").attr('src', './assets/teams.png');
+        $team_persona.removeClass(active);
+        $(".team-dev-img").attr(src, './assets/teams.png');
 
-        $("#kotlin-dev").removeClass("active");
-        $(".kotlin-dev-img").attr('src','./assets/kotlin.png');
+        $kotlin_persona.removeClass(active);
+        $(".kotlin-dev-img").attr(src,'./assets/kotlin.png');
 
-        // show single player roadmap
-        if (!$(".roadmap-single").is(":visible")) $(".roadmap-single").show();
-        $(".roadmap-team").hide();
+        // show novice roadmap
+        $java_roadmap.hide();
+        $kotlin_roadmap.hide();
+        $team_roadmap.hide();
+        if (!$novice_roadmap.is(":visible")) $(".roadmap-novice").slideToggle();
     });
 
     /**
      * Select java dev
      **/
 
-    $("#java-dev").hover(
-        function() { if (!$(this).hasClass("active")) $(".java-dev-img").attr('src','./assets/java-dev.png'); },
-        function() { if (!$(this).hasClass("active")) $(".java-dev-img").attr('src','./assets/java.png'); },
+    $java_persona.hover(
+        function() { if (!$(this).hasClass(active)) $(".java-dev-img").attr(src,'./assets/java-dev.png'); },
+        function() { if (!$(this).hasClass(active)) $(".java-dev-img").attr(src,'./assets/java.png'); },
     ).click(function() {
 
         // add selection to current element
-        $("#java-dev").addClass("active");
-        $(".java-dev-img").attr('src','./assets/java-dev.png');
+        $java_persona.addClass(active);
+        $(".java-dev-img").attr(src,'./assets/java-dev.png');
 
         // remove selection from other choices
-        $("#kotlin-dev").removeClass("active");
-        $(".kotlin-dev-img").attr('src','./assets/kotlin.png');
+        $kotlin_persona.removeClass(active);
+        $(".kotlin-dev-img").attr(src,'./assets/kotlin.png');
 
-        $("#team").removeClass("active");
-        $(".team-dev-img").attr('src', './assets/teams.png');
+        $team_persona.removeClass(active);
+        $(".team-dev-img").attr(src, './assets/teams.png');
 
-        $("#novice-dev").removeClass("active");
-        $(".novice-dev-img").attr('src','./assets/novice.png');
+        $novice_persona.removeClass(active);
+        $(".novice-dev-img").attr(src,'./assets/novice.png');
 
-        // show single player roadmap
-        if (!$(".roadmap-single").is(":visible")) $(".roadmap-single").slideToggle();
-        $(".roadmap-team").hide();
+        // show java roadmap
+
+        $novice_roadmap.hide();
+        $kotlin_roadmap.hide();
+        $team_roadmap.hide();
+        if (!$java_roadmap.is(":visible")) $(".roadmap-java").slideToggle();
     });
 
     /**
      * Select kotlin dev
      **/
 
-    $("#kotlin-dev").hover(
-        function() { if (!$(this).hasClass("active")) $(".kotlin-dev-img").attr('src','./assets/kotlin-dev.png'); },
-        function() { if (!$(this).hasClass("active")) $(".kotlin-dev-img").attr('src','./assets/kotlin.png'); },
+    $kotlin_persona.hover(
+        function() { if (!$(this).hasClass(active)) $(".kotlin-dev-img").attr(src,'./assets/kotlin-dev.png'); },
+        function() { if (!$(this).hasClass(active)) $(".kotlin-dev-img").attr(src,'./assets/kotlin.png'); },
     ).click(function() {
 
         // add selection to current element
-        $("#kotlin-dev").addClass("active");
-        $(".kotlin-dev-img.active").attr('src','./assets/kotlin-dev.png');
+        $kotlin_persona.addClass(active);
+        $(".kotlin-dev-img.active").attr(src,'./assets/kotlin-dev.png');
 
         // remove selection from other choices
-        $("#java-dev").removeClass("active");
-        $(".java-dev-img").attr('src','./assets/java.png');
+        $java_persona.removeClass(active);
+        $(".java-dev-img").attr(src,'./assets/java.png');
 
-        $("#team").removeClass("active");
-        $(".team-dev-img").attr('src', './assets/teams.png');
+        $team_persona.removeClass(active);
+        $(".team-dev-img").attr(src, './assets/teams.png');
 
-        $("#novice-dev").removeClass("active");
-        $(".novice-dev-img").attr('src','./assets/novice.png');
+        $novice_persona.removeClass(active);
+        $(".novice-dev-img").attr(src,'./assets/novice.png');
 
-        // show single player roadmap
-        if (!$(".roadmap-single").is(":visible")) $(".roadmap-single").slideToggle();
-        $(".roadmap-team").hide();
+        // show kotlin roadmap
+        $novice_roadmap.hide();
+        $java_roadmap.hide();
+        $team_roadmap.hide();
+        if (!$kotlin_roadmap.is(":visible")) $(".roadmap-kotlin").slideToggle();
     });
 
     /**
      * Select team
      **/
 
-    $("#team").hover(
-        function() { if (!$(this).hasClass("active")) $(".team-dev-img").attr('src','./assets/teams-persona.png'); },
-        function() { if (!$(this).hasClass("active")) $(".team-dev-img").attr('src','./assets/teams.png'); },
+    $team_persona.hover(
+        function() { if (!$(this).hasClass(active)) $(".team-dev-img").attr(src,'./assets/teams-persona.png'); },
+        function() { if (!$(this).hasClass(active)) $(".team-dev-img").attr(src,'./assets/teams.png'); },
     ).click(function() {
         // add selection to current element
-        $("#team").addClass("active");
-        $(".team-dev-img").attr('src', './assets/teams-persona.png');
+        $team_persona.addClass(active);
+        $(".team-dev-img.active").attr(src, './assets/teams-persona.png');
 
         // remove selection from other choices
-        $("#java-dev").removeClass("active");
-        $(".java-dev-img.active").attr('src','./assets/java.png');
+        $java_persona.removeClass(active);
+        $(".java-dev-img").attr(src,'./assets/java.png');
 
-        $("#kotlin-dev").removeClass("active");
-        $(".kotlin-dev-img").attr('src','./assets/kotlin.png');
+        $kotlin_persona.removeClass(active);
+        $(".kotlin-dev-img").attr(src,'./assets/kotlin.png');
 
-        $("#novice-dev").removeClass("active");
+        $novice_persona.removeClass(active);
 
-        // show single player roadmap
-        $(".roadmap-single").hide();
-        $(".roadmap-team").slideToggle();
+        // show team roadmap
+        if (!$novice_roadmap.is(":visible")) $novice_roadmap.hide();
+        $java_roadmap.hide();
+        $kotlin_roadmap.hide();
+        if (!$team_roadmap.is(":visible")) $(".roadmap-team").slideToggle();
     });
+
+    /**
+     * Workshop views
+     */
+
+    let $sample_workshop_1 = $(".sample-workshop-1");
+    let $workshop_1 = $(".workshop-1");
+
+
+    let $sample_workshop_2 = $(".sample-workshop-2");
+    let $workshop_2 = $(".workshop-2");
+    let $sample_workshop_3 = $(".sample-workshop-3");
+    let $workshop_3 = $(".workshop-3");
 
     /**
      * Team can browse through workshops for selection
      **/
-    $(".sample-workshop-1").click(function() {
-        $(".sample-workshop-1").addClass("active");
-        $(".workshop-1").show();
+    $sample_workshop_1.click(function() {
+        $sample_workshop_1.addClass(active);
+        $workshop_1.show();
 
-        $(".sample-workshop-2").removeClass("active");
-        $(".workshop-2").hide();
+        $sample_workshop_2.removeClass(active);
+        $workshop_2.hide();
 
-        $(".sample-workshop-3").removeClass("active");
-        $(".workshop-3").hide();
+        $sample_workshop_3.removeClass(active);
+        $workshop_3.hide();
     });
 
-    $(".sample-workshop-2").click(function() {
-        $(".sample-workshop-1").removeClass("active");
-        $(".workshop-1").hide();
+    $sample_workshop_2.click(function() {
+        $sample_workshop_1.removeClass(active);
+        $workshop_1.hide();
 
-        $(".sample-workshop-2").addClass("active");
-        $(".workshop-2").show();
+        $sample_workshop_2.addClass(active);
+        $workshop_2.show();
 
-        $(".sample-workshop-3").removeClass("active");
-        $(".workshop-3").hide();
+        $sample_workshop_3.removeClass(active);
+        $workshop_3.hide();
     });
 
 
-    $(".sample-workshop-3").click(function() {
-        $(".sample-workshop-1").removeClass("active");
-        $(".workshop-1").hide();
+    $sample_workshop_3.click(function() {
+        $sample_workshop_1.removeClass(active);
+        $workshop_1.hide();
 
-        $(".sample-workshop-2").removeClass("active");
-        $(".workshop-2").hide();
+        $sample_workshop_2.removeClass(active);
+        $workshop_2.hide();
 
-        $(".sample-workshop-3").addClass("active");
-        $(".workshop-3").show();
+        $sample_workshop_3.addClass(active);
+        $workshop_3.show();
     });
 
 });
