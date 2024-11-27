@@ -150,9 +150,8 @@ $(document).ready(function() {
     let $sample_workshop_3 = $(".sample-workshop-3");
     let $workshop_3 = $(".workshop-3");
 
-    /**
-     * Team can browse through workshops for selection
-     **/
+    // Teams can browse through workshops for selection
+
     $sample_workshop_1.click(function() {
         $sample_workshop_1.addClass(active);
         $workshop_1.show();

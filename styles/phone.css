@@ -92,6 +92,12 @@
     margin-bottom: 10%;
 }
 
+.journey > .row > img  {
+    width: 80%;
+    height: 80%;
+    margin: auto;
+}
+
 .product > p {
     text-align: center;
 }

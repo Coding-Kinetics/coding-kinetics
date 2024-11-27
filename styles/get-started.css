@@ -2,12 +2,13 @@
 *  Get started
 **/
 
-h4 {
+h3 {
 	font-size: 20px;
+	margin-top: 5%;
 }
 
-h3 {
-	margin-top: 5%;
+h4 {
+	font-size: 18px;
 }
 
 .persona > img {
@@ -47,6 +48,23 @@ h3 {
 	display: flex;
 }
 
+.roadmap > .row {
+	padding: 2%
+}
+
+.roadmap > .row > h3 {
+	margin: auto;
+	width: 70%;
+}
+
+.team-img-roadmap, .java-img-roadmap {
+	margin-right: 5% !important
+}
+
+.novice-dev-img {
+	margin-left: 5%;
+}
+
 .roadmap-team {
 	margin-top: 5%;
 	padding: 5%;
@@ -64,6 +82,25 @@ h3 {
 	margin-top: 5%;
 	padding: 5%;
 	display: none;
+}
+
+/**
+ * Recommendations
+ **/
+.recommendations {
+	background: #FFBF23;
+	border: 2px solid #666666;
+	box-shadow: 1px 0 0 1px #705100;
+	border-radius: 10px;
+	padding: 10px
+}
+
+.recommendation {
+	background: white;
+	border: 1px solid #666666;
+	border-radius: 10px;
+	padding: 10px;
+	margin-top: 1em;
 }
 
 /**
@@ -138,6 +175,10 @@ h3 {
 }
 
 @media (max-width: 800px) {
+	.persona > h3 {
+		text-align: center;
+	}
+
 	.persona > h4 {
 		padding-left: 5%;
 		padding-right: 5%;
@@ -147,12 +188,40 @@ h3 {
 	.pick-persona {
 		margin-bottom: 5%;
 		display: grid;
-		grid-template-columns: 50% 50%;
+		grid-template-columns: repeat(2, minmax(0, 1fr));
 	}
 
 	.persona {
 		width: 100%;
   		padding-left: 0;
 		padding-right: 0;
+		height: 94% !important;
+	}
+
+	.novice-dev-img {
+		margin-left: unset;
+	}
+
+	.img-roadmap {
+		width: 100%;
+		margin: auto !important;
+		padding-top: 5%;
+		padding-bottom: 5%;
+	}
+
+	.roadmap > .row > h3 {
+		width: unset;
+		margin-top: 1em;
+		margin-bottom: 1em;
+	}
+
+	.roadmap-single {
+		padding: unset;
+	}
+
+	.target-audience {
+		text-align: center;
+		padding-left: unset;
+		padding-right: unset;
 	}
 }

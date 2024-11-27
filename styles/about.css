@@ -55,10 +55,13 @@
 .social-links > .bio-social-icon > a {
 	margin-right: 1%;
 	margin-top: 1%;
+	margin-bottom: 1%;
 }
 
 .social-links > .bio-social-icon > p {
-	padding-left: 8px;
+	margin-block-end: unset;
+	margin: auto;
+	padding: 2%;
 }
 
 .notable-work {
@@ -67,8 +70,7 @@
 }
 
 .notable-works-desc {
-	margin-top: 0px;
-	margin-bottom: 0px;
+	margin-top: 0;
 	margin-left: 5%;
 }
 
@@ -99,14 +101,11 @@
 
 .visit-o {
 	background: #FE393C;
-	padding-left: 20px;
-	padding-right: 20px;
-	padding-top: 10px;
-	padding-bottom: 10px;
+	padding: 10px 20px;
 	border-radius: 3px;
 	text-decoration: none;
 	color: black;
-	text-weight: bold;
+	font-weight: bold;
 	box-shadow: 2px 2px;
 }
 
@@ -190,7 +189,7 @@
 	}
 
 	.work-1, .work-2 {
-		margin-left: 0%;
+		margin-left: 0;
 	}
 
 	.works-info-video {
@@ -204,10 +203,12 @@
 	.desc-link > a {
 		margin-top: 5%;
 		margin-left: 5%;
+		display: block;
+		width: fit-content;
 	}
 
 	.desc-link > p {
-		margin-left: 0%;
+		margin-left: 0;
 		padding-left: 5%;
 	}
 }
