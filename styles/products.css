@@ -22,6 +22,7 @@ h4 {
 
 p {
 	font-size: 16px;
+	word-break: break-word;
 }
 
 li {
@@ -177,16 +178,20 @@ ul {
 	margin-right: 5%;
 }
 
-.workshop-offerings {
-	display: flex;
-}
-
 .workshop-offerings-section {
 	width: 50%;
 }
 
+.product-features {
+	margin-left: 5%;
+}
+
 .workshop-desc {
 	font-size: 18px;
+}
+
+.workshop-calendar {
+	float: left;
 }
 
 .step {
@@ -210,6 +215,7 @@ ul {
 
 .learn-more {
 	margin-top: 25%;
+	position: relative;
 }
 
 .sample-workshops {
@@ -230,17 +236,64 @@ ul {
 }
 
 .upcoming-workshops-calendar {
-	border: 1px solid #666;
-	padding: 2%;
+	border: 2px solid #666;
 	border-radius: 10px;
 	background: white;
-	height: 200px;
 	margin: auto;
+	box-shadow: 2px 0 0 0 #705100;
+	overflow: auto;
+	width: 340px;
+}
+
+.zebra-scrollable {
+	width: 600px;
+	display: flex;
+	margin: 2%;
+}
+
+.calendar-event {
+	border-radius: 10px;
+	border: 1px solid black;
+	padding: 3%;
+	width: 200px;
+	height: 200px;
+	box-shadow: 2px 2px;
+	margin-right: 1%;
+}
+
+.event-end {
+	background: rgba(0, 0, 0, 0.08);
+	width: 200px;
 }
 
 .sample-workshop-title {
 	font-size: 20px;
 }
+
+/**
+ * Pricing table
+ */
+
+table {
+	border: 1px solid black;
+	border-radius: 4px;
+	background: white;
+}
+
+td {
+	vertical-align: baseline;
+	border: 1px solid black;
+	width: auto;
+	padding: 6px;
+}
+
+.pricing-title {
+	text-align: center;
+}
+
+/**
+ * Work in Progress
+ */
 
 .under-construction {
 	opacity: 1.0;

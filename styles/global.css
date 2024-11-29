@@ -180,6 +180,17 @@
     margin-right: 14px;
 }
 
+/* CTA button */
+.button {
+    background-color: #04AA6D;
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+}
+
 /**
  * Junk Drawer
  */
