@@ -185,10 +185,14 @@
     background-color: #04AA6D;
     border: none;
     color: white;
-    padding: 10px 25px;
+    padding: 10px 22px;
     text-align: center;
     text-decoration: none;
     font-size: 18px;
+}
+
+.button:hover {
+    background-color: #0c916a;
 }
 
 /**
@@ -196,8 +200,7 @@
  */
 .junk-drawer {
     background-color: #FFBF23;
-    padding: 0%;
-    padding-top: 5%;
+    padding: 5% 0 0 0;
 }
 
 .junk-text {
@@ -336,5 +339,97 @@
     top: 20.2%;
     lefT: 71%;
     position: fixed;
+}
+
+/* Create three columns of equal width */
+.columns {
+    float: left;
+    width: 33.3%;
+    padding: 8px;
+}
+
+/* Style the list */
+.price {
+    list-style-type: none;
+    border: 1px solid #eee;
+    margin: 0;
+    padding: 0;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    background: #eee;
+}
+
+/* Add shadows on hover */
+.price:hover {
+    box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
+}
+
+/* Pricing header */
+.price .li-header {
+    background-color: #111;
+    color: white;
+    font-size: 25px;
+}
+
+.price .desc {
+    background-color: #666666;
+    color: white;
+}
+
+/* List items */
+.price li {
+    border-bottom: 1px solid #eee;
+    padding: 20px;
+    text-align: center;
+    background: white;
+    margin-top: 1px;
+}
+
+/* Grey list item */
+.price .grey {
+    background-color: #eee;
+    font-size: 20px;
+}
+
+@media (max-width: 800px) {
+    /* Hide the links inside the navigation menu (except for logo/home) */
+    .header-content {
+        display: block;
+        z-index: 25;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .nav-links.selected {
+        display: flex;
+        flex-direction: column;
+        margin-top: 14px;
+    }
+
+
+    /* Style the hamburger menu */
+
+    .topnav {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+    }
+
+    .topnav-selected {
+        background: #FFBF23;
+        border-radius: 0px 0px 10px 10px;
+        border: 1px solid black;
+        box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.08), 0 2px 4px 0 rgba(0, 0, 0, 0.12);
+    }
+
+    .topnav .icon {
+        display: block;
+    }
+
+    .topnav a {
+        text-align: left;
+    }
 }
 

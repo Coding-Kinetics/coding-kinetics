@@ -16,8 +16,10 @@ $(document).ready(function() {
      **/
 
     $(".icon").click(function() {
-        if ($(".topnav-selected").is(":visible")) {
-            $(".topnav-selected").hide();
+        let $topnav_selected = $(".topnav-selected");
+
+        if ($topnav_selected.is(":visible")) {
+            $topnav_selected.hide();
         }
         $(".topnav").addClass("topnav-selected");
         $(".nav-links").addClass("selected")
@@ -32,12 +34,14 @@ $(document).ready(function() {
             console.log("Clicked outside #myDiv");
             $(".topnav").removeClass("topnav-selected");
             $(".nav-links").removeClass("selected");
-
         }
     });
 
     // TODO remove cookies
-    var cookieCount = document.cookie.split('; ').findIndex(x => x.split('=')[0] == 'cookiename');
+    var cookieCount = document.cookie
+        .split('; ')
+        .findIndex(x => x.split('=')[0] === 'cookiename');
+
     if(cookieCount >= 0) {
         // TODO finish out
     } else {
@@ -77,11 +81,11 @@ $(document).ready(function() {
 
     // hide popups
     $(document).on('keydown', function() {
-        if ($("#subscribe-screen").is(":visible") && event.key == "Escape") {
+        if ($("#subscribe-screen").is(":visible") && event.key === "Escape") {
             $("#subscribe-screen").hide();
         }
 
-        if ($("#page-under-construction").is(":visible") && event.key == "Escape") {
+        if ($("#page-under-construction").is(":visible") && event.key === "Escape") {
             $("#page-under-construction").hide();
         }
     });

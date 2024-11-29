@@ -11,7 +11,7 @@ html {
 }
 
 body {
-	margin: 0px;	
+	margin: 0;
 	background-color: #ffffff;
 }
 
@@ -55,22 +55,22 @@ h2 {
 }
 
 .black-button {
-		background-color: black;
-		border-radius: 3px;
-		color: white;
- 		font-family:  "Space Grotesk", sans-serif;
+	background-color: black;
+	border-radius: 3px;
+	color: white;
+	font-family:  "Space Grotesk", sans-serif;
     font-weight: 300;
     text-align: center;
- 		padding-left: 10%;
+	padding-left: 10%;
     padding-right: 10%;
     padding-top: 10px;
     padding-bottom: 10px;
 }
 
 .black-button:hover {
-		box-shadow: 2px 2px;
-		background: #FFBF23;
-		color: black;
+	box-shadow: 2px 2px;
+	background: #FFBF23;
+	color: black;
 }
 
 .black-button-small {
@@ -120,9 +120,9 @@ h2 {
 }
 
 .welcome-title {
-    margin-top: 0px;
-    margin-block-start: 0px;
-    margin-block-end: 0px;
+    margin-top: 0;
+    margin-block-start: 0;
+    margin-block-end: 0;
 }
 
 .welcome-image {
@@ -160,8 +160,8 @@ h2 {
 	font-size: 20px;
 	text-align: center;
 	color: white;
-	margin-block-start: 0px;
-	margin-block-end: 0px;
+	margin-block-start: 0;
+	margin-block-end: 0;
 	padding-top: 20px;
 }
 
@@ -274,8 +274,8 @@ h2 {
 .problem > h4 {
 	text-align: center;
 	color: black;
-	margin-block-start: 0px;
-	margin-block-end: 0px;
+	margin-block-start: 0;
+	margin-block-end: 0;
 	padding-top: 20px;
 } 
 

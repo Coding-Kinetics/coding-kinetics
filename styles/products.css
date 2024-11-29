@@ -1,3 +1,7 @@
+h5 {
+	font-size: 24px;
+}
+
 .online-courses-section {
 	background: rgba(0, 0, 0, 0.08);
 }
@@ -25,6 +29,20 @@ p {
 	word-break: break-word;
 }
 
+.follow {
+	margin-top: 5%;
+	font-size: 20px;
+}
+
+.event-banner {
+	background-color: black;
+	color: white;
+	padding: 5%;
+	margin-left: -1em;
+	margin-right: -1em;
+	text-align: center;
+}
+
 li {
 	font-weight: normal;
 	margin-block-start: 1em;
@@ -38,7 +56,6 @@ li {
 .section-desc {
 	font-size: 18px;
 }
-
 
 /**
  * Patreon
@@ -156,6 +173,10 @@ ul {
  * Workshops
  **/
 
+.private-workshops {
+	margin-top: 10%;
+}
+
 .benefit {
 	padding: 3%;
 }
@@ -194,9 +215,27 @@ ul {
 	float: left;
 }
 
+.instructions {
+	margin-top: 5%
+}
+
+.workshop-instructions {
+	margin-left: 5%;
+}
+
+.social-links > .bio-social-icon {
+	display: flex;
+}
+
+.bio-social-icon > a > img {
+	width: 40px;
+	height: 40px;
+	padding: 2%;
+}
+
 .step {
-	width: 60%;
-	margin-bottom: 10%;
+	margin-bottom: 5%;
+	display: flow-root;
 }
 
 .step-title {
@@ -216,11 +255,6 @@ ul {
 .learn-more {
 	margin-top: 25%;
 	position: relative;
-}
-
-.sample-workshops {
-	margin-left: 5%;
-	margin-right: 5%;
 }
 
 .sample-workshop-sample {
@@ -248,7 +282,7 @@ ul {
 .zebra-scrollable {
 	width: 600px;
 	display: flex;
-	margin: 2%;
+	margin: 5% 2% 2%;
 }
 
 .calendar-event {
@@ -256,9 +290,32 @@ ul {
 	border: 1px solid black;
 	padding: 3%;
 	width: 200px;
-	height: 200px;
-	box-shadow: 2px 2px;
+	height: 260px;
+	box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2);
 	margin-right: 1%;
+}
+
+.calendar-event:hover {
+	box-shadow: 2px 2px;
+}
+
+.calendar-date, .calendar-event-location {
+	text-align: center
+}
+
+.calendar-event-button {
+	background-color: #FFBF23;
+	border-radius: 3px;
+	color: black;
+	font-family:  "Space Grotesk", sans-serif;
+	font-weight: 300;
+	text-align: center;
+	padding: 10px 10%;
+	width: auto;
+}
+
+.not-ready {
+	opacity: 0.2;
 }
 
 .event-end {
@@ -268,6 +325,12 @@ ul {
 
 .sample-workshop-title {
 	font-size: 20px;
+}
+
+.team-persona {
+	border-radius: 50%;
+	width: 30%;
+	height: 30%;
 }
 
 /**
@@ -289,6 +352,11 @@ td {
 
 .pricing-title {
 	text-align: center;
+}
+
+.button {
+	margin-left: 5%;
+	display: inline-block;
 }
 
 /**
@@ -318,7 +386,6 @@ td {
  * For media max-width: 600px
  **/
 @media (max-width: 600px) {
-
 	.benefit > p {
     	height: unset;
 	}
@@ -356,5 +423,19 @@ td {
 	.offer-desc {
 		padding-left: 5%;
 		padding-right: 5%;
+	}
+
+	.product-features {
+		margin-left: unset;
+	}
+
+	.columns {
+		width: 100%;
+	}
+
+	.team-persona {
+		width: 50%;
+		height: 50%;
+		margin: auto;
 	}
 }

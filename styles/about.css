@@ -60,8 +60,8 @@
 
 .social-links > .bio-social-icon > p {
 	margin-block-end: unset;
-	margin: auto;
-	padding: 2%;
+	margin: auto 0;
+	padding: 1%;
 }
 
 .notable-work {
