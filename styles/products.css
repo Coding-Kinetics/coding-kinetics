@@ -2,10 +2,6 @@ h5 {
 	font-size: 24px;
 }
 
-.online-courses-section {
-	background: rgba(0, 0, 0, 0.08);
-}
-
 .products-section > a {
 	text-decoration: none;
 	color: black;
@@ -364,17 +360,19 @@ td {
  */
 
 .under-construction {
-	opacity: 1.0;
+	opacity: .4;
 	position: absolute;
-	height: auto;
+	height: 100%;
 	border: transparent;
-	background: transparent;
 	text-align: center;
+	background: rgba(0, 0, 0, 0.2);
 }
 
 .wip {
 	width: auto;
-	position: unset;
+	left: 0;
+	right: 0;
+	margin: 10%;
 }
 
 .wip-sign > p {
