@@ -26,16 +26,22 @@ p {
 }
 
 .follow {
-	margin-top: 5%;
-	font-size: 20px;
+	margin: 5%;
+	font-size: 18px;
+	margin-block-end: 2em;
+}
+
+.bio-social-icon {
+	margin: 4% auto;
+	display: flex;
+	justify-content: space-around;
+	width: 50%;
 }
 
 .event-banner {
 	background-color: black;
 	color: white;
 	padding: 5%;
-	margin-left: -1em;
-	margin-right: -1em;
 	text-align: center;
 }
 
@@ -284,9 +290,8 @@ ul {
 .calendar-event {
 	border-radius: 10px;
 	border: 1px solid black;
-	padding: 3%;
 	width: 200px;
-	height: 260px;
+	height: auto;
 	box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2);
 	margin-right: 1%;
 }
@@ -295,8 +300,10 @@ ul {
 	box-shadow: 2px 2px;
 }
 
-.calendar-date, .calendar-event-location {
-	text-align: center
+.calendar-date, .calendar-event-location, .calendar-event-title {
+	margin-block-start: .7em;
+	margin-block-end: .7em;
+	text-align: center;
 }
 
 .calendar-event-button {
@@ -307,7 +314,13 @@ ul {
 	font-weight: 300;
 	text-align: center;
 	padding: 10px 10%;
-	width: auto;
+	display: block;
+	width: 45%;
+	margin: auto auto 5%;
+}
+
+.event-img {
+	width: 100%;
 }
 
 .not-ready {
@@ -317,6 +330,10 @@ ul {
 .event-end {
 	background: rgba(0, 0, 0, 0.08);
 	width: 200px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 5% 0;
 }
 
 .sample-workshop-title {
