@@ -200,7 +200,6 @@
  */
 .junk-drawer {
     background-color: #FFBF23;
-    padding: 5% 0 0 0;
 }
 
 .junk-text {
@@ -277,10 +276,11 @@
 
 .junk-logo {
     display: block;
+    margin-left: 3%;
 }
 
 .junk-logo > .logo-img, .junk-logo > .author-name {
-    padding-left: 0px;
+    padding-left: 0;
 }
 
 /**

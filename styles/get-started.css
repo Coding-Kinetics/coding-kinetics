@@ -3,11 +3,16 @@
 **/
 
 h3 {
-	font-size: 20px;
+	font-size: 26px;
 }
 
 h4 {
+	font-size: 24px;
+}
+
+p, li {
 	font-size: 18px;
+	line-height: 32px;
 }
 
 .persona > img {
@@ -42,7 +47,7 @@ h4 {
 	display: flex;
 }
 
-.roadmap > .row {
+.sub-section {
 	padding: 2%
 }
 
@@ -50,6 +55,17 @@ h4 {
 	margin: auto;
 	width: 70%;
 	padding-left: 5%;
+}
+
+.step-2-teams-step {
+	margin-top: 5%;
+	padding: 5%;
+	background: #E8E6E6;
+	border-radius: 10px;
+}
+
+.step-2-teams {
+	margin-right: 5%;
 }
 
 .team-img-roadmap, .java-img-roadmap {
@@ -104,6 +120,12 @@ h4 {
 	display: block;
 }
 
+.center {
+	width: fit-content;
+	float: unset;
+	margin: 2% auto 0;
+}
+
 /**
  * Sample workshops
  **/
@@ -140,7 +162,7 @@ h4 {
 }
 
 .target {
-	padding-left: 1em;
+	padding-left: 1.5em;
 	padding-right: 1em;
 }
 
@@ -158,10 +180,16 @@ h4 {
 	box-shadow: 1px 0 0 1px #705100;
 }
 
+.sample-workshop-header {
+	background: #E8E6E6;
+	padding: 1%;
+	border-radius: 5px 5px 0 0;
+}
+
 .sample-workshop-details {
 	background: white;
 	padding: 2%;
-	border-radius: 5px;
+	border-radius: 0 0 5px 5px;
 }
 
 .subtitle, .sub-point {
@@ -174,10 +202,14 @@ h4 {
 }
 
 #mlb2-19767908.ml-form-embedContainer .ml-form-embedWrapper.embedForm {
-	max-width: 600px;
+	max-width: 600px !important;
 	margin-top: 5%;
 	border: 1px solid #666666;
 	border-radius: 10px;
+}
+
+#mlb2-19767908.ml-form-embedContainer .ml-form-align-center {
+	text-align: end;
 }
 
 @media (max-width: 800px) {

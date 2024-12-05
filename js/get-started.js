@@ -129,9 +129,10 @@ $(document).ready(function() {
         $(".kotlin-dev-img").attr(src,'./assets/kotlin.png');
 
         $novice_persona.removeClass(active);
+        $(".novice-dev-img").attr(src,'./assets/novice.png');
 
         // show team roadmap
-        if (!$novice_roadmap.is(":visible")) $novice_roadmap.hide();
+        $novice_roadmap.hide();
         $java_roadmap.hide();
         $kotlin_roadmap.hide();
         if (!$team_roadmap.is(":visible")) $(".roadmap-team").slideToggle();
@@ -186,6 +187,7 @@ $(document).ready(function() {
         $workshop_3.show();
     });
 
+    // on get abstract workshop, open up subscribe email forms
 });
 
 
