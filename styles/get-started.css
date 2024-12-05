@@ -15,6 +15,10 @@ p, li {
 	line-height: 32px;
 }
 
+.button-label {
+	font-size: 20px;
+}
+
 .persona > img {
 	width: 150px;
 	height: 150px;
@@ -210,6 +214,13 @@ p, li {
 
 #mlb2-19767908.ml-form-embedContainer .ml-form-align-center {
 	text-align: end;
+}
+
+.going-from-java-to-kotlin,  .kotlin-coroutine-mechanisms, .programming-android-with-kotlin {
+	z-index: 15;
+	height: 100%;
+	top: 20%;
+	position: relative;
 }
 
 @media (max-width: 800px) {

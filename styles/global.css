@@ -242,7 +242,7 @@
 }
 
 .junk-section > h3 {
-    margin-top: 0px;
+    margin-top: 0;
 }
 
 .follow-subscribe {
@@ -250,11 +250,16 @@
 }
 
 .follow-socials {
-    padding-left: 5%
+    padding-left: 5%;
+}
+
+.follow-socials .link {
+    margin-top: 10%;
+    display: block;
 }
 
 #email-subscribe-input {
-      background-color: #ffffff !important;
+    background-color: #ffffff !important;
     color: #333333 !important;
     border-color: #cccccc;
     border-radius: 4px !important;
@@ -322,6 +327,9 @@
     left: 0;
     right: 0;
     text-align: center;
+    z-index: 15;
+    top: 20%;
+    position: relative;
 }
 
 
@@ -419,7 +427,7 @@
 
     .topnav-selected {
         background: #FFBF23;
-        border-radius: 0px 0px 10px 10px;
+        border-radius: 0 0 10px 10px;
         border: 1px solid black;
         box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.08), 0 2px 4px 0 rgba(0, 0, 0, 0.12);
     }

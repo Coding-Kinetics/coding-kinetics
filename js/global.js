@@ -1,4 +1,23 @@
 
+/** Sanitize input **/
+function sanitize(string) {
+    const map = {
+        '&': '&amp;',
+        '<': '&lt;',
+        '>': '&gt;',
+        '"': '&quot;',
+        "'": '&#x27;',
+        "/": '&#x2F;',
+    };
+    const reg = /[&<>"'/]/ig;
+    return string.replace(reg, (match)=>(map[match]))
+        .replace(/[^a-z0-9áéíóúñü .,_-]/gim,"")
+        .replace(
+            /[^\w. ]/gi,
+            function (c) { return '&#' + c.charCodeAt(0) + ';';}
+        ).trim();
+}
+
 /** MailerLite Universal **/
 
 (function(w,d,e,u,f,l,n){w[f]=w[f]||function(){(w[f].q=w[f].q||[])
@@ -28,10 +47,10 @@ $(document).ready(function() {
     // exit out of menu by clicking elsewhere
      $("body").click(function(e) {
         if ($(e.target).closest(".topnav-selected").length) {
-           console.log("Clicked inside #myDiv");
+           console.log("Clicked inside nav");
         } else { 
             // if click is outside
-            console.log("Clicked outside #myDiv");
+            console.log("Clicked outside nav");
             $(".topnav").removeClass("topnav-selected");
             $(".nav-links").removeClass("selected");
         }
@@ -50,46 +69,63 @@ $(document).ready(function() {
     }
 
     /**
-     * Show/hide subscribe screen
+     * Show/hide popups
      **/
 
-    // subscribe screen pops up
+    let $subscribe_screen = $("#subscribe-screen");
+    let $page_under_construction = $("#page-under-construction");
+
+    let $subscribe_input = $("#mlb2-19702615.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow input");
+
+    // show subscription page
     $(".email-subscribe-button").click(function() {
-        // show single player roadmap
-        $("#subscribe-screen").show();
+        let input = sanitize($("#email-subscribe-input").val());
+        console.log("input " + input)
+        $subscribe_input.val(input);
+
+
+        $subscribe_screen.show();
+        $page_under_construction.hide();
     });
 
-    // hide subscribe screen
-    $("#subscribe-screen").click(function() {
-        $("#subscribe-screen").hide();
-    });
-
-    /**
-     * Show/hide page under construction screen 
-     **/
-
-    // show page
+   // show page under construction view
     $(".page-under-construction").click(function() {
-        // show popup
-        $("#page-under-construction").show();
+        $page_under_construction.show();
+        $subscribe_screen.hide();
     });
 
-    // hide page
-    $("#page-under-construction").click(function() {
-        $("#page-under-construction").hide();
+    // hide pages
+
+    $subscribe_screen.click(function(e) {
+        if ($(e.target).closest(".embedForm").length) {
+            console.log("Clicked inside .embedForm");
+        } else {
+            // if click is outside
+            console.log("Clicked outside .embedForm");
+            $subscribe_screen.hide();
+        }
+    });
+
+    $page_under_construction.click(function(e) {
+        if ($(e.target).closest(".embedForm").length) {
+            console.log("Clicked inside .embedForm");
+        } else {
+            // if click is outside
+            console.log("Clicked outside .embedForm");
+            $page_under_construction.hide();
+        }
     });
 
     // hide popups
     $(document).on('keydown', function() {
-        if ($("#subscribe-screen").is(":visible") && event.key === "Escape") {
-            $("#subscribe-screen").hide();
+        if ($subscribe_screen.is(":visible") && event.key === "Escape") {
+            $subscribe_screen.hide();
         }
 
-        if ($("#page-under-construction").is(":visible") && event.key === "Escape") {
-            $("#page-under-construction").hide();
+        if ($page_under_construction.is(":visible") && event.key === "Escape") {
+            $page_under_construction.hide();
         }
     });
-
 });
 
 

@@ -187,7 +187,73 @@ $(document).ready(function() {
         $workshop_3.show();
     });
 
-    // on get abstract workshop, open up subscribe email forms
+    /**
+     * Page under construction
+     */
+
+    // show page
+    $(".page-under-construction").click(function() {
+        // show popup
+        $("#page-under-construction").show();
+    });
+
+    // hide page
+    $("#page-under-construction").click(function() {
+        $("#page-under-construction").hide();
+    });
+
+    /**
+     * Subscribe popups
+     */
+
+
+    let $subscribe_screen = $("#subscribe-screen");
+    let $subscribe_by_email = $(".subscribe-by-email");
+    let $subscribe_download_java = $(".going-from-java-to-kotlin")
+    let $subscribe_download_kotlin = $(".kotlin-coroutine-mechanisms")
+    let $subscribe_download_android = $(".programming-android-with-kotlin")
+
+    // Show popups
+    $(".email-subscribe-button").click(function() {
+        $subscribe_screen.show();
+        $subscribe_by_email.show();
+
+        // hide other screens
+        $subscribe_download_java.hide();
+        $subscribe_download_kotlin.hide();
+        $subscribe_download_android.hide();
+    });
+
+    $(".email-workshop-java").click(function() {
+        // show java workshop signup
+        $subscribe_screen.show();
+
+        // hide other screens
+        $subscribe_by_email.hide();
+        $subscribe_download_kotlin.hide();
+        $subscribe_download_android.hide();
+    });
+
+    $(".email-workshop-kotlin").click(function() {
+        // show kotlin workshop signup
+        $subscribe_screen.show();
+        $subscribe_download_kotlin.show();
+
+        // hide other screens
+        $subscribe_download_java.hide();
+        $subscribe_by_email.hide();
+        $subscribe_download_android.hide();
+    });
+
+    $(".email-workshop-android").click(function() {
+        // show android workshop signup
+        $subscribe_screen.show();
+        $subscribe_download_android.show();
+
+        $subscribe_by_email.hide();
+        $subscribe_download_java.hide();
+        $subscribe_download_kotlin.hide();
+    });
 });
 
 
