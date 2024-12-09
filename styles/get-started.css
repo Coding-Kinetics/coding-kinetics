@@ -55,6 +55,13 @@ p, li {
 	padding: 2%
 }
 
+.notecard-sample {
+	display: flex;
+	width: 50%;
+	border: 1px solid black;
+	box-shadow: 1px 1px #666666;
+}
+
 .roadmap > .row > h3 {
 	margin: auto;
 	width: 70%;
@@ -249,6 +256,10 @@ p, li {
   		padding-left: 0;
 		padding-right: 0;
 		height: 94% !important;
+	}
+
+	.notecard-sample {
+		width: 100%;
 	}
 
 	.novice-dev-img {
