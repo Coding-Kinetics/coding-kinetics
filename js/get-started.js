@@ -139,6 +139,34 @@ $(document).ready(function() {
     });
 
     /**
+     * Navigate quickly to book private workshop
+     * TODO - figure out why pulling out code into function does not enable slide toggle on navigation
+     */
+
+    if (window.location.href.indexOf("book-private-workshop") > -1) {
+        console.log("url is https://kotlinkinetics.com/get-started#book-private-workshop");
+        // add selection to current element
+        $team_persona.addClass(active);
+        $(".team-dev-img.active").attr(src, './assets/teams-persona.png');
+
+        // remove selection from other choices
+        $java_persona.removeClass(active);
+        $(".java-dev-img").attr(src,'./assets/java.png');
+
+        $kotlin_persona.removeClass(active);
+        $(".kotlin-dev-img").attr(src,'./assets/kotlin.png');
+
+        $novice_persona.removeClass(active);
+        $(".novice-dev-img").attr(src,'./assets/novice.png');
+
+        // show team roadmap
+        $novice_roadmap.hide();
+        $java_roadmap.hide();
+        $kotlin_roadmap.hide();
+        if (!$team_roadmap.is(":visible")) $(".roadmap-team").slideToggle();
+    }
+
+    /**
      * Workshop views
      */
 
