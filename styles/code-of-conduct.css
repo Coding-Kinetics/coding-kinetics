@@ -1,0 +1,33 @@
+h1 {
+    text-align: center;
+}
+
+h2 {
+    color: #2980b9;
+}
+
+ul {
+    margin-left: 20px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+.title-section {
+    background: #FFBF23;
+}
+
+.code-conduct-img {
+    width: 30%;
+    display: block;
+    margin: auto;
+}
+
+@media (max-width: 600px) {
+    .code-conduct-img {
+        width: 90%;
+    }
+}
+
+
