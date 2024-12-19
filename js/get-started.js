@@ -24,12 +24,12 @@ $(document).ready(function() {
      **/
 
     $novice_persona.hover(
-        function() { if (!$(this).hasClass(active)) $(".novice-dev-img").attr(src,'./assets/novice-dev.png'); },
+        function() { if (!$(this).hasClass(active)) $(".novice-dev-img").attr(src,'./assets/novice-dev.webp'); },
         function() { if (!$(this).hasClass(active)) $(".novice-dev-img").attr(src,'./assets/novice.png'); },
     ).click(function() {
         // add selection to current element
         $novice_persona.addClass(active);
-        $(".novice-dev-img.active").attr(src,'./assets/novice-dev.png');
+        $(".novice-dev-img.active").attr(src,'./assets/novice-dev.webp');
 
         // remove selection from other choices
         $java_persona.removeClass(active);
@@ -53,13 +53,13 @@ $(document).ready(function() {
      **/
 
     $java_persona.hover(
-        function() { if (!$(this).hasClass(active)) $(".java-dev-img").attr(src,'./assets/java-dev.png'); },
+        function() { if (!$(this).hasClass(active)) $(".java-dev-img").attr(src,'./assets/java-dev.webp'); },
         function() { if (!$(this).hasClass(active)) $(".java-dev-img").attr(src,'./assets/java.png'); },
     ).click(function() {
 
         // add selection to current element
         $java_persona.addClass(active);
-        $(".java-dev-img").attr(src,'./assets/java-dev.png');
+        $(".java-dev-img").attr(src,'./assets/java-dev.webp');
 
         // remove selection from other choices
         $kotlin_persona.removeClass(active);
@@ -114,12 +114,12 @@ $(document).ready(function() {
      **/
 
     $team_persona.hover(
-        function() { if (!$(this).hasClass(active)) $(".team-dev-img").attr(src,'./assets/teams-persona.png'); },
+        function() { if (!$(this).hasClass(active)) $(".team-dev-img").attr(src,'./assets/teams-persona.webp'); },
         function() { if (!$(this).hasClass(active)) $(".team-dev-img").attr(src,'./assets/teams.png'); },
     ).click(function() {
         // add selection to current element
         $team_persona.addClass(active);
-        $(".team-dev-img.active").attr(src, './assets/teams-persona.png');
+        $(".team-dev-img.active").attr(src, './assets/teams-persona.webp');
 
         // remove selection from other choices
         $java_persona.removeClass(active);
@@ -147,7 +147,7 @@ $(document).ready(function() {
         console.log("url is https://kotlinkinetics.com/get-started#book-private-workshop");
         // add selection to current element
         $team_persona.addClass(active);
-        $(".team-dev-img.active").attr(src, './assets/teams-persona.png');
+        $(".team-dev-img.active").attr(src, './assets/teams-persona.webp');
 
         // remove selection from other choices
         $java_persona.removeClass(active);
