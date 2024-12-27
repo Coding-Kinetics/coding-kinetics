@@ -222,7 +222,7 @@ ul {
 }
 
 .workshop-instructions {
-	margin-left: 5%;
+	margin-right: 5%;
 }
 
 .social-links > .bio-social-icon {
@@ -241,7 +241,7 @@ ul {
 }
 
 .step-title {
-	font-size: 22px;
+	font-size: 20px;
 	font-weight: 600;
 }
 
@@ -281,6 +281,10 @@ ul {
 	width: 340px;
 }
 
+.upcoming-workshops-calendar > p {
+	text-align: center;
+}
+
 .zebra-scrollable {
 	width: 600px;
 	display: flex;
@@ -297,7 +301,7 @@ ul {
 }
 
 .calendar-event:hover {
-	box-shadow: 2px 2px;
+	box-shadow: 1px 1px;
 }
 
 .calendar-date, .calendar-event-location, .calendar-event-title {
@@ -317,6 +321,12 @@ ul {
 	display: block;
 	width: 45%;
 	margin: auto auto 5%;
+}
+
+.calendar-event-button:hover {
+	box-shadow: 2px 2px black;
+	background: #d69700;
+	color: white;
 }
 
 .event-img {

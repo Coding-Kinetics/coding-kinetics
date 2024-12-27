@@ -61,10 +61,7 @@ h2 {
 	font-family:  "Space Grotesk", sans-serif;
     font-weight: 300;
     text-align: center;
-	padding-left: 10%;
-    padding-right: 10%;
-    padding-top: 10px;
-    padding-bottom: 10px;
+	padding: 10px 10%;
 }
 
 .black-button:hover {
@@ -91,7 +88,7 @@ h2 {
 	z-index: 1;
 }
 
-.welcome:after {
+.welcome:after, .problems:after {
   background: inherit;
   bottom: 0;
   content: '';
@@ -193,18 +190,15 @@ h2 {
 }
 
 .value-button {
-		background-color: #FFA500;
-		border-radius: 3px;
-		color: #444444;
-		width: fit-content;
+	background-color: #FFA500;
+	border-radius: 3px;
+	color: #444444;
+	width: fit-content;
   	font-family: 'Metropolis', sans-serif;
     font-weight: bold;
     text-align: center;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    margin-bottom: 10%;
+	padding: 10px 20px;
+	margin-bottom: 10%;
     margin-top: auto;
     box-shadow: 2px 2px #705100;
 }
@@ -221,20 +215,6 @@ h2 {
 .problems {
 	position: relative;
 	z-index: 1;
-}
-
-.problems:after {
-  background: inherit;
-  bottom: 0;
-  content: '';
-  display: block;
-  height: 50%;
-  left: 0;
-  position: absolute;
-  right: 0;
-  transform: skewY(-1.2deg);
-  transform-origin: 100%;
-  z-index: -1;
 }
 
 .journey > .row > img {
@@ -489,7 +469,7 @@ li {
 }
 
 /**
- * 
+ * Phone mode or small screen mode
  **/
 
 @media (max-width: 600px) {
@@ -521,9 +501,9 @@ li {
 
 	.value-button {
 		width: fit-content;
-    padding-left: 20px;
-    padding-right: 20px;
-    margin: 0 auto;
+    	padding-left: 20px;
+    	padding-right: 20px;
+    	margin: 0 auto;
 	}
 
 	.value {

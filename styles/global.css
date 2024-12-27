@@ -160,7 +160,7 @@ p {
 
 /* Add an active class to highlight the current page */
 .topnav a.active {
-    background-color: #04AA6D;
+    background-color: #03915d;
     color: white;
 }
 
@@ -186,7 +186,7 @@ p {
 
 /* CTA button */
 .button {
-    background-color: #04AA6D;
+    background-color: #03915d;
     border: none;
     color: white;
     padding: 10px 22px;
@@ -221,6 +221,13 @@ p {
 
 .link {
     color: black;
+    text-decoration: underline;
+    padding-top: 5%;
+    cursor: pointer;
+}
+
+.cookies.link {
+    color: white;
     text-decoration: underline;
     padding-top: 5%;
     cursor: pointer;
@@ -401,6 +408,60 @@ p {
 .price .grey {
     background-color: #eee;
     font-size: 20px;
+}
+
+/**
+ * Cookie Popup notice
+ */
+.cookie-notice {
+    position: fixed;
+    width: 400px;
+    height: fit-content;
+    bottom: 0;
+    right: 0;
+    float: right;
+    z-index: 30;
+    overflow: hidden;
+}
+
+.cookie-notice-slide {
+    position: fixed;
+    background: black;
+    color: white;
+    box-shadow: 2px 2px 2px 2px #222222;
+    padding: 20px;
+    transition: all 1s ease-out;
+    bottom: -100%;
+}
+
+.cookie-notice-slide > p {
+    font-size: 12px;
+}
+
+.cookie-notice-slide.show {
+    transition: all 1s ease-out;
+    bottom: 0;
+}
+
+.cookie-notice-buttons {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.cookie-button {
+    background-color: #03915d;
+    border-radius: 3px;
+    color: white;
+    font-weight: 300;
+    padding: 10px 8%;
+    display: block;
+    font-size: 14px;
+}
+
+.cookie-button:hover {
+    box-shadow: 2px 2px black;
+    background: #5BAA73;
+    color: black;
 }
 
 @media (max-width: 800px) {

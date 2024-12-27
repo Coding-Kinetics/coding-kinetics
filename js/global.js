@@ -56,18 +56,6 @@ $(document).ready(function() {
         }
     });
 
-    // TODO remove cookies
-    var cookieCount = document.cookie
-        .split('; ')
-        .findIndex(x => x.split('=')[0] === 'cookiename');
-
-    if(cookieCount >= 0) {
-        // TODO finish out
-    } else {
-        window["ga-disable-UA-7358061-1"] = true;
-        window["gid-disable-UA-7358061-1"] = true;
-    }
-
     /**
      * Show/hide popups
      **/
