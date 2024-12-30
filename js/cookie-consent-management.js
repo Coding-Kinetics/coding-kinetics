@@ -6,10 +6,10 @@ function setCookie(name, value) {
     let expires = "; expires=" + date.toUTCString();
 
     // Log the cookie to be set (for debugging)
-    console.log(name + "=" + (value || "") + expires + "; Secure; SameSite=Strict; path=/; domain=kotlinkinetics.com");
+    console.log(name + "=" + (value || "") + expires + "; Secure; SameSite=Strict; path=/; domain=codingkinetics.com");
 
     // Set the cookie without Secure flag (since localhost uses HTTP)
-    document.cookie = name + "=" + (value || "") + expires + "; Secure; SameSite=Strict; path=/; domain=kotlinkinetics.com";
+    document.cookie = name + "=" + (value || "") + expires + "; Secure; SameSite=Strict; path=/; domain=codingkinetics.com";
 
     // Log the cookies to see what was set
     console.log("Cookie stored: " + document.cookie);

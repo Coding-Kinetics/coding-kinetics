@@ -144,7 +144,7 @@ $(document).ready(function() {
      */
 
     if (window.location.href.indexOf("book-private-workshop") > -1) {
-        console.log("url is https://kotlinkinetics.com/get-started#book-private-workshop");
+        console.log("url is https://codingkinetics.com/get-started#book-private-workshop");
         // add selection to current element
         $team_persona.addClass(active);
         $(".team-dev-img.active").attr(src, './assets/teams-persona.webp');
