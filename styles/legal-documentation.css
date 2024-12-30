@@ -18,6 +18,14 @@ li {
     background: #FFBF23;
 }
 
+.terms-of-service > *, .terms-of-service > * > * {
+    font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.tos-title {
+    text-align: center;
+}
+
 .code-conduct-img {
     width: 30%;
     display: block;

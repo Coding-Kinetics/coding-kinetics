@@ -25,7 +25,7 @@ $(document).ready(function() {
 
     $novice_persona.hover(
         function() { if (!$(this).hasClass(active)) $(".novice-dev-img").attr(src,'./assets/novice-dev.webp'); },
-        function() { if (!$(this).hasClass(active)) $(".novice-dev-img").attr(src,'./assets/novice.png'); },
+        function() { if (!$(this).hasClass(active)) $(".novice-dev-img").attr(src,'./assets/novice.webp'); },
     ).click(function() {
         // add selection to current element
         $novice_persona.addClass(active);
@@ -33,10 +33,10 @@ $(document).ready(function() {
 
         // remove selection from other choices
         $java_persona.removeClass(active);
-        $(".java-dev-img").attr(src,'./assets/java.png');
+        $(".java-dev-img").attr(src,'./assets/java.webp');
 
         $team_persona.removeClass(active);
-        $(".team-dev-img").attr(src, './assets/teams.png');
+        $(".team-dev-img").attr(src, './assets/teams.webp');
 
         $kotlin_persona.removeClass(active);
         $(".kotlin-dev-img").attr(src,'./assets/kotlin.png');
@@ -54,7 +54,7 @@ $(document).ready(function() {
 
     $java_persona.hover(
         function() { if (!$(this).hasClass(active)) $(".java-dev-img").attr(src,'./assets/java-dev.webp'); },
-        function() { if (!$(this).hasClass(active)) $(".java-dev-img").attr(src,'./assets/java.png'); },
+        function() { if (!$(this).hasClass(active)) $(".java-dev-img").attr(src,'./assets/java.webp'); },
     ).click(function() {
 
         // add selection to current element
@@ -66,10 +66,10 @@ $(document).ready(function() {
         $(".kotlin-dev-img").attr(src,'./assets/kotlin.png');
 
         $team_persona.removeClass(active);
-        $(".team-dev-img").attr(src, './assets/teams.png');
+        $(".team-dev-img").attr(src, './assets/teams.webp');
 
         $novice_persona.removeClass(active);
-        $(".novice-dev-img").attr(src,'./assets/novice.png');
+        $(".novice-dev-img").attr(src,'./assets/novice.webp');
 
         // show java roadmap
 
@@ -94,13 +94,13 @@ $(document).ready(function() {
 
         // remove selection from other choices
         $java_persona.removeClass(active);
-        $(".java-dev-img").attr(src,'./assets/java.png');
+        $(".java-dev-img").attr(src,'./assets/java.webp');
 
         $team_persona.removeClass(active);
-        $(".team-dev-img").attr(src, './assets/teams.png');
+        $(".team-dev-img").attr(src, './assets/teams.webp');
 
         $novice_persona.removeClass(active);
-        $(".novice-dev-img").attr(src,'./assets/novice.png');
+        $(".novice-dev-img").attr(src,'./assets/novice.webp');
 
         // show kotlin roadmap
         $novice_roadmap.hide();
@@ -115,7 +115,7 @@ $(document).ready(function() {
 
     $team_persona.hover(
         function() { if (!$(this).hasClass(active)) $(".team-dev-img").attr(src,'./assets/teams-persona.webp'); },
-        function() { if (!$(this).hasClass(active)) $(".team-dev-img").attr(src,'./assets/teams.png'); },
+        function() { if (!$(this).hasClass(active)) $(".team-dev-img").attr(src,'./assets/teams.webp'); },
     ).click(function() {
         // add selection to current element
         $team_persona.addClass(active);
@@ -123,13 +123,13 @@ $(document).ready(function() {
 
         // remove selection from other choices
         $java_persona.removeClass(active);
-        $(".java-dev-img").attr(src,'./assets/java.png');
+        $(".java-dev-img").attr(src,'./assets/java.webp');
 
         $kotlin_persona.removeClass(active);
         $(".kotlin-dev-img").attr(src,'./assets/kotlin.png');
 
         $novice_persona.removeClass(active);
-        $(".novice-dev-img").attr(src,'./assets/novice.png');
+        $(".novice-dev-img").attr(src,'./assets/novice.webp');
 
         // show team roadmap
         $novice_roadmap.hide();
@@ -151,13 +151,13 @@ $(document).ready(function() {
 
         // remove selection from other choices
         $java_persona.removeClass(active);
-        $(".java-dev-img").attr(src,'./assets/java.png');
+        $(".java-dev-img").attr(src,'./assets/java.webp');
 
         $kotlin_persona.removeClass(active);
         $(".kotlin-dev-img").attr(src,'./assets/kotlin.png');
 
         $novice_persona.removeClass(active);
-        $(".novice-dev-img").attr(src,'./assets/novice.png');
+        $(".novice-dev-img").attr(src,'./assets/novice.webp');
 
         // show team roadmap
         $novice_roadmap.hide();
