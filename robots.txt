@@ -4,4 +4,4 @@ disallow: /js/
 disallow: /logos/
 disallow: /styles/
 
-Sitemap: https://www.codingkinetics.com/sitemap.xml
+Sitemap: https://www.kotlinkinetics.com/sitemap.xml

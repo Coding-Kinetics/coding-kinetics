@@ -7,33 +7,43 @@
 <!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
 
 <url>
-  <loc>https://codingkinetics.com/</loc>
+  <loc>https://kotlinkinetics.com/</loc>
   <lastmod>2024-12-29T20:58:26+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>https://codingkinetics.com/about</loc>
+  <loc>https://kotlinkinetics.com/about</loc>
   <lastmod>2024-12-29T20:58:26+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://codingkinetics.com/products</loc>
+  <loc>https://kotlinkinetics.com/products</loc>
   <lastmod>2024-12-29T20:58:26+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://codingkinetics.com/pricing</loc>
+  <loc>https://kotlinkinetics.com/pricing</loc>
   <lastmod>2024-12-29T20:58:26+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://codingkinetics.com/get-started</loc>
+  <loc>https://kotlinkinetics.com/get-started</loc>
   <lastmod>2024-12-29T20:58:26+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://codingkinetics.com/code-of-conduct</loc>
+  <loc>https://kotlinkinetics.com/code-of-conduct</loc>
   <lastmod>2024-12-29T20:58:26+00:00</lastmod>
   <priority>0.80</priority>
 </url>
+<url>
+  <loc>https://kotlinkinetics.com/terms-of-service</loc>
+  <lastmod>2024-12-29T20:58:26+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+  <url>
+    <loc>https://kotlinkinetics.com/cancellation-policy</loc>
+    <lastmod>2024-12-29T20:58:26+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
 </urlset>
