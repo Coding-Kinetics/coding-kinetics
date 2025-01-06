@@ -58,7 +58,35 @@
 @font-face {
     font-family: 'Jost-Medium';
     src: url('../fonts/jost/Jost-Medium.ttf');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SpaceGrotesk';
+    src: url('../fonts/space-grotesk/SpaceGrotesk-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SpaceGrotesk';
+    src: url('../fonts/space-grotesk/SpaceGrotesk-Bold.ttf');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SpaceGrotesk-Light';
+    src: url('../fonts/space-grotesk/SpaceGrotesk-Light.ttf');
     font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SpaceGrotesk-Medium';
+    src: url('../fonts/space-grotesk/SpaceGrotesk-Medium.ttf');
+    font-weight: 300;
     font-style: normal;
 }
 

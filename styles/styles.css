@@ -3,7 +3,7 @@
  * */
 
 * {
-	font-family: "Space Grotesk", sans-serif;
+	font-family: "SpaceGrotesk", sans-serif;
 }
 
 html {
@@ -15,8 +15,9 @@ body {
 	background-color: #ffffff;
 }
 
-h1, h2, h3  {
-	font-family:  "Space Grotesk", sans-serif;
+h1, h2, h3, h4, h5  {
+	font-family:  "SpaceGrotesk", sans-serif;
+	font-weight: 300;
 }
 
 a {
@@ -58,7 +59,7 @@ h2 {
 	background-color: black;
 	border-radius: 3px;
 	color: white;
-	font-family:  "Space Grotesk", sans-serif;
+	font-family:  "SpaceGrotesk", sans-serif;
     font-weight: 300;
     text-align: center;
 	padding: 10px 10%;

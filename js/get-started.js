@@ -164,6 +164,16 @@ $(document).ready(function() {
         $java_roadmap.hide();
         $kotlin_roadmap.hide();
         if (!$team_roadmap.is(":visible")) $(".roadmap-team").slideToggle();
+
+        setTimeout(function() {
+            /*window.scroll(
+                {
+                    top: 2000,
+                    behavior: "smooth",
+                }
+            );*/
+            $("#book-private-workshop").get(0).scrollIntoView({behavior: 'smooth'});
+        }, 1000);
     }
 
     /**

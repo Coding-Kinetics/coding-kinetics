@@ -45,6 +45,11 @@
     padding-bottom: 10%;
 }
 
+.row.cookie-notice-buttons {
+    flex-direction: row;
+    padding-bottom: 5%;
+}
+
 .value {
     padding-top: 5%;
     width: auto;
