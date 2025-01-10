@@ -6,19 +6,30 @@ h2 {
     color: #2980b9;
 }
 
+h1, h2, h3, h4 {
+    font-weight: bold;
+}
+
 ul {
     margin-left: 20px;
 }
 
 li {
     margin-bottom: 10px;
+    line-height: 24px;
+    font-family: Georgia, "Times New Roman", Times, serif;
 }
 
 .title-section {
     background: #FFBF23;
 }
 
-.terms-of-service > *, .terms-of-service > * > * {
+td {
+    line-height: 24px;
+}
+
+.terms-of-service > *, .terms-of-service > * > *, .terms-of-service > * > * > * ,
+th, td {
     font-family: Georgia, "Times New Roman", Times, serif;
 }
 
@@ -30,6 +41,24 @@ li {
     width: 30%;
     display: block;
     margin: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+}
+tr:nth-child(even) {
+    background-color: #f9f9f9;
 }
 
 @media (max-width: 600px) {
