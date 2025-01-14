@@ -37,27 +37,29 @@ $(document).ready(function() {
     let $cookie_notice = $(".cookie-notice-slide");
     console.log(`Cookies: ${document.cookie}`);
 
-    let consent = getCookie(cookie_selection)
-    console.log(consent);
+    let consent = getCookie(cookie_selection);
+    console.log(`Consent?: ${consent}`);
 
     if (consent) {
         console.log(`Welcome back. Consent given.`);
         $cookie_notice.removeClass("show");
-        // TODO actually remove cookies
     } else {
         console.log("First time user or consent not given yet.");
         $cookie_notice.addClass("show");
+        // TODO actually remove cookies
     }
 
     // Handle accept button click
     $(".accept-button").click(function() {
         setCookie(cookie_selection, true); // store consent in cookies
+        console.log(`Cookies: ${document.cookie}`);
         $cookie_notice.removeClass("show");
     });
 
     // Handle reject button click
     $(".reject-button").click(function() {
         setCookie(cookie_selection, false); // Store rejection in cookies
+        console.log(`Cookies: ${document.cookie}`);
         $cookie_notice.removeClass("show");
     });
 });

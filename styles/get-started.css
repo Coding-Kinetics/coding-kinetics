@@ -3,7 +3,7 @@
 **/
 
 h3 {
-	font-size: 26px;
+	font-size: 20px;
 }
 
 h4 {
@@ -34,6 +34,7 @@ p, li {
 	flex-direction: column;
 	justify-content: center;
   	align-items: center;
+	opacity: 0.6;
 }
 
 .persona > p {
@@ -44,6 +45,10 @@ p, li {
 	border: 1px solid #666666;
 	border-radius: 10px;
 	box-shadow: 2px 2px;
+}
+
+.persona.hover, .persona.active {
+	opacity: 1.0;
 }
 
 .pick-persona {

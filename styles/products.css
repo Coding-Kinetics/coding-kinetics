@@ -38,13 +38,6 @@ p {
 	width: 50%;
 }
 
-.event-banner {
-	background-color: black;
-	color: white;
-	padding: 5%;
-	text-align: center;
-}
-
 li {
 	font-weight: normal;
 	margin-block-start: 1em;
@@ -267,85 +260,6 @@ ul {
 	margin-right: 5%;
 }
 
-.upcoming-workshops-calendar {
-	border: 2px solid #666;
-	border-radius: 10px;
-	background: white;
-	margin: auto;
-	box-shadow: 2px 0 0 0 #705100;
-	overflow: auto;
-	width: 340px;
-}
-
-.upcoming-workshops-calendar > p {
-	text-align: center;
-}
-
-.zebra-scrollable {
-	width: 600px;
-	display: flex;
-	margin: 5% 2% 2%;
-}
-
-.calendar-event {
-	border-radius: 10px;
-	border: 1px solid black;
-	min-width: 200px;
-	max-width: 200px;
-	height: auto;
-	box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2);
-	margin-right: 1%;
-}
-
-.calendar-event:hover {
-	box-shadow: 1px 1px;
-}
-
-.calendar-date, .calendar-event-location, .calendar-event-title {
-	margin-block-start: .7em;
-	margin-block-end: .7em;
-	text-align: center;
-}
-
-.calendar-event-button {
-	background-color: #FFBF23;
-	border-radius: 3px;
-	color: black;
-	font-family:  "SpaceGrotesk", sans-serif;
-	font-weight: 300;
-	text-align: center;
-	padding: 10px 10%;
-	display: block;
-	width: 45%;
-	margin: auto auto 5%;
-}
-
-.calendar-event-button:hover {
-	box-shadow: 2px 2px black;
-	background: #d69700;
-	color: white;
-}
-
-.event-img {
-	width: 100%;
-	max-height: 50px;
-	overflow: hidden;
-}
-
-.not-ready {
-	opacity: 0.2;
-}
-
-.event-end {
-	background: rgba(0, 0, 0, 0.08);
-	min-width: 200px;
-	max-width: 200px;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	padding: 5% 5px;
-}
-
 .sample-workshop-title {
 	font-size: 20px;
 }
@@ -354,6 +268,10 @@ ul {
 	border-radius: 50%;
 	width: 30%;
 	height: 30%;
+}
+
+.upcoming-workshops-calendar {
+	width: 340px;
 }
 
 /**

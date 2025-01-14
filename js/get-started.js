@@ -90,7 +90,7 @@ $(document).ready(function() {
 
         // add selection to current element
         $kotlin_persona.addClass(active);
-        $(".kotlin-dev-img.active").attr(src,'./assets/kotlin-dev.png');
+        $(".kotlin-dev-img").attr(src,'./assets/kotlin-dev.png');
 
         // remove selection from other choices
         $java_persona.removeClass(active);
@@ -119,7 +119,7 @@ $(document).ready(function() {
     ).click(function() {
         // add selection to current element
         $team_persona.addClass(active);
-        $(".team-dev-img.active").attr(src, './assets/teams-persona.webp');
+        $(".team-dev-img").attr(src, './assets/teams-persona.webp');
 
         // remove selection from other choices
         $java_persona.removeClass(active);
@@ -146,32 +146,9 @@ $(document).ready(function() {
     if (window.location.href.indexOf("book-private-workshop") > -1) {
         console.log("url is https://codingkinetics.com/get-started#book-private-workshop");
         // add selection to current element
-        $team_persona.addClass(active);
-        $(".team-dev-img.active").attr(src, './assets/teams-persona.webp');
-
-        // remove selection from other choices
-        $java_persona.removeClass(active);
-        $(".java-dev-img").attr(src,'./assets/java.webp');
-
-        $kotlin_persona.removeClass(active);
-        $(".kotlin-dev-img").attr(src,'./assets/kotlin.png');
-
-        $novice_persona.removeClass(active);
-        $(".novice-dev-img").attr(src,'./assets/novice.webp');
-
-        // show team roadmap
-        $novice_roadmap.hide();
-        $java_roadmap.hide();
-        $kotlin_roadmap.hide();
-        if (!$team_roadmap.is(":visible")) $(".roadmap-team").slideToggle();
+        $team_persona.click();
 
         setTimeout(function() {
-            /*window.scroll(
-                {
-                    top: 2000,
-                    behavior: "smooth",
-                }
-            );*/
             $("#book-private-workshop").get(0).scrollIntoView({behavior: 'smooth'});
         }, 1000);
     }
