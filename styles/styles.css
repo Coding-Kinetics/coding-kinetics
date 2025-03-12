@@ -536,6 +536,7 @@ li {
 	width: 100%;
 	max-height: 50px;
 	overflow: hidden;
+	object-fit: cover;
 }
 
 .not-ready {
@@ -554,6 +555,11 @@ li {
 	flex-direction: column;
 	justify-content: center;
 	padding: 5% 5px;
+}
+
+.past-event {
+	opacity: 0.3;
+	background: #bbb;
 }
 
 .social-links > .bio-social-icon {
@@ -587,11 +593,20 @@ li {
 	margin-inline-end: 3%;
 }
 
+.bio-social-icon {
+	display: flex;
+	margin: 0 auto;
+}
+
 /**
  * Phone mode or small screen mode
  **/
 
 @media (max-width: 600px) {
+
+	.learn-more {
+		bottom: 1%;
+	}
 
 	.products-section, .character-profiles {
 		flex-direction: column;
