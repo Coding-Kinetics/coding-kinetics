@@ -33,8 +33,42 @@ th, td {
     font-family: Georgia, "Times New Roman", Times, serif;
 }
 
+.spacer-terms {
+    height: 50px;
+    width: 100%;
+    background: #FFBF23;
+}
+
 .tos-title {
     text-align: center;
+}
+
+.view_as_pdf_button a {
+    color: white;
+}
+
+.view_as_pdf_button a:hover {
+    color: black;
+}
+
+.view_as_pdf_button {
+    background-color: #03915d;
+    border-radius: 3px;
+    color: white !important;
+    text-decoration: none;
+    font-weight: 300;
+    padding: 10px 2%;
+    margin-top: 40px;
+    margin-right: 6%;
+    display: block;
+    font-size: 14px;
+    float: right;
+}
+
+.view_as_pdf_button:hover {
+    box-shadow: 2px 2px black;
+    background: #5BAA73;
+    color: black;
 }
 
 .code-conduct-img {
