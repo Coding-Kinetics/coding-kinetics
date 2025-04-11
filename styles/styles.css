@@ -105,11 +105,10 @@ h2 {
 
 .welcome-content {
 	padding: 3%;
-	display: flex;
 }
 
 .welcome-description {
-	font-size: 20px;
+	font-size: 18px;
 }
 
 .welcome-text {
@@ -124,8 +123,8 @@ h2 {
 }
 
 .welcome-image {
-    width: 50%;
-    height: 50%;
+    width: 40%;
+    height: 40%;
     float: left;
     padding-right: 5%;
 }
@@ -139,11 +138,12 @@ h2 {
 	background: #996E00;
 	position: relative;
 	padding-top: 10%;
-	padding-bottom: 15%;
+	display: flow-root;
 }
 
 .valueprops > .section-title {
 	color: white;
+	font-size: 22px;
 }
 
 .value {
@@ -243,7 +243,7 @@ h2 {
 }
 
 .problem-description > p,  .problem-description > ul > li {
-	font-size: 20px;
+	font-size: 18px;
 	padding-right: 5%;
 }
 
@@ -337,7 +337,7 @@ li {
 	padding-right: 2%;
 	border: 1px transparent;
 	border-radius: 10px;
-	box-shadow: 2px 2px #222222;
+	box-shadow: 2px 2px 1px 1px #222222;
 	margin: 1px;
 }
 
@@ -354,7 +354,7 @@ li {
 
 .persona:hover {
 	border: 1px solid #666666;
-	box-shadow: 2px 2px;
+	opacity: 1.0;
 }
 
 .product > h4 {
@@ -470,10 +470,203 @@ li {
 }
 
 /**
+ * Event Calendar
+ */
+
+.upcoming-workshops-calendar {
+	border: 2px solid #666;
+	border-radius: 10px;
+	background: white;
+	margin: auto;
+	box-shadow: 2px 0 0 0 rgba(0,0,0,0.2);
+	overflow: auto;
+	width: 100%;
+}
+
+.product-reel .zebra-scrollable {
+	margin: 2% 2%;
+}
+
+.product-reel {
+	background: unset;
+	box-shadow: unset;
+	border: unset;
+}
+
+.product-reel .event-end {
+	background: rgba(255, 255, 255, 0.80);
+}
+
+.upcoming-workshops-calendar > p {
+	text-align: center;
+}
+
+.zebra-scrollable {
+	width: 600px;
+	display: flex;
+	margin: 5% 2% 2%;
+}
+
+.zebra-scrollable-product-reel {
+	width: 100%;
+	display: flex;
+}
+
+.patreon-card p {
+	text-align: left;
+	font-size: 14px;
+	margin: 5%;
+	text-decoration: none;
+	color: black !important;
+}
+
+.calendar-event {
+	border-radius: 10px;
+	border: 1px solid black;
+	min-width: 200px;
+	max-width: 200px;
+	height: auto;
+	box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2);
+	margin-right: 1%;
+}
+
+.calendar-event:hover, .patreon-card:hover {
+	box-shadow: 1px 1px;
+}
+
+.calendar-date, .calendar-event-location, .calendar-event-title {
+	margin-block-start: .7em;
+	margin-block-end: .7em;
+	text-align: center;
+}
+
+.calendar-event-button {
+	background-color: #FFBF23;
+	border-radius: 3px;
+	color: black;
+	font-family:  "SpaceGrotesk", sans-serif;
+	font-weight: 300;
+	text-align: center;
+	padding: 10px 10%;
+	display: block;
+	width: 45%;
+	margin: auto auto 5%;
+}
+
+.calendar-event-button:hover, .access-patreon-button:hover {
+	box-shadow: 2px 2px black;
+	background: #d69700;
+	color: white;
+}
+
+.event-img {
+	width: 100%;
+	max-height: 50px;
+	overflow: hidden;
+	object-fit: cover;
+}
+
+.patreon-card {
+	border-radius: 10px;
+	border: 1px solid black;
+	min-width: 200px;
+	max-width: 400px;
+	height: auto;
+	background: white;
+	box-shadow: 8px 12px rgba(0,0,0,0.2);
+	margin-right: 1%;
+}
+
+.patreon-img {
+	width: 100%;
+	overflow: hidden;
+	object-fit: cover;
+	border-radius: 10px 10px 0 0;
+}
+
+.access-patreon-button {
+	background-color: #FFBF23;
+	border-radius: 3px;
+	color: black;
+	font-family:  "SpaceGrotesk", sans-serif;
+	font-weight: 300;
+	text-align: center;
+	padding: 10px 10%;
+	display: block;
+	width: auto;
+	float: right;
+	margin-top: 5%;
+	box-shadow: 1px 2px black;
+}
+
+.not-ready {
+	opacity: 0.2;
+}
+
+.event-calendar {
+	margin-top: 10%;
+}
+
+.event-end {
+	background: rgba(0, 0, 0, 0.08);
+	min-width: 200px;
+	max-width: 200px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 5% 5px;
+}
+
+.past-event {
+	opacity: 0.3;
+	background: #bbb;
+}
+
+.social-links > .bio-social-icon {
+	display: flex;
+}
+
+.bio-social-icon > a > img {
+	width: 40px;
+	height: 40px;
+	padding: 2%;
+}
+
+.calendar-event-location {
+	height: 3em;
+}
+
+.calendar-event-title {
+	height: 5em;
+	padding: 3%;
+}
+
+.event-banner {
+	background-color: black;
+	color: white;
+	padding: 5%;
+	text-align: center;
+}
+
+.follow-social {
+	margin-inline-start: 3%;
+	margin-inline-end: 3%;
+}
+
+.bio-social-icon {
+	display: flex;
+	margin: 0 auto;
+}
+
+/**
  * Phone mode or small screen mode
  **/
 
 @media (max-width: 600px) {
+
+	.learn-more {
+		bottom: 1%;
+	}
 
 	.products-section, .character-profiles {
 		flex-direction: column;
