@@ -105,7 +105,6 @@ h2 {
 
 .welcome-content {
 	padding: 3%;
-	display: flex;
 }
 
 .welcome-description {
@@ -139,11 +138,12 @@ h2 {
 	background: #996E00;
 	position: relative;
 	padding-top: 10%;
-	padding-bottom: 15%;
+	display: flow-root;
 }
 
 .valueprops > .section-title {
 	color: white;
+	font-size: 22px;
 }
 
 .value {
@@ -478,9 +478,23 @@ li {
 	border-radius: 10px;
 	background: white;
 	margin: auto;
-	box-shadow: 2px 0 0 0 #705100;
+	box-shadow: 2px 0 0 0 rgba(0,0,0,0.2);
 	overflow: auto;
 	width: 100%;
+}
+
+.product-reel .zebra-scrollable {
+	margin: 2% 2%;
+}
+
+.product-reel {
+	background: unset;
+	box-shadow: unset;
+	border: unset;
+}
+
+.product-reel .event-end {
+	background: rgba(255, 255, 255, 0.80);
 }
 
 .upcoming-workshops-calendar > p {
@@ -493,6 +507,19 @@ li {
 	margin: 5% 2% 2%;
 }
 
+.zebra-scrollable-product-reel {
+	width: 100%;
+	display: flex;
+}
+
+.patreon-card p {
+	text-align: left;
+	font-size: 14px;
+	margin: 5%;
+	text-decoration: none;
+	color: black !important;
+}
+
 .calendar-event {
 	border-radius: 10px;
 	border: 1px solid black;
@@ -503,7 +530,7 @@ li {
 	margin-right: 1%;
 }
 
-.calendar-event:hover {
+.calendar-event:hover, .patreon-card:hover {
 	box-shadow: 1px 1px;
 }
 
@@ -526,7 +553,7 @@ li {
 	margin: auto auto 5%;
 }
 
-.calendar-event-button:hover {
+.calendar-event-button:hover, .access-patreon-button:hover {
 	box-shadow: 2px 2px black;
 	background: #d69700;
 	color: white;
@@ -537,6 +564,39 @@ li {
 	max-height: 50px;
 	overflow: hidden;
 	object-fit: cover;
+}
+
+.patreon-card {
+	border-radius: 10px;
+	border: 1px solid black;
+	min-width: 200px;
+	max-width: 400px;
+	height: auto;
+	background: white;
+	box-shadow: 8px 12px rgba(0,0,0,0.2);
+	margin-right: 1%;
+}
+
+.patreon-img {
+	width: 100%;
+	overflow: hidden;
+	object-fit: cover;
+	border-radius: 10px 10px 0 0;
+}
+
+.access-patreon-button {
+	background-color: #FFBF23;
+	border-radius: 3px;
+	color: black;
+	font-family:  "SpaceGrotesk", sans-serif;
+	font-weight: 300;
+	text-align: center;
+	padding: 10px 10%;
+	display: block;
+	width: auto;
+	float: right;
+	margin-top: 5%;
+	box-shadow: 1px 2px black;
 }
 
 .not-ready {
