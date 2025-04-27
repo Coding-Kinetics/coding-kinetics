@@ -321,7 +321,7 @@ td {
 	margin: 10%;
 }
 
-.wip-sign > p {
+.wip-sign > p, .patreon-txt {
 	padding-left: 5%;
 	padding-right: 5%;
 }

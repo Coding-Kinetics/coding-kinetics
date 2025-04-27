@@ -60,6 +60,7 @@ $(document).ready(function() {
 
     let $subscribe_screen = $("#subscribe-screen");
     let $page_under_construction = $("#page-under-construction");
+    let $patreon_popup = $('#patreon-popup')
 
     let $subscribe_input = $("#mlb2-19702615.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow input");
 
@@ -80,8 +81,19 @@ $(document).ready(function() {
         $subscribe_screen.hide();
     });
 
-    // hide pages
+    let count = 0
 
+    // show patreon popup
+    $(window).scroll(function() {
+        if ($(window).scrollTop() > $(document).height() / 2 && count < 1) {
+            $subscribe_screen.hide();
+            $page_under_construction.hide();
+            $patreon_popup.fadeIn();
+            count++;
+        }
+    });
+
+    // hide pages
     $subscribe_screen.click(function(e) {
         if ($(e.target).closest(".embedForm").length) {
             console.log("Clicked inside .embedForm");
@@ -102,6 +114,20 @@ $(document).ready(function() {
         }
     });
 
+    $patreon_popup.click(function(e) {
+        if ($(e.target).closest(".patreon-content").length) {
+            console.log("Clicked inside .patreon-content");
+        } else {
+            // if click is outside
+            console.log("Clicked outside .patreon-content");
+            $patreon_popup.hide();
+        }
+    });
+
+    $(".exit-popup").click(function() {
+        $patreon_popup.hide();
+    });
+
     // hide popups
     $(document).on('keydown', function() {
         if ($subscribe_screen.is(":visible") && event.key === "Escape") {
@@ -110,6 +136,10 @@ $(document).ready(function() {
 
         if ($page_under_construction.is(":visible") && event.key === "Escape") {
             $page_under_construction.hide();
+        }
+
+        if ($patreon_popup.is(":visible") && event.key === "Escape") {
+            $patreon_popup.hide();
         }
     });
 });

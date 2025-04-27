@@ -584,6 +584,62 @@ li {
 	border-radius: 10px 10px 0 0;
 }
 
+.patreon-content {
+	display: flex;
+	flex-direction: row;
+	margin-left: 25%;
+	margin-right: 25%;
+	background: #FFBF23;
+	border-radius: 8px;
+	height: 50%;
+}
+
+.popup-img {
+	width: 30%;
+	overflow: clip;
+	position: relative;
+	border-radius: 8px 0 0 8px;
+}
+
+.exit-popup {
+	position: absolute;
+	float: right;
+	top: 2%;
+	right: 2%;
+	width: 40px;
+	height: 40px;
+}
+
+.patreon-popup-img {
+	height: 100%;
+	margin-left: -90%;
+}
+
+.patreon-desc {
+	text-align: left;
+}
+
+.patreon-txt {
+	padding-left: 5%;
+	padding-right: 10%;
+	padding-bottom: 5%;
+	position: relative;
+}
+
+.patreon-title {
+	font-size: 24px;
+	text-align: left;
+	margin-bottom: 10%;
+}
+
+.patreon-button {
+	bottom: 10%;
+	display: block;
+	position: absolute;
+	left: 0;
+	right: 0;
+}
+
 .access-patreon-button {
 	background-color: #FFBF23;
 	border-radius: 3px;

@@ -349,7 +349,7 @@ p {
     z-index: 10;
 }
 
-#page-under-construction {
+#page-under-construction, #patreon-popup {
     display: none;
     position: fixed;
     background-color: rgba(0, 0, 0, 0.5);
@@ -360,7 +360,7 @@ p {
     z-index: 20;
 }
 
-#page-under-construction > .wip {
+#page-under-construction > .wip, .patreon-content {
     width: fit-content;
     margin: auto;
     left: 0;
@@ -370,7 +370,6 @@ p {
     top: 20%;
     position: relative;
 }
-
 
 .subscribe-by-email {
     z-index: 15;
@@ -531,6 +530,19 @@ p {
 
     .topnav a {
         text-align: left;
+    }
+
+    #patreon-popup {
+        z-index: 50;
+    }
+
+    .patreon-content {
+        margin: auto !important;
+        width: 90%;
+    }
+
+    .patreon-popup-img {
+        margin-left: -172% !important;
     }
 }
 
