@@ -17,6 +17,7 @@ p, li {
 
 .button-label {
 	font-size: 20px;
+	text-align: center;
 }
 
 .persona > img {
@@ -32,7 +33,6 @@ p, li {
 	width: 25%;
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
   	align-items: center;
 	opacity: 0.6;
 }
@@ -68,7 +68,7 @@ p, li {
 }
 
 .roadmap > .row > h3 {
-	margin: auto;
+	margin: 2% auto;
 	width: 70%;
 	padding-left: 5%;
 }
@@ -88,14 +88,10 @@ p, li {
 	margin-right: 5% !important
 }
 
-.novice-dev-img {
-	margin-left: 5%;
-}
-
 .roadmap-team {
 	margin-top: 5%;
 	padding: 5%;
-	display: none;
+	/*display: none;*/
 }
 
 .img-roadmap {
@@ -108,7 +104,7 @@ p, li {
 .roadmap-single {
 	margin-top: 5%;
 	padding: 5%;
-	display: none;
+	/*display: none;*/
 }
 
 /**
@@ -235,6 +231,91 @@ p, li {
 	position: relative;
 }
 
+.tier {
+	padding-left: 2%;
+	padding-right: 2%;
+	border: 1px solid #666666;
+	border-radius: 10px;
+	display: flex;
+	flex-direction: column;
+	width: 50%;
+	text-decoration: none;
+	color: black;
+}
+
+.patreon-overview {
+	padding-bottom: 5%;
+	display: flex;
+	width: 100%;
+	justify-content: center;
+}
+
+.tier:hover {
+	border: 1px solid #666666;
+	border-radius: 10px;
+	box-shadow: 2px 2px;
+}
+
+.tier > h4 {
+	font-size: 20px;
+	margin-left: 1em;
+	margin-right: 1em;
+}
+
+.tier > h5 {
+	font-size: 16px;
+	text-align: center;
+}
+
+.tier > .space-cowboy {
+	width: 80%;
+	padding-bottom: 10%;
+}
+
+
+.tier > img {
+	width: 90%;
+	margin: 0 auto;
+}
+
+.tier > p {
+	text-align: left;
+}
+
+
+.description {
+	display: flex;
+	flex-direction: column;
+}
+
+.product-product {
+	padding-bottom: 10%;
+}
+
+.product-sample {
+	display: flex;
+	width: 100%;
+}
+
+.notecard-sample {
+	width: 60%;
+	border: 2px solid #666666;
+	border-radius: 10px;
+	margin: auto;
+}
+
+.offering-section {
+	position: relative;
+	background-color: rgba(0, 0, 0, 0.2);
+	border-radius: 10px;
+	margin-bottom: 5%;
+}
+
+.offering-section-desc {
+	padding: 5%;
+	opacity: 0.7;
+}
+
 @media (max-width: 800px) {
 	.roadmap > .row {
 		flex-direction: column;
@@ -297,5 +378,44 @@ p, li {
 		text-align: center;
 		padding-left: unset;
 		padding-right: unset;
+	}
+
+	.patreon-offerings {
+		padding-left: 0;
+	}
+
+	.patreon-overview, .workshop-offerings {
+		flex-direction: column;
+	}
+
+	.tier-image {
+		width: 100%;
+		padding-bottom: 10%;
+		padding-left: 0%;
+		padding-right: 0%;
+	}
+
+	.tier {
+		width: fit-content;
+		padding-bottom: 10%;
+	}
+
+	.offer-desc {
+		padding-left: 5%;
+		padding-right: 5%;
+	}
+
+	.product-features {
+		margin-left: unset;
+	}
+
+	.columns {
+		width: 100%;
+	}
+
+	.team-persona {
+		width: 50%;
+		height: 50%;
+		margin: auto;
 	}
 }

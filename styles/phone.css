@@ -28,6 +28,8 @@
 .topnav-selected {
     background: #FFBF23;
     border-radius: 0 0 10px 10px;
+    margin-top: unset;
+    padding-top: 26px;
     border: 1px solid black;
     box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.08), 0 2px 4px 0 rgba(0, 0, 0, 0.12);
 }

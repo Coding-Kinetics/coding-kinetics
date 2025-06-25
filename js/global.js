@@ -62,14 +62,15 @@ $(document).ready(function() {
     let $page_under_construction = $("#page-under-construction");
     let $patreon_popup = $('#patreon-popup')
 
-    let $subscribe_input = $("#mlb2-19702615.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow input");
+    let $subscribe_input = $(".ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow input");
+    let $subscribe_input2 = $(".form-control");
 
     // show subscription page
     $(".email-subscribe-button").click(function() {
         let input = sanitize($("#email-subscribe-input").val());
-        console.log("input " + input)
-        $subscribe_input.val(input);
-
+        console.log("Cleaned input: " + input)
+        if ($subscribe_input != null) $subscribe_input.val(input);
+        if ($subscribe_input2 != null) $subscribe_input2.val(input)
 
         $subscribe_screen.show();
         $page_under_construction.hide();
