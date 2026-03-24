@@ -62,10 +62,10 @@ li {
 	border: 1px solid #666666;
 	border-radius: 10px;
 	display: flex;
-    flex-direction: column;
-    width: 50%;
-    text-decoration: none;
-    color: black;
+	flex-direction: column;
+	width: 50%;
+	text-decoration: none;
+	color: black;
 }
 
 .patreon-overview {
@@ -138,7 +138,7 @@ ul {
 	display: flex;
 	width: 100%;
 }
- 
+
 .notecard-sample {
 	width: 60%;
 	border: 2px solid #666666;
@@ -172,21 +172,17 @@ ul {
 	margin-top: 10%;
 }
 
-.benefit {
-	padding: 3%;
-}
-
-.benefit > p {
-	height: 40px;
-}
-
 .benefit > img {
-    width: 100%;
-    height: 100%;
-    margin: auto;
+	width: 100%;
+	height: 100%;
+	margin: auto;
 }
 
 #workshops {
+	padding-bottom: unset;
+}
+
+#workshops, #community_workshops {
 	background: #FFBF23;
 }
 
@@ -271,7 +267,8 @@ ul {
 }
 
 .upcoming-workshops-calendar {
-	width: 340px;
+	width: 80%;
+	float: left;
 }
 
 /**
@@ -326,18 +323,22 @@ td {
 	padding-right: 5%;
 }
 
+.section {
+	padding-top: 2% !important;
+}
+
 /**
  * For media max-width: 600px
  **/
 @media (max-width: 600px) {
 	.benefit > p {
-    	height: unset;
+		height: unset;
 	}
 
 
 	.benefit > img {
-    	width: 100% !important;
-    	height: 100% !important;
+		width: 100% !important;
+		height: 100% !important;
 	}
 
 	.workshop-offering-section {

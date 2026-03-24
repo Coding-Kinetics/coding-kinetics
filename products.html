@@ -12,9 +12,9 @@
         <link rel="stylesheet" href="./styles/styles.css" />
         <link rel="stylesheet" href="./styles/products.css" />
         <link rel='stylesheet' media='handheld, only screen and (max-device-width: 600px)' href='styles/phone.css'>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js" defer></script>
-        <script src="./js/global.js" defer></script>
-        <script src="./js/cookie-consent-management.js" defer></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js" defer type="479df90ae52901b659fbaa6e-text/javascript"></script>
+        <script src="./js/global.js" defer type="479df90ae52901b659fbaa6e-text/javascript"></script>
+        <script src="./js/cookie-consent-management.js" defer type="479df90ae52901b659fbaa6e-text/javascript"></script>
         <title>Coding Kinetics - Products</title>
     </head>
     <body>
@@ -44,7 +44,7 @@
                     <p class="section-desc">Coding Kinetics offers a diverse range of learning experiences for everyone. No matter the budget or learning style, learn Kotlin your way.</p>
                 </div>
                 <div class="products-section">
-                     <div class="workshops-section product product-product">
+                    <div class="workshops-section product product-product">
                         <h4>Kotlin Workshops</h4>
                         <img src="./assets/workshop.webp" alt="Offering Kotlin and Android workshops in a collaborative and engaging setting."/>
                         <a href="#workshops" class="black-button black-button-small learn-more">Learn more</a>
@@ -72,25 +72,27 @@
             </div>
             <div id="workshops" class="workshop-training section">
                 <h3>Master Code Quickly – Workshops for the Community and Engineers</h3>
-                <p class="section-desc">It's never been easier to get developers writing in Kotlin.</p>
-                <div class="structured-benefit"> 
+                <p class="section-desc">It's never been easier to get developers writing robust code.</p>
+                <div class="structured-benefit wk-photo-strip">
                     <div class="benefit">
-                        <img src="./assets/productivity.webp" alt="Win back time and productivity when learning from Coding Kinetics"/>
                         <p>Accelerate Productivity</p>
+                        <img src="./assets/events/droidcon.webp" alt="A photo of a person starting to code in just hours" />
                     </div>
                     <div class="benefit">
-                        <img src="./assets/expert-led.webp" alt="Expert instructor teaches Kotlin and Android in front of a chalkboard"/>
                         <p>Expert-led workshops</p>
+                        <img src="./assets/events/coroutines_workshop.webp" alt="Amanda leading a full classroom at IIT on coroutines." />
                     </div>
                     <div class="benefit">
-                        <img src="./assets/hands-on.webp" alt="Hands-on experience is working with Kotlin on your own laptop or workspace for real-life applications"/>
                         <p>Hands-on experience with Kotlin projects</p>
+                        <img src="./assets/events/accelerate.webp" alt="Workshop attendees writing their own web page." />
                     </div>
                     <div class="benefit">
-                        <img src="./assets/tailored.webp" alt="Red mug with pes and pencils for a customized learning experience"/>
-                        <p>Tailored training for organizations</p>
+                        <p>Tailored training for different communities</p>
+                        <img src="./assets/events/pach.webp" alt="Workshop photo at Pilsen Arts" />
                     </div>
                 </div>
+            </div>
+            <div id="community_workshops" class="workshop-training section">
                 <div class="workshop-offerings">
                     <div class="workshop-offering-section offerings-popup">
                         <h4 id="popup-workshops">Workshops for Individuals</h4>
@@ -148,12 +150,36 @@
                                         <p>Click an event to sign up!</p>
                                         <div class="zebra-scrollable">
                                             <div class="calendar-event">
+                                                <p class="calendar-date">Apr. 15, 2026</p>
+                                                <img class="event-img" src="./assets/events/mayfair-cpl.webp" alt="Coding Kinetics workshop offers an opportunity to learn HTML, CSS and JS in a small group setting."/>
+                                                <p class="calendar-event-location">Chicago Public Library - Mayfair</p>
+                                                <p class="event-banner">FREE</p>
+                                                <p class="calendar-event-title">Intro to Coding Workshop: Build & Publish Your First Web Page</p>
+                                                <a class="calendar-event-button" href="https://chipublib.bibliocommons.com/events/69b987d12866a5b48842ab73">Tickets</a>
+                                            </div>
+                                            <div class="calendar-event">
+                                                <p class="calendar-date">Dec. 15, 2025</p>
+                                                <img class="event-img" src="./assets/events/humboldt-cpl.webp" alt="Coding Kinetics workshop offers an opportunity to learn HTML, CSS and JS in a small group setting."/>
+                                                <p class="calendar-event-location">Chicago Public Library - Humboldt Park</p>
+                                                <p class="event-banner">FREE</p>
+                                                <p class="calendar-event-title"> Intro to Coding Workshop: Build & Publish Your First Web Page</p>
+                                                <a class="calendar-event-button" href="https://chipublib.bibliocommons.com/events/68e546c923b2d134d7cd30b9">Tickets</a>
+                                            </div>
+                                            <div class="calendar-event past-event">
+                                                <p class="calendar-date">Nov. 11, 2025</p>
+                                                <img class="event-img" src="./assets/events/cpl_harold.webp" alt="Coding Kinetics workshop offers an opportunity to learn HTML, CSS and JS in a small group setting."/>
+                                                <p class="calendar-event-location">Chicago Public Library - Harold Washington</p>
+                                                <p class="event-banner">FREE</p>
+                                                <p class="calendar-event-title"> Intro to Coding Workshop: Build & Publish Your First Web Page</p>
+                                                <a class="calendar-event-button" href="https://chipublib.bibliocommons.com/events/68e546c923b2d134d7cd30b9">Tickets</a>
+                                            </div>
+                                            <div class="calendar-event past-event">
                                                 <p class="calendar-date">June 25, 2025</p>
                                                 <img class="event-img" src="./assets/events/dcnyc25.webp" alt="Coding Kinetics shares expertise on Kotlin Coroutines at Droidcon New York City."/>
                                                 <p class="calendar-event-location">Droidcon NYC 2025</p>
                                                 <p class="event-banner">$375-$675</p>
                                                 <p class="calendar-event-title">Kotlin Coroutine Mechanisms: A Surprisingly Deep Rabbithole</p>
-                                                <a class="calendar-event-button" href="https://nyc.droidcon.com/tickets/">Get ticket</a>
+                                                <a class="calendar-event-button" href="https://nyc.droidcon.com/tickets/">Tickets</a>
                                             </div>
                                             <div class="calendar-event">
                                                 <p class="calendar-date">April 26, 2025</p>
@@ -351,7 +377,7 @@
             <!-- End MailerLite Universal -->
         </div>
         <div id="page-under-construction">
-             <div class="wip">
+            <div class="wip">
                 <div class="wip-sign">
                     <p class="wip-title">CAUTION</p>
                     <p>Page under construction</p>

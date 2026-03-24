@@ -270,7 +270,3 @@ $(document).ready(function() {
         $subscribe_download_kotlin.hide();
     });
 });
-
-
-
-
