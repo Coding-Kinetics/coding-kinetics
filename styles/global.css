@@ -431,11 +431,13 @@ p {
     -webkit-transition: 0.3s;
     transition: 0.3s;
     background: #eee;
+    border-radius: 12px;
+    overflow: hidden;
 }
 
 /* Add shadows on hover */
 .price:hover {
-    box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
+    box-shadow: 0 12px 20px 0 rgba(0,0,0,0.15)
 }
 
 /* Pricing header */
@@ -444,6 +446,7 @@ p {
     color: white;
     font-size: 25px;
     text-transform: lowercase;
+    padding: 24px;
 }
 
 .price .desc {
@@ -454,7 +457,7 @@ p {
 /* List items */
 .price li {
     border-bottom: 1px solid #eee;
-    padding: 20px;
+    padding: 24px 20px;
     text-align: center;
     background: white;
     margin-top: 1px;
@@ -464,6 +467,7 @@ p {
 .price .grey {
     background-color: #eee;
     font-size: 20px;
+    font-weight: 500;
 }
 
 /**
