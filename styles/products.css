@@ -1,5 +1,6 @@
 h5 {
 	font-size: 24px;
+	margin: 0.5em;
 }
 
 .products-section > a {
@@ -14,15 +15,18 @@ h5 {
 
 h3 {
 	font-size: 26px;
+	letter-spacing: 0.2px;
 }
 
 h4 {
 	font-size: 24px;
+	letter-spacing: 0.2px;
 }
 
 p {
 	font-size: 16px;
 	word-break: break-word;
+	line-height: 1.6;
 }
 
 .follow-social {
@@ -50,6 +54,7 @@ li {
 
 .section-desc {
 	font-size: 18px;
+	max-width: 72ch;
 }
 
 /**
@@ -220,9 +225,13 @@ ul {
 	padding: 2%;
 }
 
+
 .step {
 	margin-bottom: 5%;
 	display: flow-root;
+	padding: 16px 18px;
+	border-radius: 16px;
+	background: rgba(255, 255, 255, 0.55);
 }
 
 .step-title {
@@ -245,8 +254,8 @@ ul {
 }
 
 .sample-workshop-sample {
-	border-radius: 10px;
-	border: 1px solid black;
+	border-radius: 16px;
+	border: 1px solid #e2e2e2;
 	padding: 3%;
 	background: white;
 	margin-bottom: 3%;

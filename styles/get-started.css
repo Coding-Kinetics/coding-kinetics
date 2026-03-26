@@ -91,7 +91,7 @@ p, li {
 .roadmap-team {
 	margin-top: 5%;
 	padding: 5%;
-	/*display: none;*/
+	display: none;
 }
 
 .img-roadmap {
@@ -104,7 +104,7 @@ p, li {
 .roadmap-single {
 	margin-top: 5%;
 	padding: 5%;
-	/*display: none;*/
+	display: none;
 }
 
 /**

@@ -6,10 +6,6 @@
 	font-family: "Jost", sans-serif;
 }
 
-p {
-	text-transform: lowercase;
-}
-
 html {
 	scroll-behavior: smooth;
 }

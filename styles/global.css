@@ -252,12 +252,14 @@ p {
 .junk-links {
     display: flex;
     justify-content: space-between;
+    gap: 28px;
 }
 
 .link {
     color: black;
     text-decoration: underline;
-    padding-top: 5%;
+    text-underline-offset: 3px;
+    padding-top: 0;
     cursor: pointer;
 }
 
@@ -339,10 +341,12 @@ p {
  **/
 
 .subscribe > input {
-    border: 2px solid black;
-    border-radius: 3px;
-    background: #FFBF23;
+    border: 1px solid #cfcfcf;
+    border-radius: 10px;
+    background: #fff;
     width: 97%;
+    padding: 12px 14px;
+    box-sizing: border-box;
 }
 
 #subscribe-screen {
@@ -467,7 +471,7 @@ p {
  */
 .cookie-notice {
     position: fixed;
-    width: 400px;
+    width: 380px;
     height: fit-content;
     bottom: 0;
     right: 0;
@@ -480,12 +484,12 @@ p {
     position: fixed;
     background: black;
     color: white;
-    box-shadow: 2px 2px 2px 2px #222222;
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.28);
     padding: 20px;
     transition: all 1s ease-out;
     bottom: -100%;
+    border-radius: 16px 0 0 0;
 }
-
 .cookie-notice-slide > p {
     font-size: 12px;
 }
