@@ -5,11 +5,16 @@ function setCookie(name, value) {
     date.setTime(date.getTime() + (60 * 24 * 60 * 60 * 1000)); // set to 2 months
     let expires = "; expires=" + date.toUTCString();
 
-    // Log the cookie to be set (for debugging)
-    console.log(name + "=" + (value || "") + expires + "; Secure; SameSite=Strict; path=/; domain=codingkinetics.com");
+    let domain = "";
+    if (window.location.hostname.match(/codingkinetics\.com$/)) {
+        domain = "; domain=codingkinetics.com";
+    }
 
-    // Set the cookie without Secure flag (since localhost uses HTTP)
-    document.cookie = name + "=" + (value || "") + expires + "; Secure; SameSite=Strict; path=/; domain=codingkinetics.com";
+    // Log the cookie to be set (for debugging)
+    console.log(name + "=" + (value || "") + expires + "; SameSite=Lax; Secure; path=/" + domain);
+
+    // Set the cookie
+    document.cookie = name + "=" + (value || "") + expires + "; SameSite=Lax; Secure; path=/" + domain;
 
     // Log the cookies to see what was set
     console.log("Cookie stored: " + document.cookie);
